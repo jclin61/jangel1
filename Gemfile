@@ -6,6 +6,11 @@ gem 'rails', '4.0.2'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'
+  gem 'hirb'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+  gem 'rails-footnotes', '>= 3.7.9'
 end
 
 group :production do
