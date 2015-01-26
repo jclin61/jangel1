@@ -1,4 +1,5 @@
 Jangel1::Application.routes.draw do
+  get "blog/index"
   get "home/index"
   resources :home
 

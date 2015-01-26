@@ -11,7 +11,21 @@
  *= require_self
  *= require_tree .
  */
-#top_space {margin-top: 50px;
+#top_space {
+	margin-top: 50px;
 }
-.container {font-family: sans-serif;
+.container {
+	font-family: sans-serif;
+}
+.navbar ul li {
+	float:left; margin: 10px 20px 0px 0px;
+}
+.navbar ul li a{
+	padding-top: 0px;
+}
+.navbar li button {
+	margin-top: -5px;
+}
+.navbar button {
+	padding: 8px 10px 5px 10px;
 }
