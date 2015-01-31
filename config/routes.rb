@@ -1,6 +1,22 @@
 Jangel1::Application.routes.draw do
   get "blog/index"
   get "home/index"
+  get "home/story"
+  get "home/blog"
+
+  # The following is to direct short menu name to actual web address such as "home/index"
+  match "home",
+  :to => "home#index",
+  :via => :get
+
+  match "story",
+  :to => "home#story",
+  :via => :get
+  
+  match "blog",
+  :to => "home#blog",
+  :via => :get
+
   resources :home
 
   # The priority is based upon order of creation: first created -> highest priority.
