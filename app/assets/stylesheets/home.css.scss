@@ -69,7 +69,7 @@
 }
 #welcome_home{
 	top:15px;
-	background: url(route66.jpg) 50% 0 no-repeat fixed;
+	background: url(image_path('route66.jpg')) 50% 0 no-repeat fixed;
 	background-size: cover;
 	height:800px;
 	margin: 0 auto;
@@ -92,7 +92,7 @@
 		color:#515151;
 	}
 #welcome_why{
-	background: url(yosemite1.jpg) 50% 0 no-repeat fixed;
+	background: url(image_path('yosemite1.jpg')) 50% 0 no-repeat fixed;
 	background-size: cover;
 	height:1000px;
 	margin: 0 auto;
@@ -115,7 +115,7 @@
 	color:#515151;
 	}
 #welcome_how{
-	background: url(horseshoebend1.jpg) 50% 0 no-repeat fixed;
+	background: url(image_path('horseshoebend1.jpg')) 50% 0 no-repeat fixed;
 	background-size: cover;
 	height:1000px;
 	margin: 0 auto;
