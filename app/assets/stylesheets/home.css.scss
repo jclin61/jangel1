@@ -12,7 +12,7 @@
 }
 
     #video-sec .overlay {
-        background-color: rgba(0, 0, 0, 0.55);
+        /*background-color: rgba(0, 0, 0, 0.55);*/
         min-height: 700px;
         color: #fff;
     }
@@ -24,42 +24,24 @@
         padding-bottom: 30px;
     }
 
+#mobilebanner {
+	background: url(image_path('mobilebanner.jpg')) repeat;
+	min-height: 700px;
+	background-size: 100%;
+}
+#mobile_arrow{
+	vertical-align: bottom;
+}
+
 /*================================
     Below Video Parralex
 ==================================*/
-.parallax_space{
-	text-align: center;
-	margin-top: 150px;
-	height:300px;
-}
-#cover{
-	background: url(welcome/Cover.png) repeat;
-	background-size: 110%;
-	height:250px;
-}
-	#cover_title{
-		font-weight: bold;
-		margin-top: 50px;
-		color: lightgrey;
-		text-shadow: 3px 2px 2px #515151;
-	}
-	#cover_subtitle{
-		color: #EEEEEE;
-		text-shadow: 3px 2px 2px #515151;
-	}
-	#cover_button{
-		font-size:22px;
-		margin-top: 10px;
-		padding: 5px 10px 5px 10px;
-		color: #EEEEEE;
-	}
-	#cover_summary{
-		margin-top:50px;
-	}
-#welcome_arrow{
+#desktop_arrow{
 	margin-bottom: 150px;
 	height:50px;
 	width:100px;
+	z-index: 1;
+	opacity: 0.5;
 
 }
 .parralex_space{

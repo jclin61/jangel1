@@ -20,7 +20,7 @@ $(document).on('page:change ready', function(){
 	}
 
 	function scroll_to_position(){
-		$("#welcome_arrow").click(function(){
+		$("#desktop_arrow").click(function(){
 			$('html, body').animate({
 				scrollTop: $("#welcome_home").offset().top
 			}, 2000);

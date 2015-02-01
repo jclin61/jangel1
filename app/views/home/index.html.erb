@@ -1,9 +1,11 @@
-<div id="video-sec" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=vcozOGM-Xic',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:1,mute: true,showControls:false}">
+<!-- Desktop Devices Banner -->
+
+<div id="video-sec" class="player hidden-xs hidden-sm" data-property="{videoURL:'https://www.youtube.com/watch?v=vcozOGM-Xic',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:0.6,mute: true,showControls:false}">
     <!-- change https://www.youtube.com/watch?v=Ycv5fNd4AeM to your youtube url-->
     <div class="overlay">
         <div class="container">
             <div class="row text-center">
-                <div class="col-xs-24">
+                <div class="col-md-12">
                     <h1>ANGEL AND JERRY</h1>
                     <h4>MUAH MUAH<strong>LOVE</strong>
                     </h4>
@@ -13,10 +15,24 @@
             </div>
         </div>
     </div>
+    <button type="button" id="desktop_arrow" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-chevron-down"></span></button>
 </div>
-<div class="parallax_space">
-	<button type="button" id="welcome_arrow" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-chevron-down"></span></button>
-</div>
+
+<!-- Mobile Devices Banner -->
+<div id="mobilebanner" class="visible-xs visible-sm">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1>ANGEL AND JERRY</h1>
+                    <h4>MUAH MUAH<strong>LOVE</strong>
+                    </h4>
+                    <h4>MUAH MUAH MUAH 3
+                    </h4>
+                </div>
+                <span id="mobile_arrow" class="glyphicon glyphicon-chevron-down"></span>
+            </div>
+        </div>
+    </div>   
 
 <!-- parallax -->
 <section id="welcome_home" data-type="background" data-speed="10">
