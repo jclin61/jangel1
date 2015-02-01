@@ -11,9 +11,6 @@
  *= require_self
  *= require_tree .
  */
- 
- 
-
 
 #top_space {
 	margin-top: 50px;
@@ -25,7 +22,8 @@
 	float:left; margin: 10px 20px 0px 0px;
 }
 .navbar ul li a{
-	padding-top: 0px;
+	padding: 0px 5px 0px 5px;
+	padding-left: px;
 }
 .navbar li button {
 	margin-top: -5px;
@@ -49,7 +47,7 @@
 
 /* A single menu */
 .dropotron { background: #F8F8F8; list-style: none; margin-top: -10px; max-width: 10em; padding: 1.75em 1em 0.75em 1em; }
-.dropotron > li { z-index: 1; text-align: center; border-top: none 1px #555; margin: 0; padding: 0; }
+.dropotron > li { z-index: 1; text-align: left; border-top: none 1px #555; margin: 0; padding: 0; }
 /*.dropotron > li:first-child { border-top: 0; }*/
 /*.dropotron > li > a { color: #ccc; display: block; padding: 0.5em 0 0.5em 0; text-decoration: none; }*/
 .dropotron > li.active > a, .dropotron > li:hover > a { color: none; }

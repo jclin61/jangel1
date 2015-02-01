@@ -1,4 +1,8 @@
 Jangel1::Application.routes.draw do
+  resources :responses
+
+  resources :rsvps
+
   get "blog/index"
   get "home/index"
   get "home/story"
@@ -15,6 +19,10 @@ Jangel1::Application.routes.draw do
   
   match "blog",
   :to => "home#blog",
+  :via => :get
+
+  match "rsvp",
+  :to => "responses#new",
   :via => :get
 
   resources :home
