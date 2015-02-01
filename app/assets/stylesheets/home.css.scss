@@ -1,3 +1,25 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*Index*/
+/*================================
+    VIDEO SECTION STYLES
+==================================*/
+#video-sec {
+    color: #fff;
+    text-align: center;
+}
+
+    #video-sec .overlay {
+     /*   background-color: rgba(0, 0, 0, 0.85);*/
+        min-height: 600px;
+        color: #fff;
+    }
+
+    #video-sec h1 {
+        padding-top: 80px;
+        font-size: 50px;
+        font-weight: 900;
+        padding-bottom: 30px;
+    }

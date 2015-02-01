@@ -11,6 +11,10 @@
  *= require_self
  *= require_tree .
  */
+ 
+ 
+
+
 #top_space {
 	margin-top: 50px;
 }
@@ -29,3 +33,27 @@
 .navbar button {
 	padding: 8px 10px 5px 10px;
 }
+.navbar .container{
+	padding-top: 5px;
+}
+
+/*Dropotron CSS*/
+
+/*body { font-family: sans-serif; font-size: 12pt; color: #444; line-height: 1.5em; } */
+/*h1 { font-size: 1.5em; } */
+/*#wrapper { width: 100%; margin: 0 auto; text-align: center; } */
+/*#main-nav ul { list-style: none; margin: 0; padding: 0; }*/
+/*#main-nav ul li { display: inline-block; margin: 0 1em 0 1em; padding: 0.35em 0.75em 0.35em 0.75em; border-radius: 0.5em; }*/
+/*#main-nav ul li.active { background: #999; }*/
+/*#main-nav ul li.active a { text-decoration: none; }*/
+
+/* A single menu */
+.dropotron { background: #F8F8F8; list-style: none; margin-top: -10px; max-width: 10em; padding: 1.75em 1em 0.75em 1em; }
+.dropotron > li { z-index: 1; text-align: center; border-top: none 1px #555; margin: 0; padding: 0; }
+/*.dropotron > li:first-child { border-top: 0; }*/
+/*.dropotron > li > a { color: #ccc; display: block; padding: 0.5em 0 0.5em 0; text-decoration: none; }*/
+.dropotron > li.active > a, .dropotron > li:hover > a { color: none; }
+
+/* Only applies to top level ("level-0") menus */
+/*.dropotron.level-0 { margin-top: 1.00em; }*/
+/*.dropotron.level-0:before { content: ''; position: absolute; border-bottom: none 0.5em #444; border-left: solid 0.5em transparent; border-right: solid 0.5em transparent; top: -0.5em; }*/
