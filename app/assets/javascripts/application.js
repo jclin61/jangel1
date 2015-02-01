@@ -15,19 +15,21 @@
 // = require turbolinks
 // = require_tree .
 
+$(document).on('page:change ready', function(){
+	// Dropotron navigation drop down
+	$(function() {
+		
+		// Note: make sure you call dropotron on the top level <ul>
+		$('#main-nav > ul').dropotron({ 
+			offsetY: -10 // Nudge up submenus by 10px to account for padding
+		});
 
-// Dropotron navigation drop down
-$(function() {
-	
-	// Note: make sure you call dropotron on the top level <ul>
-	$('#main-nav > ul').dropotron({ 
-		offsetY: -10 // Nudge up submenus by 10px to account for padding
 	});
 
-});
+	// BACKGROUND VIDEO SCRIPTS
+	$(function () {
+	    $(".player").mb_YTPlayer(); // .player - class to add for playing video ( see the div above to understand)
+	});
 
-// BACKGROUND VIDEO SCRIPTS
-$(function () {
-    $(".player").mb_YTPlayer(); // .player - class to add for playing video ( see the div above to understand)
-});
 
+});
