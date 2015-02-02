@@ -22,7 +22,7 @@ $(document).on('page:change ready', function(){
 	function scroll_to_position(){
 		$("#desktop_arrow").click(function(){
 			$('html, body').animate({
-				scrollTop: $("#welcome_home").offset().top
+				scrollTop: $("#video-sec").offset().top
 			}, 2000);
 			});
 		

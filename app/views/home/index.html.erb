@@ -1,6 +1,5 @@
 <!-- Desktop Devices Banner -->
-
-<div id="video-sec" class="player hidden-xs hidden-sm" data-property="{videoURL:'https://www.youtube.com/watch?v=vcozOGM-Xic',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:0.6,mute: true,showControls:false}">
+<div id="video-sec" class="player hidden-xs" data-property="{videoURL:'https://www.youtube.com/watch?v=vcozOGM-Xic',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:0.6,mute: true,showControls:false}">
     <!-- change https://www.youtube.com/watch?v=Ycv5fNd4AeM to your youtube url-->
     <div class="overlay">
         <div class="container">
@@ -15,40 +14,45 @@
             </div>
         </div>
     </div>
-    <button type="button" id="desktop_arrow" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-chevron-down"></span></button>
+</div>
+<!-- DESKTOP show parallax -->
+<div class="hidden-xs">
+	<section class="white_section">
+		<p>test</p>
+	</section>
+	<section id="welcome_home" data-type="background" data-speed="15">
+		<article>
+			<div>
+				<p class="welcome_text">Did you know? <br> Number of Cars Has Surpassed <span>1 Billion</span> Worldwide</p>
+			</div>
+		</article>
+	</section>
+
+	<section class="white_section">
+		<p>test</p>
+	</section>
+
+	<section id="welcome_why" data-type="background" data-speed="15">
+		<article>
+			<p class="welcome_text2">More Than 30% of Drivers Use Dashboard Cameras to Protect Themselves in Asia</p>
+		</article>
+	</section>
+
+	<section class="white_section">
+		<p>test</p>
+	</section>
+
+	<section id="welcome_how" data-type="background" data-speed="15">
+		<article>
+			<p class="welcome_text2"><span class="brand">ViDence</span> is here to help all road users to find evidence for their accidents</p>
+		</article>
+	</section>
 </div>
 
-<!-- Mobile Devices Banner -->
-<div id="mobilebanner" class="visible-xs visible-sm">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <h1>ANGEL AND JERRY</h1>
-                    <h4>MUAH MUAH<strong>LOVE</strong>
-                    </h4>
-                    <h4>MUAH MUAH MUAH 3
-                    </h4>
-                </div>
-                <span id="mobile_arrow" class="glyphicon glyphicon-chevron-down"></span>
-            </div>
-        </div>
-    </div>   
+<!-- MOBILE DEVICE show-->
+<div class="hidden-sm hidden-md hidden-lg">
+	<%= render "home/mobile_index" %>
+</div>
+<!-- MOBILE DEVICE end -->
 
-<!-- parallax -->
-<section id="welcome_home" data-type="background" data-speed="10">
-	<article>
-		<div>
-			<p class="welcome_text">Did you know? <br> Number of Cars Has Surpassed <span>1 Billion<span> Worldwide</p>
-		</div>
-	</article>
-</section>
-<section id="welcome_why" data-type="background" data-speed="10">
-	<article>
-		<p class="welcome_text2">More Than 30% of Drivers Use Dashboard Cameras to Protect Themselves in Asia</p>
-	</article>
-</section>
-<section id="welcome_how" data-type="background" data-speed="10">
-	<article>
-		<p class="welcome_text2"><span class="brand">ViDence</span> is here to help all road users to find evidence for their accidents</p>
-	</article>
-</section>
+<button type="button" id="desktop_arrow" class="btn btn-default btn-lg center-block"><span class="glyphicon glyphicon-chevron-up"></span><br><span>Top</span></button>
