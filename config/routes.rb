@@ -1,4 +1,5 @@
 Jangel1::Application.routes.draw do
+  get "galleries/showcase"
   resources :responses
 
   resources :rsvps
@@ -23,6 +24,10 @@ Jangel1::Application.routes.draw do
 
   match "rsvp",
   :to => "responses#new",
+  :via => :get
+
+  match "gallery",
+  :to => "galleries#showcase",
   :via => :get
 
   resources :home

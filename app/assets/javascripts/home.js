@@ -1,8 +1,11 @@
 $(document).on('page:change ready', function(){
 
-	welcome_page_scroll()
+	// welcome_page_scroll()
 	scroll_to_position()
-	function welcome_page_scroll(){
+	
+});
+
+function welcome_page_scroll(){
 		$('section[data-type="background"]').each(function(){
 			var $back_object = $(this);  //To Assign the object of section
 			$(window).scroll(function(){
@@ -27,4 +30,3 @@ $(document).on('page:change ready', function(){
 			});
 		
 	}
-});
