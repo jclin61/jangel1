@@ -16,11 +16,14 @@
 // = require_tree .
 
 $(document).on('page:change ready', function(){
-	// stellar parallax
-	$(window).stellar({
-		horizontalScrolling: false,
-	    verticalOffset: 0,
-	    horizontalOffset: 0
+	// stellar parallax	
+	$(function() {
+
+		$(window).stellar({
+			horizontalScrolling: false,
+		    verticalOffset: 0,
+		    horizontalOffset: 0
+		});
 	});
 
 	// Dropotron navigation drop down
@@ -37,5 +40,6 @@ $(document).on('page:change ready', function(){
 	$(function () {
 	    $(".player").mb_YTPlayer(); // .player - class to add for playing video ( see the div above to understand)
 	});
+
 
 });

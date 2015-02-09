@@ -1,6 +1,6 @@
 $(document).on('page:change ready', function(){
 
-	// welcome_page_scroll()
+	welcome_page_scroll()
 	scroll_to_position()
 	
 });
@@ -22,11 +22,11 @@ function welcome_page_scroll(){
 
 	}
 
-	function scroll_to_position(){
-		$("#desktop_arrow").click(function(){
-			$('html, body').animate({
-				scrollTop: $("#video-sec").offset().top
-			}, 2000);
-			});
-		
-	}
+function scroll_to_position(){
+	$("#desktop_arrow").click(function(){
+		$('html, body').animate({
+			scrollTop: $("#video-sec").offset().top
+		}, 2000);
+		});
+	
+}
