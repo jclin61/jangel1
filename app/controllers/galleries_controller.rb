@@ -2,7 +2,7 @@ class GalleriesController < ApplicationController
   def showcase
 
   	begin
-	  client = Picasa::Client.new(:user_id => "someemail", :password => "whatever11")
+	  client = Picasa::Client.new(:user_id => ENV['GMAIL_ID'], :password => ENV['GMAIL_PASSWORD'])
   	
 	  albums = client.album.list.entries
 	  album = albums.find { |album| album.title == "jangel_photo_test" }
