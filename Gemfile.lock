@@ -47,6 +47,9 @@ GEM
     execjs (2.2.2)
     hike (1.2.3)
     hirb (0.7.3)
+    httparty (0.13.3)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
@@ -63,9 +66,15 @@ GEM
       rack-contrib (~> 1.1)
       railties (>= 3.0.0, < 5.0.0)
     mime-types (1.25.1)
+    mini_portile (0.6.1)
     minitest (4.7.5)
     multi_json (1.10.1)
+    multi_xml (0.5.5)
+    nokogiri (1.6.5)
+      mini_portile (~> 0.6.0)
     pg (0.18.1)
+    picasa (0.7.4)
+      httparty
     polyglot (0.3.5)
     rack (1.5.2)
     rack-contrib (1.2.0)
@@ -331,7 +340,9 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   meta_request
+  nokogiri
   pg
+  picasa
   rails (= 4.0.2)
   rails-footnotes (>= 3.7.9)
   rails_12factor

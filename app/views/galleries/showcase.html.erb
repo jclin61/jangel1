@@ -10,39 +10,14 @@
 </div>
 
 	<div class="links" id="links">
-	  <a href="https://lh5.googleusercontent.com/-NQnB9IjK8Ig/VNhnj3D9ZvI/AAAAAAAAAq8/om7zEWhaFwc/s800/horseshoebend1.jpg" title="Photo 1" data-gallery="" data-unique-id="tmp_1">
-	    <%=image_tag("https://lh5.googleusercontent.com/-NQnB9IjK8Ig/VNhnj3D9ZvI/AAAAAAAAAq8/om7zEWhaFwc/s144/horseshoebend1.jpg") %>
+	  <% num = 0 %>
+	  <% @photolinks.each do |photolink| %>
+	  <a href="<%= photolink.content.src + "?imgmax=800" %>" title="Photo <%= num+1 %>" data-gallery="" data-unique-id="tmp_<%= num+1 %>">
+	    <%=image_tag(photolink.content.src + "?imgmax=144") %>
 	  </a>
-	  <a href="https://lh4.googleusercontent.com/-AoIWxbrEe30/VNhnj7lMATI/AAAAAAAAArA/Tf7qPbWqx5M/s800/mobilebanner.jpg" title="Photo 2" data-gallery="" data-unique-id="2">
-	    <%=image_tag("https://lh4.googleusercontent.com/-AoIWxbrEe30/VNhnj7lMATI/AAAAAAAAArA/Tf7qPbWqx5M/s144/mobilebanner.jpg") %>
-	  </a>
-	  <a href="https://lh3.googleusercontent.com/-BbulhySveHg/VNhnjplIMRI/AAAAAAAAAq0/ZRVaMzfvopI/s800/route66.jpg" title="Photo 3" data-gallery="" data-unique-id="tmp_3">
-	    <%=image_tag("https://lh3.googleusercontent.com/-BbulhySveHg/VNhnjplIMRI/AAAAAAAAAq0/ZRVaMzfvopI/s144/route66.jpg") %>
-     <a href="https://lh6.googleusercontent.com/-IH9cEHIKZBY/VNhnkmbjtNI/AAAAAAAAArE/_PR8CmoreDM/s800/yosemite1.jpg" title="Photo 3" data-gallery="" data-unique-id="tmp_3">
-    <%=image_tag("https://lh6.googleusercontent.com/-IH9cEHIKZBY/VNhnkmbjtNI/AAAAAAAAArE/_PR8CmoreDM/s144/yosemite1.jpg") %>
-	  </a>
+	  <% num += 1 %>
+	  <% end %>
 	</div>
-
-	<!-- <div class="links" id="links">
-	<a href="http://farm6.static.flickr.com/5101/13539971585_6c655628e5_b.jpg" title="La finestra" data-gallery="1" data-unique-id="tmp_1">
-        <img src="http://farm6.static.flickr.com/5101/13539971585_6c655628e5_s.jpg"/>
-	</a>
-	<a href="http://farm8.static.flickr.com/7058/13535332874_e1ffe2f14c_b.jpg" title="ONE OF MY FAVORITE PLACES IN NORWAY :)" data-gallery="1" data-unique-id="2">
-        <img src="http://farm8.static.flickr.com/7058/13535332874_e1ffe2f14c_s.jpg"/>
-	</a>
-	<a href="http://farm3.static.flickr.com/2832/13535035223_a31eb2c8a8_b.jpg" title="ghost stories and other urban legends" data-gallery="" data-unique-id="3">
-        <img src="http://farm3.static.flickr.com/2832/13535035223_a31eb2c8a8_s.jpg"/>
-	</a>
-	<a href="http://farm4.static.flickr.com/3685/13539935244_3540cf2bfe_b.jpg" title="Esa Hora Del da" data-gallery="" data-unique-id="tmp_4">
-        <img src="http://farm4.static.flickr.com/3685/13539935244_3540cf2bfe_s.jpg"/>
-	</a>
-	<a href="http://farm4.static.flickr.com/3760/13534581825_b32103f379_b.jpg" title="Jalapeo" data-gallery="" data-unique-id="5">
-        <img src="http://farm4.static.flickr.com/3760/13534581825_b32103f379_s.jpg"/>
-	</a>
-	<a href="http://farm4.static.flickr.com/3705/13541202353_dc22b7de3b_b.jpg" title="Lady in The Flowers" data-gallery="" data-unique-id="tmp_6">
-        <img src="http://farm4.static.flickr.com/3705/13541202353_dc22b7de3b_s.jpg"/>
-	</a>
-</div> -->
 
 
 <script>
@@ -60,3 +35,18 @@ $(document).ready(function() {
 
 
 </div>
+
+<!-- Picasa image source loop example below -->
+
+<% @photolinks.each do |photolink| %>
+
+<p> <% photolink.content.src + "?imgmax=800" %></p>
+
+<p> <% image_tag(photolink.content.src + "?imgmax=800") %></p>
+
+<% end %>
+
+
+<!-- Picasa image loop example end -->
+
+
