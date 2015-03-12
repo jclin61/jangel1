@@ -8,10 +8,15 @@ Jangel1::Application.routes.draw do
   get "home/index"
   get "home/story"
   get "home/blog"
+  get "home/savethedate"
 
   # The following is to direct short menu name to actual web address such as "home/index"
   match "home",
   :to => "home#index",
+  :via => :get
+
+  match "savethedate",
+  :to => "home#savethedate",
   :via => :get
 
   match "story",
@@ -37,6 +42,7 @@ Jangel1::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'home#index'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

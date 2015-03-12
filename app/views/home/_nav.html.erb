@@ -1,0 +1,50 @@
+<!-- collapse navbar -->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           <h4 id="title" class="pull-left"><%= link_to 'Jerry & Angel', '/' %></h4>
+        </div>
+        <div id="main-nav" class="navbar-collapse collapse navbar-right scroll-me">
+                <ul class="nav navbar-nav navbar-right">
+				<li><%= link_to 'Story', "/story" %>
+					<ul class="story_menu">
+						<li><%= link_to '13~28', '/story#13_28' %></li>
+						<li><%= link_to 'Proposal', '/story#proposal' %></li>
+					</ul>
+				</li>
+				<li><%= link_to 'Weddings', '/weddings' %>
+					<ul class="weddings_menu">
+						<li>SF Civil</li>
+						<li>Lake Tahoe</li>
+						<li>Taipei</li>
+					</ul>
+				</li>
+				<li><%= link_to 'Seasons', '/seasons' %>
+					<ul class="seasons_menu">
+						<li>Spring</li>
+						<li>Summer</li>
+						<li>Autumn</li>
+						<li>Winter</li>
+					</ul>
+				</li>
+				<li><%= link_to 'Gallery', "/gallery" %></li>
+				<li><%= link_to 'Blog', "/blog" %></li>
+				<li>Registry</li>
+				<li class ="pull-right">
+					<form action="/rsvp">
+						<button id="rsvp" type="submit" class="btn btn-info btn-sm pull-right">RSVP</button>
+					</form>
+				</li>
+			</ul>
+        </div>
+
+    </div>
+</div>
+
+<div id="top_space">
+</div>
