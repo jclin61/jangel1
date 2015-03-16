@@ -1,6 +1,9 @@
 /*================================
    Save The Date (desktop+mobile)
 ==================================*/
+#savethedatepage h1 h2 h3 p li{
+	font-family: 'Didact Gothic', sans-serif;
+}
 
 .mapoverlay {
    background:transparent; 
@@ -29,7 +32,6 @@
 	}
 	.sd1_text{
 	font-size:60px;
-	font-family: 'Didact Gothic', sans-serif;
 	letter-spacing: 0.2em;
 	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
 	/*font-weight: 300;*/
@@ -41,7 +43,6 @@
 
 .sd_text{
 	font-size:60px;
-	font-family: 'Didact Gothic', sans-serif;
 	letter-spacing: 0.2em;
 	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
 	/*font-weight: 300;*/
@@ -95,7 +96,6 @@
 	}
 	.m_sd1_text{
 	font-size:28px;
-	font-family: 'Didact Gothic', sans-serif;
 	font-weight: 300;
 	letter-spacing: 0.2em;
 	color: white;
@@ -106,7 +106,6 @@
 
 .m_sd_text{
 	font-size:28px;
-	font-family: 'Didact Gothic', sans-serif;
 	font-weight: 300;
 	letter-spacing: 0.2em;
 	color: black;
@@ -140,18 +139,14 @@
 
 .couple-info-top{
 	margin-top: 150px;
-	margin-left: 10%;
-	margin-right: 10%;
 	text-align: center;
 }
 
 .couple-info-top h2{
-	font-family: "PT Serif",Georgia,serif;
 	margin: 30px 30px 30px 30px;
 }
 
 .couple-info-top p{
-	font-family: "PT Serif",Georgia,serif;
 	font-size: 20px;
 	line-height: 130%;
 }
@@ -164,18 +159,16 @@
 }
 
 .couple-info-list li{
-	font-family: "PT Serif",Georgia,serif;
+	width: 260px;
+	margin:0 auto;
 	line-height: 110%;
 	font-size: 18px;
-	margin-left: 35%;
-	margin-right: 30%;
 	text-align: left;
 }
 
 .sd_end_note{
 	text-align: right;
 	font-size: 20px;
-	font-family: "PT Serif",Georgia,serif;
 	margin-top: 50px;
 }
 #welcome_how{
