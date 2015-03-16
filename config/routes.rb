@@ -4,14 +4,18 @@ Jangel1::Application.routes.draw do
 
   resources :rsvps
 
-  get "blog/index"
-  get "home/index"
-  get "home/story"
-  get "home/blog"
-  get "home/savethedate"
+  #====
+  # Enable the following on public release
+  #====
+
+  # get "blog/index"
+  # get "home/index"
+  # get "home/story"
+  # get "home/blog"
+  # get "home/savethedate"
 
   # The following is to direct short menu name to actual web address such as "home/index"
-  match "home",
+  match "home0702",
   :to => "home#index",
   :via => :get
 
@@ -19,20 +23,32 @@ Jangel1::Application.routes.draw do
   :to => "home#savethedate",
   :via => :get
 
-  match "story",
+  match "story0702",
   :to => "home#story",
   :via => :get
   
-  match "blog",
+  match "blog0702",
   :to => "home#blog",
   :via => :get
 
-  match "rsvp",
+  match "rsvp0702",
   :to => "responses#new",
   :via => :get
 
-  match "gallery",
+  match "gallery0702",
   :to => "galleries#showcase",
+  :via => :get
+
+  # ==== 
+  # Following to prevent user to expose pages in construction
+  # ====
+
+  match "index",
+  :to => "home#savethedate",
+  :via => :get
+
+  match "home",
+  :to => "home#savethedate",
   :via => :get
 
   resources :home
@@ -41,7 +57,7 @@ Jangel1::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'home#index'
+  root 'home#savethedate'
 
 
   # Example of regular route:

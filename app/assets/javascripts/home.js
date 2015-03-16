@@ -2,6 +2,7 @@ $(document).on('page:change ready', function(){
 
 	welcome_page_scroll()
 	scroll_to_position()
+	savethedate_type()
 	
 });
 
@@ -28,5 +29,11 @@ function scroll_to_position(){
 			scrollTop: $("#video-sec").offset().top
 		}, 2000);
 		});
+}
 	
+
+function savethedate_type(){
+	var win = $(window),
+        word1 = $('#typer');
+		word1.typer(['<i>couple</i>', 'scenery']);
 }

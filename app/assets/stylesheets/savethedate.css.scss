@@ -79,7 +79,7 @@
        Mobile
 =====================*/
 .m_sd1{
-	background: url(image_path('sd/m_sd_top.jpg')) 65% 0 no-repeat fixed;
+	background: url(image_path('sd/m_sd_top.jpg')) 65% 0 no-repeat;
 	background-size: 110%;
 	height:320px;
 	margin: 0 auto;
@@ -90,39 +90,41 @@
 	.m_sd1 article{
 		height: 20px;
 		position: relative;
-		top:10px;
+		top:20px;
 		width:100%;	
 	}
 	.m_sd1_text{
 	font-size:30px;
-	font-family: 'Abel', sans-serif;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
 	letter-spacing: 0.2em;
-	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
-	/*font-weight: 300;*/
 	color: white;
 	text-shadow: -1px 0 lightgrey, 0 1px lightgrey, 1px 0 lightgrey, 0 -1px lightgrey;
-	padding-top: 100px;
+	padding-top: 50px;
 	text-align:center;
 		}
 
 .m_sd_text{
 	font-size:30px;
-	font-family: 'Abel', sans-serif;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
 	letter-spacing: 0.2em;
-	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
-	/*font-weight: 300;*/
 	color: black;
 	vertical-align: middle;
 	text-shadow: -1px 0 lightgrey, 0 1px lightgrey, 1px 0 lightgrey, 0 -1px lightgrey;
 	text-align:center;
 }
 
+.m_sd_whitespace1{
+	margin: 100px 0 100px 0;
+}
+
 .m_sd_whitespace{
-	margin: 80px 0 50px 0;
+	margin: 100px 0 100px 0;
 }
 .m_sd2{
-	background: url(image_path('sd/sd_sand.jpg')) 50% 0 no-repeat fixed;
-	background-size: cover;
+	background: url(image_path('sd/sd_sand.jpg')) 50% 0 no-repeat;
+	background-size: 100%;
 	height:320px;
 	margin: 0 auto;
 	width: 100%;
@@ -132,30 +134,31 @@
 	.m_sd2 article{
 		height: 20px;
 		position: relative;
-		top:10px;
+		top:20px;
 		width:100%;	
 	}
 
 
 
 
-
-
-
-
-
-
-
-
-.couple-info{
-	margin-top: 50px;
+.couple-info-top{
+	margin-top: 150px;
+	text-align: center;
 }
 
-.couple-info img{
+.couple-info-top img{
 	height: 180px;
 	width: 180px;
 	-moz-border-radius: 200px;
 	border-radius: 200px;
+}
+
+.couple-info-list li{
+	font-size: 18px;
+}
+
+.sd_end_note{
+	text-align: right;
 }
 #welcome_how{
 	background: url(image_path('horseshoebend1.jpg')) 50% 0 no-repeat fixed;

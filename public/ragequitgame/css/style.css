@@ -1,0 +1,142 @@
+textarea{
+	float:left;
+	margin-top: 5px;
+	margin-left: 15px;
+	width:500px;
+	height: 60px;
+}
+	#hitbox{
+		position: relative;
+		margin: 5px 10px 5px 5px;
+		float:right;
+		width: 60px;
+		height:60px;
+		border: 1px solid black;
+	}
+	h5{
+		margin-top: 30px;
+	}
+	span{
+		margin-left: 5px;
+		color:maroon;
+		font-size: 180%;
+	}
+#white{
+	position: absolute;
+	background-color: white;
+	top:8px;
+	left:8px;
+	border: 1px solid black;
+	width:600px;
+	height:500px;
+}
+#start{
+	visibility: visible;
+	position: relative;
+	margin:auto;
+	top:50px;
+	border: 1px solid black;
+	background: grey;
+	width:500px;
+	height:400px;
+
+}
+	h2{
+		color:lightgrey;
+		text-align: center;
+	}
+	p{
+		margin-left: 40px;
+		font-size: 120%;
+	}
+	#accept{
+		position: relative;
+		margin: auto;
+		border: 1px solid black;
+		background: white;
+		height:150px;
+		width:400px;
+	}
+		#accepted{
+			position: absolute;
+			margin-top: 45px;
+			margin-left: 170px;
+			height:50px;
+			width:80px;
+			font-size: 150%;
+		}
+		#accepted1{
+			margin: 10px;
+			height:120px;
+		}
+		#accepted2{
+			margin:10px;
+			display: none;
+			height:120px;
+		}
+		#guide{
+			margin-top: 25px;
+			margin-right: 15px;
+			text-align: left;
+			float:right;
+
+		}
+#field{
+	border: 1px solid black;
+	width:600px;
+	height:500px;
+	position: relative;
+}
+
+#score{
+	border:1px solid grey;
+	background-color: grey;
+	width:600px;
+	height:70px;
+}
+#troll{
+	display: inline;
+	float:left;
+	visibility: visible;
+	position:absolute;
+	top:420px;
+	left:520px;
+	height:50px;
+}
+#rider{
+	position:absolute;
+	top:50px;
+	left:50px;
+	height:60px;
+}
+#damsel{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:60px;
+}
+#gg{
+	position:absolute;
+	visibility: hidden;
+	top:430px;
+	left:120px;
+}
+#win{
+	position:absolute;
+	visibility: hidden;
+	color: red;
+	top:440px;
+	left:30px;
+}
+#restart{
+	visibility:visible;
+}
+.fb-comments{
+	margin-left: 15px;
+}
+.fb-like{
+	margin-left: 320px;
+}
+.reload{
+	height:20px;
+}
