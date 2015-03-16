@@ -90,11 +90,11 @@
 	.m_sd1 article{
 		height: 20px;
 		position: relative;
-		top:20px;
+		top:80px;
 		width:100%;	
 	}
 	.m_sd1_text{
-	font-size:30px;
+	font-size:28px;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 300;
 	letter-spacing: 0.2em;
@@ -105,7 +105,7 @@
 		}
 
 .m_sd_text{
-	font-size:30px;
+	font-size:28px;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 300;
 	letter-spacing: 0.2em;
@@ -134,16 +134,26 @@
 	.m_sd2 article{
 		height: 20px;
 		position: relative;
-		top:20px;
+		top:40px;
 		width:100%;	
 	}
 
-
-
-
 .couple-info-top{
 	margin-top: 150px;
+	margin-left: 10%;
+	margin-right: 10%;
 	text-align: center;
+}
+
+.couple-info-top h2{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin: 30px 30px 30px 30px;
+}
+
+.couple-info-top p{
+	font-family: "Platino Linotype", Palatino, serif;
+	font-size: 20px;
+	line-height: 130%;
 }
 
 .couple-info-top img{
@@ -159,6 +169,8 @@
 
 .sd_end_note{
 	text-align: right;
+	font-size: 20px;
+	font-family: "Platino Linotype", Palatino, serif;
 }
 #welcome_how{
 	background: url(image_path('horseshoebend1.jpg')) 50% 0 no-repeat fixed;
