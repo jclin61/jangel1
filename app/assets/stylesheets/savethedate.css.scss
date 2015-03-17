@@ -6,14 +6,13 @@
 }
 
 .mapoverlay {
-   background:transparent; 
+   background-color:rgba(175, 175, 175, 0.3) ; 
    position:relative; 
    width:100%;
    height:800px; /* your iframe height */
    top:800px;  /* your iframe height */
    margin-top:-800px;  /* your iframe height */
 }
-
 
 .sd1{
 	background: url(image_path('sd/sd_top.jpg')) 100% 0 no-repeat fixed;
@@ -87,7 +86,7 @@
 
 #dotNav {
 	z-index: 5;
-	right: 7%;
+	right: 1%;
 	padding: 7px;
 	padding-top: 12px;
 }
@@ -97,7 +96,7 @@
 }
 #dotNav li {
 	position: relative;
-	background: none repeat scroll 0 0 #cccccc;
+	/*background: none repeat scroll 0 0 #cccccc;*/
 	border:1px solid lightgrey;
 	border-radius: 15px 15px 15px 15px;
 	cursor: pointer;
@@ -107,7 +106,7 @@
 	vertical-align:bottom;
 }
 #dotNav li.active {
-	background-color: #ffffff;
+	background-color: grey;
 	background-image: -moz-linear-gradient(center top , #FFFFFF, #EEEEEE);
 	background-repeat: repeat-x;
 }
