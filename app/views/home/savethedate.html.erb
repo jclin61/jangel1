@@ -1,16 +1,16 @@
 <div id="savethedatepage">
 	<!-- DESKTOP TOP PAGE BEGIN-->
 	<div class="hidden-xs">
-		<section class="sd1" data-type="background" data-speed="3">
+		<section id="Jangel_SD" class="sd1" data-type="background" data-speed="3">
 			<article>
 					<p class="sd1_text">JERRY & ANGEL</p>
 			</article>
 		</section>
 		<div class="sd_whitespace">
-			<p class="sd_text">Save The Date</p>
+			<p class="sd_text">SAVE THE DATE</p>
 			<br>
 		</div>
-		<section class="sd2" data-type="background" data-speed="15">
+		<section id="Lake_SD" class="sd2" data-type="background" data-speed="15">
 			<article>
 				<p class="sd1_text">LAKE TAHOE,</p>
 				<p class="sd1_text">CALIFORNIA</p>
@@ -22,7 +22,18 @@
 		</div>
 		<div class="mapoverlay" onClick="style.pointerEvents='none'"></div>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198182.41684440308!2d-120.0449687!3d39.092802049999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809978a1b91f1151%3A0x8c3f1fafeeafb520!2z5aSq5rWp5rmW!5e0!3m2!1szh-TW!2sus!4v1426124789301" width="100%" height="800" frameborder="0" style="border:0" scrolling="no"></iframe>
+		<section id="Info_SD">  <!-- placeholder for navDot --> </section>
+
 	</div>
+	<div data-spy="affix" data-offset-top="0" id="dotNav" class="pull-right">
+		<ul>
+	      <li title="Jangel" class="active"><a href="#Jangel_SD"></a></li>
+	      <li title="Lake Tahoe"><a href="#Lake_SD"></a></li>
+	      <li title="Info"><a href="#Info_SD"></a></li>
+	    </ul>
+	</div>
+
+	
 	<!-- DESKTOP TOP PAGE END -->
 
 	<!-- Mobile TOP PAGE BEGIN -->
@@ -34,7 +45,7 @@
 			</article>
 		</section>
 		<div class="m_sd_whitespace1">
-			<p class="m_sd_text">Save The Date</p>
+			<p class="m_sd_text">SAVE THE DATE</p>
 			<br>
 		</div>
 		<section class="m_sd2">
@@ -44,7 +55,7 @@
 			</article>
 		</section>
 		<div class="m_sd_whitespace">
-			<p class="m_sd_text">You Are Invited</p>
+			<p class="m_sd_text">YOU ARE INVITED</p>
 			<br>
 		</div>
 		<div class="mapoverlay" onClick="style.pointerEvents='none'"></div>
@@ -53,24 +64,26 @@
 	<!-- MOBILE TOP PAGE END -->
 
 	<!-- SHARED INFO PAGE -->
-	<div class="container">
-		<div class="couple-info-top">
-			<%= image_tag("sd/sd_couple.jpg") %>
-			<h2>Hello our dear friends,</h2>
-			<p>We are finally tying the knot after knowing each other almost forever and being together for 6 years. Our simple destination wedding will take place on August 2nd, 2015 in Lake Tahoe, California. This date is coveniently chosen to be a day before B.C. day in Canada. If you haven't been to beautiful Lake Tahoe, this is the perfect excuse for you to save the date and visit!</p>
-			<p>Besides, you get to see the beautiful <span id="typer">word1</span></p>
-		</div>
 
-		<div class="couple-info-top">
-			<h2>The following details will be sent out via invitation page in 2 weeks</h2>
-			<ul class="couple-info-list">
-				<li> Wedding Location Address </li>
-				<li> Wedding Day Activities </li>
-				<li> Recommended Lodging </li>
-				<li> Travel Details and Route</li>
-			</ul>
-		</div>
-		<p class="sd_end_note"><i>Stay Tuned, Jerry&Angel</i></p>
+	<div class="couple-info-top">
+		<%= image_tag("sd/sd_couple.jpg") %>
+		<p>A romantic affair...something special is in the air!</p>
+		<p>Kindly save the date for an outdoor marriage celebration uniting</p>
+		<h3>Jerry Lin</h3>
+		<h3>&</h3>
+		<h3>Angel Kuo</h3>
+		<p>On Sunday, August 2nd, 2015</p>
+		<p>South Lake Tahoe</p>
+		<h3><span id="typer">word1</span></h3>
+	</div>
+	<div id="sd_top_button" class="sd_arrow">
+		<a class="btn btn-default" href="#savethedatepage">
+			<span class="glyphicon glyphicon-menu-up"> </span>
+			<span>TOP</span>
+		</a>
+	</div>
+	<div class="sd_footer">
+		<!-- see css -->
 	</div>
 	<!-- SHARED INFO PAGE END -->
 </div>

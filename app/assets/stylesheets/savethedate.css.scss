@@ -72,7 +72,55 @@
 	}
 
 
+/*Dot NAV*/
+.affix-top {
+    top: 30%; 
+	right: 0;
+	position:absolute;
+	z-index:2;
+}
+.affix {
+    top: 30%;
+	right: 0;
+	z-index:2;
+}
 
+#dotNav {
+	z-index: 5;
+	right: 7%;
+	padding: 7px;
+	padding-top: 12px;
+}
+#dotNav ul {
+	list-style: none;
+	margin:0;
+}
+#dotNav li {
+	position: relative;
+	background: none repeat scroll 0 0 #cccccc;
+	border:1px solid lightgrey;
+	border-radius: 15px 15px 15px 15px;
+	cursor: pointer;
+	height: 15px;
+	margin: 10px 10px 0px 0px;
+	width: 15px;
+	vertical-align:bottom;
+}
+#dotNav li.active {
+	background-color: #ffffff;
+	background-image: -moz-linear-gradient(center top , #FFFFFF, #EEEEEE);
+	background-repeat: repeat-x;
+}
+#dotNav li:hover {
+	background: none repeat scroll 0 0 #EEEEEE;
+}
+#dotNav a {
+	outline: 0;
+	vertical-align:top;
+	margin: 0px 0px 0px 25px;
+	position: relative;
+	top:-5px;
+}
 
 
 
@@ -81,11 +129,11 @@
 =====================*/
 .m_sd1{
 	background: url(image_path('sd/m_sd_top.jpg')) 65% 0 no-repeat;
-	background-size: 110%;
-	height:320px;
+	background-size: cover;
 	margin: 0 auto;
+	height:320px;
 	width: 100%;
-	max-width: 800px;
+	max-width: 768px;
 	position:relative;
 }
 	.m_sd1 article{
@@ -98,6 +146,7 @@
 	font-size:28px;
 	font-weight: 300;
 	letter-spacing: 0.2em;
+	line-height:120%;
 	color: white;
 	/*text-shadow: -1px 0 lightgrey, 0 1px lightgrey, 1px 0 lightgrey, 0 -1px lightgrey;*/
 	padding-top: 50px;
@@ -105,9 +154,10 @@
 		}
 
 .m_sd_text{
-	font-size:28px;
+	font-size:26px;
 	font-weight: 300;
 	letter-spacing: 0.2em;
+	line-height:120%;
 	color: black;
 	vertical-align: middle;
 	text-shadow: -1px 0 lightgrey, 0 1px lightgrey, 1px 0 lightgrey, 0 -1px lightgrey;
@@ -123,11 +173,11 @@
 }
 .m_sd2{
 	background: url(image_path('sd/sd_sand.jpg')) 50% 0 no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	height:320px;
 	margin: 0 auto;
 	width: 100%;
-	max-width: 800px;
+	max-width: 768px;
 	position:relative;
 }
 	.m_sd2 article{
@@ -138,7 +188,7 @@
 	}
 
 .couple-info-top{
-	margin-top: 150px;
+	margin-top: 100px;
 	text-align: center;
 }
 
@@ -146,9 +196,14 @@
 	margin: 30px 30px 30px 30px;
 }
 
+.couple-info-top h3{
+	margin: 30px 30px 30px 30px;
+}
+
 .couple-info-top p{
 	font-size: 20px;
 	line-height: 130%;
+	margin: 10px 10px 10px 10px;
 }
 
 .couple-info-top img{
@@ -156,21 +211,25 @@
 	width: 180px;
 	-moz-border-radius: 200px;
 	border-radius: 200px;
+	margin: 10px 10px 20px 10px;
+
 }
 
-.couple-info-list li{
-	width: 260px;
-	margin:0 auto;
-	line-height: 110%;
-	font-size: 18px;
-	text-align: left;
+.sd_arrow{
+	top: 30px;
+	position: relative;
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	border-radius: 50%;
+	
 }
 
-.sd_end_note{
-	text-align: right;
-	font-size: 20px;
-	margin-top: 50px;
+
+.sd_footer{
+	background-color: #F5F5F5;
+	height:100px;
 }
+
 #welcome_how{
 	background: url(image_path('horseshoebend1.jpg')) 50% 0 no-repeat fixed;
 	background-size: cover;

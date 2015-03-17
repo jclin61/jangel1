@@ -29,7 +29,7 @@
                 c = 0;
 
             (function typetext(i) {
-                var e = ({string:1, number:1}[typeof text] ? text : text[i]) + '_',
+                var e = ({string:1, number:1}[typeof text] ? text : text[i]) + '',
                     char = e.substr(c++, 1);
 
                 if( char === '<' ){ isTag = true; }

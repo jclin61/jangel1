@@ -2,6 +2,8 @@ $(document).on('page:change ready', function(){
 
 	welcome_page_scroll()
 	scroll_to_position()
+	sd_scroll_to_top()
+	navigation_dot()
 	savethedate_type()
 	
 });
@@ -30,10 +32,77 @@ function scroll_to_position(){
 		}, 2000);
 		});
 }
+
+
+function sd_scroll_to_top(){
+	$("#sd_top_button").click(function(){
+		$('html, body').animate({
+			scrollTop: $("#savethedatepage").offset().top
+		}, 1000);
+		});
+}
+
+function navigation_dot(){
+		/* dot nav */
+	$(window).bind('scroll',function(e){
+	  redrawDotNav();
+	});
+
+	function redrawDotNav(){
+	  
+	  	var topNavHeight = 50;
+	  	var numDivs = $('section').length;
+		
+	  	$('#dotNav li a').removeClass('active').parent('li').removeClass('active');  	
+	  	$('section').each(function(i,item){
+	      var ele = $(item), nextTop;
+	      
+	      console.log(ele.next().html());
+	      
+	      if (typeof ele.next().offset() != "undefined") {
+	        nextTop = ele.next().offset().top;
+	      }
+	      else {
+	        nextTop = $(document).height();
+	      }
+	      
+	      if (ele.offset() !== null) {
+	        thisTop = ele.offset().top - ((nextTop - ele.offset().top) / numDivs);
+	      }
+	      else {
+	        thisTop = 0;
+	      }
+	      
+	      var docTop = $(document).scrollTop()+topNavHeight;
+	      
+	      if(docTop >= thisTop && (docTop < nextTop)){
+	        $('#dotNav li').eq(i).addClass('active');
+	      }
+		});   
+	}
+
+	/* get clicks working */
+	$('#dotNav li').click(function(){
+	  
+		var id = $(this).find('a').attr("href"),
+	      posi,
+	      ele,
+	      padding = $('.navbar-fixed-top').height();
+	  
+		ele = $(id);
+		posi = ($(ele).offset()||0).top - padding;
+	  
+		$('html, body').animate({scrollTop:posi}, 'slow');
+	  
+		return false;
+	});
+
+	/* end dot nav */
+}
 	
 
 function savethedate_type(){
 	var win = $(window),
         word1 = $('#typer');
-		word1.typer(['<i>couple</i>', 'scenery']);
+		word1.typer(['Formal Invitation to Follow.', 'Stay Tuned!']);
 }
