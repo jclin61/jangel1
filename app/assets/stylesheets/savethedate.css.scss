@@ -2,7 +2,7 @@
    Save The Date (desktop+mobile)
 ==================================*/
 #savethedatepage h1 h2 h3 p li{
-	font-family: 'Didact Gothic', sans-serif;
+	font-family: 'Muli', sans-serif;
 }
 
 .mapoverlay {
@@ -32,6 +32,7 @@
 	.sd1_text{
 	font-size:60px;
 	letter-spacing: 0.2em;
+	font-family: 'Muli', sans-serif;
 	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
 	/*font-weight: 300;*/
 	color: white;
@@ -43,6 +44,7 @@
 .sd_text{
 	font-size:60px;
 	letter-spacing: 0.2em;
+	font-family: 'Muli', sans-serif;
 	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
 	/*font-weight: 300;*/
 	color: black;
@@ -55,7 +57,7 @@
 	margin: 150px 0 150px 0;
 }
 .sd2{
-	background: url(image_path('sd/sd_sand.jpg')) 50% 0 no-repeat fixed;
+	background: url(image_path('sd/sd_sand.jpg')) no-repeat center fixed;
 	background-size: cover;
 	height:1000px;
 	margin: 0 auto;
@@ -144,24 +146,25 @@
 	position:relative;
 }
 	.m_sd1 article{
-		height: 20px;
 		position: relative;
 		top: 55px;
 		width:100%;	
 	}
 	.m_sd1_text{
 	font-size:28px;
+	font-family: 'Muli', sans-serif;
 	font-weight: 300;
 	letter-spacing: 0.2em;
 	line-height:120%;
 	color: white;
 	/*text-shadow: -1px 0 lightgrey, 0 1px lightgrey, 1px 0 lightgrey, 0 -1px lightgrey;*/
-	padding-top: 50px;
+	padding-top: 60px;
 	text-align:center;
 		}
 
 .m_sd_text{
 	font-size:26px;
+	font-family: 'Muli', sans-serif;
 	font-weight: 300;
 	letter-spacing: 0.2em;
 	line-height:120%;
@@ -172,11 +175,11 @@
 }
 
 .m_sd_whitespace1{
-	margin: 100px 0 100px 0;
+	margin: 140px 0 140px 0;
 }
 
 .m_sd_whitespace{
-	margin: 100px 0 100px 0;
+	margin: 140px 0 140px 0;
 }
 .m_sd2{
 	background: url(image_path('sd/sd_sand.jpg')) 50% 0 no-repeat;
@@ -188,13 +191,13 @@
 	position:relative;
 }
 	.m_sd2 article{
-		height: 20px;
 		position: relative;
 		top:35px;
 		width:100%;	
 	}
 
 .couple-info-top{
+	font-family: 'Muli', sans-serif;
 	margin-top: 100px;
 	text-align: center;
 }
@@ -209,6 +212,7 @@
 
 .couple-info-top p{
 	font-size: 20px;
+	font-family: 'Muli', sans-serif;
 	line-height: 130%;
 	margin: 10px 10px 10px 10px;
 }
@@ -248,22 +252,3 @@
 	background-color: #F5F5F5;
 	height:120px;
 }
-
-#welcome_how{
-	background: url(image_path('horseshoebend1.jpg')) 50% 0 no-repeat fixed;
-	background-size: cover;
-	height:1000px;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1920px;
-	position: relative;
-}
-	#welcome_how article{
-		font-size: 50px;
-		color: lightgrey;
-		height: 458px; 
-		position: absolute; 
-		text-align: center; 
-		top: 150px; 
-		width: 100%; 
-	}
