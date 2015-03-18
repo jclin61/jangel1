@@ -103,6 +103,6 @@ function navigation_dot(){
 
 function savethedate_type(){
 	var win = $(window),
-        word1 = $('#typer');
-		word1.typer(['air!', 'water!']);
+        air = $('#typer');
+		air.typer(['air!', 'water!']);
 }
