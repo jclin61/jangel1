@@ -104,5 +104,5 @@ function navigation_dot(){
 function savethedate_type(){
 	var win = $(window),
         word1 = $('#typer');
-		word1.typer(['Formal Invitation to Follow.', 'Stay Tuned!']);
+		word1.typer(['air!', 'water!']);
 }

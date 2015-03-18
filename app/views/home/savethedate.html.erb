@@ -1,3 +1,10 @@
+<style>
+body:after{
+    display:none;
+    content: url(image_path('sd/sd_top.jpg'));
+}
+</style>
+
 <div id="savethedatepage">
 	<!-- DESKTOP TOP PAGE BEGIN-->
 	<div class="hidden-xs">
@@ -68,14 +75,14 @@
 
 	<div class="couple-info-top">
 		<%= image_tag("sd/sd_couple.jpg") %>
-		<p>A romantic affair...something special is in the air!</p>
+		<p>A romantic affair...something special is in the <span id="typer">word1</span></p>
 		<p>Kindly save the date for an outdoor marriage celebration uniting</p>
 		<h3>Jerry Lin</h3>
 		<h3>&</h3>
 		<h3>Angel Kuo</h3>
-		<p>On Sunday, August 2nd, 2015</p>
+		<p>On Sunday, August 2nd, 2015 <a class="glyphicon glyphicon-calendar" href="/savethedate.ics"></a></p>
 		<p>South Lake Tahoe</p>
-		<h3><span id="typer">word1</span></h3>
+		<h3>Formal Invitation to Follow</h3>
 	</div>
 	<div id="sd_top_button" class="sd_arrow">
 		<a class="btn btn-default" href="#savethedatepage">
