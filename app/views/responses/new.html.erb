@@ -1,46 +1,78 @@
-<%= render 'home/nav' %>
-<p id="notice"><%= notice %></p>
-
+<section id="rsvp_top" class="rsvp_top_img" data-type="background" data-speed="3">
+			<article>
+				<p class="sd1_text">RSVP</p>
+			</article>
+		</section>
 <div class="container">
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=566412053496466&version=v2.0";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
+	<p id="notice"><%= notice %></p>
 
+	<div class="text-center">
+		<h2>We're excited to celebrate with you!</h2>
+		<h3>Kindly respond by May 1st, 2015</h3>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<%= render 'form' %>
+		</div>
+	</div>
 
-	<h1>New response</h1>
+<!-- 	<%= link_to 'Back', responses_path %> -->
+	
+	
+	<!-- Accordion Information -->
 
-	<%= render 'form' %>
+	<div id="rsvp_location" class="rsvp_info">
+		<%= image_tag('icons/Metrize/compass-2.svg', size:"50x50") %>
+		<span>Location</span>
+		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_location_info" aria-expanded="false" aria-controls="rsvp_location_info">
+		</a>
 
-	<%= link_to 'Back', responses_path %>
+		<div class="collapse" id="rsvp_location_info">
+		  <div>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
+		  </div>
+		</div>
+	</div>
+		<div id="rsvp_date" class="rsvp_info">
+		<%= image_tag('icons/Metrize/clock.svg', size:"50x50") %>
+		<span>Date & Time</span>
+		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_date_info" aria-expanded="false" aria-controls="rsvp_date_info">
+		</a>
 
+		<div class="collapse" id="rsvp_date_info">
+		  <div>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
+		  </div>
+		</div>
+	</div>
+		<div id="rsvp_hotel" class="rsvp_info">
+		<%= image_tag('icons/Metrize/3d-cube.svg', size:"50x50") %>
+		<span>Accommodation</span>
+		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_hotel_info" aria-expanded="false" aria-controls="rsvp_hotel_info">
+		</a>
 
-	<!-- facebook comment start -->
-	<div class="fb-comments" data-href="http://www.thejangel.com/rsvp" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
-	<!-- facebook comment end -->
+		<div class="collapse" id="rsvp_hotel_info">
+		  <div>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
+		  </div>
+		</div>
+	</div>
+	<div id="rsvp_activity" class="rsvp_info">
+		<%= image_tag('icons/Metrize/circles.svg', size:"50x50") %>
+		<span>Activities</span>
+		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_activity_info" aria-expanded="false" aria-controls="rsvp_activity_info">
+		</a>
 
+		<div class="collapse" id="rsvp_activity_info">
+		  <div>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
+		  </div>
+		</div>
+	</div>
 
+	<!-- Accordion Finish -->
 
-
-	<!-- Disqus start -->
-	<div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'thejangel'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
-    <!-- Disqus end -->
+	<%= render 'comment'%>
     
 </div>
