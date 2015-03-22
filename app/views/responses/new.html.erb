@@ -6,7 +6,7 @@
 	</article>
 </section>
 
-<section id="m_rsvp_top" class="m_rsvp_top_img hidden-sm hidden-md hidden-lg" data-type="background" data-speed="3">
+<section id="m_rsvp_top" class="m_rsvp_top_img hidden-sm hidden-md hidden-lg" data-type="background">
 	<div class="rsvp_error_box"><%= render "form_errors" %></div>
 	<article>
 		<p class="rsvp_top_text">RSVP</p>
@@ -41,6 +41,10 @@
 <!-- Mobile Form w/ Image -->
 <div id="rsvp_mobile_form" class="hidden-sm hidden-md hidden-lg">
 	<div class="container">
+		<div class="text-center">
+			<h2>We're excited to celebrate with you!</h2>
+			<h3>Kindly respond by May 1st, 2015</h3>
+			</div>
 		<%= render 'form' %>
 	</div>
 </div>
@@ -51,7 +55,7 @@
 	<!-- Accordion Information -->
 
 	<div id="rsvp_location" class="rsvp_info">
-		<%= image_tag('icons/Metrize/compass-2.svg', size:"50x50") %>
+		<%= image_tag('icons/Metrize/compass-2.svg', size:"70x70") %>
 		<span>Location</span>
 		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_location_info" aria-expanded="false" aria-controls="rsvp_location_info">
 		</a>
@@ -63,7 +67,7 @@
 		</div>
 	</div>
 		<div id="rsvp_date" class="rsvp_info">
-		<%= image_tag('icons/Metrize/clock.svg', size:"50x50") %>
+		<%= image_tag('icons/Metrize/clock.svg', size:"70x70") %>
 		<span>Date & Time</span>
 		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_date_info" aria-expanded="false" aria-controls="rsvp_date_info">
 		</a>
@@ -75,7 +79,7 @@
 		</div>
 	</div>
 		<div id="rsvp_hotel" class="rsvp_info">
-		<%= image_tag('icons/Metrize/3d-cube.svg', size:"50x50") %>
+		<%= image_tag('icons/Metrize/3d-cube.svg', size:"70x70") %>
 		<span>Accommodation</span>
 		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_hotel_info" aria-expanded="false" aria-controls="rsvp_hotel_info">
 		</a>
@@ -87,7 +91,7 @@
 		</div>
 	</div>
 	<div id="rsvp_activity" class="rsvp_info">
-		<%= image_tag('icons/Metrize/circles.svg', size:"50x50") %>
+		<%= image_tag('icons/Metrize/circles.svg', size:"70x70") %>
 		<span>Activities</span>
 		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_activity_info" aria-expanded="false" aria-controls="rsvp_activity_info">
 		</a>
