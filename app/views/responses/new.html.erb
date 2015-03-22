@@ -1,25 +1,39 @@
+<span id="notice"><%= notice %></span>
 <section id="rsvp_top" class="rsvp_top_img" data-type="background" data-speed="3">
-			<article>
-				<p class="sd1_text">RSVP</p>
-			</article>
-		</section>
-<div class="container">
-	<p id="notice"><%= notice %></p>
+	<div class="rsvp_error_box"><%= render "form_errors" %></div>
+	<article>
+		<p class="rsvp_top_text">RSVP</p>
+	</article>
+</section>
 
-	<div class="text-center">
-		<h2>We're excited to celebrate with you!</h2>
-		<h3>Kindly respond by May 1st, 2015</h3>
-	</div>
-	
-	<div class="row">
-		<div class="col-md-6 col-md-offset-3">
-			<%= render 'form' %>
-		</div>
-	</div>
+<div id="rsvp_invite" class="container">
+	<h2>INVITING YOU</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
+</div>
+
+
+<!-- Desktop Devices Banner -->
+<div id="rsvp_video_sec" class="player hidden-xs" data-property="{videoURL:'https://www.youtube.com/watch?v=KLsz6X5PP7Y',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:0.6,mute: true,showControls:false}">
+<!-- change https://www.youtube.com/watch?v=Ycv5fNd4AeM to your youtube url-->
+    <div class="overlay">
+        <div class="container">
+        	<div class="text-center">
+				<h2>We're excited to celebrate with you!</h2>
+				<h3>Kindly respond by May 1st, 2015</h3>
+			</div>
+            <div id="rsvp_video_text" class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<%= render 'form' %>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- 	<%= link_to 'Back', responses_path %> -->
 	
-	
+<div class="container">	
 	<!-- Accordion Information -->
 
 	<div id="rsvp_location" class="rsvp_info">
