@@ -4,13 +4,24 @@
 
 .rsvp_top_img{
 	background: url(image_path('rsvp/rsvp_top.jpg')) 100% 0 no-repeat fixed;
-	background-size: 100%;
+	background-size: 110%;
 	height:500px;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1920px;
 	position:relative;
 }
+
+.m_rsvp_top_img{
+	background: url(image_path('rsvp/m_rsvp_top.jpg')) 100% 0 no-repeat;
+	background-size: 120%;
+	height:320px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 800px;
+	position:relative;
+}
+
 
 .rsvp_error_box{
 	margin: 0 auto;
@@ -33,7 +44,7 @@
 		}
 
 #rsvp_invite{
-	height:400px;
+
 }
 
 #rsvp_video_sec{
@@ -56,7 +67,7 @@
 	}
 
 
-#rsvp_video_text{
+#rsvp_video_form{
 	position: relative;
 	height:300px;
 	margin-left: auto;
@@ -66,3 +77,23 @@
 .rsvp_info{
 	margin: 20px 0px 20px 0px;
 }
+
+#rsvp_mobile_form{
+	background: url(image_path('rsvp/m_rsvp_form.jpg')) no-repeat;
+	background-size: cover;
+	height:500px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 800px;
+	position:relative;
+	color: #fff; /*text color*/
+}
+
+.half-black {
+	background: rgba(black, 0.5);
+}
+	#rsvp_mobile_form .container{
+		padding-top: 20px;
+	}
+
+	
