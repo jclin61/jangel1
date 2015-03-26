@@ -28,6 +28,10 @@ class ResponsesController < ApplicationController
 
     respond_to do |format|
       if @response.save
+
+        #Tell the UserMailer to send a welcome email after save
+        UserMailer.rsvp_email(@response).deliver
+
         format.html { redirect_to :back, notice: 'Response was successfully created.' }
         format.json { render action: 'show', status: :created, location: @response }
       else
