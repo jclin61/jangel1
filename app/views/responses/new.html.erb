@@ -19,35 +19,36 @@
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
 </div>
 
+<section id="rsvp_form">
+	<!-- Desktop Form w/ Video -->
+	<div id="rsvp_video_sec" class="player hidden-xs" data-property="{videoURL:'https://www.youtube.com/watch?v=KLsz6X5PP7Y',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:0.6,mute: true,showControls:false}">
+	<!-- change https://www.youtube.com/watch?v=Ycv5fNd4AeM to your youtube url-->
+	    <div class="overlay">
+	        <div class="container">
+	        	<div class="text-center">
+					<h2>We're excited to celebrate with you!</h2>
+					<h3>Kindly respond by May 1st, 2015</h3>
+				</div>
+	            <div id="rsvp_video_form" class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<%= render 'form' %>
+					</div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
 
-<!-- Desktop Form w/ Video -->
-<div id="rsvp_video_sec" class="player hidden-xs" data-property="{videoURL:'https://www.youtube.com/watch?v=KLsz6X5PP7Y',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:0.6,mute: true,showControls:false}">
-<!-- change https://www.youtube.com/watch?v=Ycv5fNd4AeM to your youtube url-->
-    <div class="overlay">
-        <div class="container">
-        	<div class="text-center">
+	<!-- Mobile Form w/ Image -->
+	<div id="rsvp_mobile_form" class="hidden-sm hidden-md hidden-lg">
+		<div class="container">
+			<div class="text-center">
 				<h2>We're excited to celebrate with you!</h2>
 				<h3>Kindly respond by May 1st, 2015</h3>
 			</div>
-            <div id="rsvp_video_form" class="row">
-				<div class="col-md-6 col-md-offset-3">
-					<%= render 'form' %>
-				</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Mobile Form w/ Image -->
-<div id="rsvp_mobile_form" class="hidden-sm hidden-md hidden-lg">
-	<div class="container">
-		<div class="text-center">
-			<h2>We're excited to celebrate with you!</h2>
-			<h3>Kindly respond by May 1st, 2015</h3>
+				<%= render 'form' %>
 		</div>
-		<%= render 'form' %>
 	</div>
-</div>
+</section>
 
 <!-- 	<%= link_to 'Back', responses_path %> -->
 	
@@ -102,9 +103,19 @@
 		  </div>
 		</div>
 	</div>
-
+	
 	<!-- Accordion Finish -->
+	<section id="rsvp_comment">
+		<%= render 'comment'%>
+	</section>
 
-	<%= render 'comment'%>
-    
+    <!-- dot navigation -->
+	<div data-spy="affix" data-offset-top="0" id="rsvp_dotNav" class="pull-right">
+		<ul>
+	      <li title="Invite" class="active"><a href="#rsvp_top"></a></li>
+	      <li title="Form"><a href="#rsvp_form"></a></li>
+	      <li title="Comment"><a href="#rsvp_comment"></a></li>
+	    </ul>
+	</div>
+<!-- dot navigation end -->
 </div>

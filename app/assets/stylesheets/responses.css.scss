@@ -44,7 +44,7 @@
 		}
 
 #rsvp_invite{
-
+	height: 500px;
 }
 
 #rsvp_video_sec{
@@ -92,5 +92,56 @@
 	#rsvp_mobile_form .container{
 		padding-top: 20px;
 	}
+
+/*Dot NAV*/
+.affix-top {
+    top: 30%; 
+	right: 0;
+	position:absolute;
+	z-index:2;
+}
+.affix {
+    top: 30%;
+	right: 0;
+	z-index:2;
+}
+
+#rsvp_dotNav {
+	z-index: 5;
+	right: 1%;
+	padding: 7px;
+	padding-top: 12px;
+}
+#rsvp_dotNav ul {
+	list-style: none;
+	padding-left: 0;
+	margin:0;
+}
+#rsvp_dotNav li {
+	position: relative;
+	/*background: none repeat scroll 0 0 #cccccc;*/
+	border:1px solid lightgrey;
+	border-radius: 15px 15px 15px 15px;
+	cursor: pointer;
+	height: 15px;
+	margin: 10px 10px 0px 0px;
+	width: 15px;
+	vertical-align:bottom;
+}
+#rsvp_dotNav li.active {
+	background-color: grey;
+	background-image: -moz-linear-gradient(center top , #FFFFFF, #EEEEEE);
+	background-repeat: repeat-x;
+}
+#rsvp_dotNav li:hover {
+	background: none repeat scroll 0 0 #EEEEEE;
+}
+#rsvp_dotNav a {
+	outline: 0;
+	vertical-align:top;
+	margin: 0px 0px 0px 25px;
+	position: relative;
+	top:-5px;
+}
 
 	
