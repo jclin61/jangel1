@@ -1,9 +1,16 @@
 $(document).on('page:change ready', function(){
 
 	rsvp_navigation_dot()
+	close_alert()
 	
 });
 
+function close_alert(){
+	$(".close").click(function(){
+        $(".alert").alert('close');
+    });
+}
+	
 function rsvp_navigation_dot(){
 		/* dot nav */
 	$(window).bind('scroll',function(e){

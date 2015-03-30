@@ -1,7 +1,22 @@
-<span id="notice"><%= notice %></span>
+<% if flash[:notice] %>
+<div id="notice" class="alert alert-success alert-dismissible" role="alert">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	<%= notice %>
+</div>
+  <% end %>
+
 <section id="rsvp_top" class="rsvp_top_img hidden-xs" data-type="background" data-speed="3">
 	<div class="rsvp_error_box"><%= render "form_errors" %></div>
 	<article>
+		<nav class="navbar navbar-default transparent navbar-fixed-top">
+			<div class="container">
+				 <ul id="rsvp_nav" class="nav navbar-nav pull-right">
+			        <li><a href="#">Top <span class="sr-only">(current)</span></a></li>
+			        <li><a href="#">Reserve</a></li>
+			        <li><a href="#">Location</a></li>
+			      </ul>
+      		</div>
+		</nav>
 		<p class="rsvp_top_text">RSVP</p>
 	</article>
 </section>

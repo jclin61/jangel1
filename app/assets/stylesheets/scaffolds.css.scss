@@ -1,4 +1,4 @@
-body {
+/*body {
   background-color: #fff;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
@@ -33,37 +33,53 @@ div {
   &.field, &.actions {
     margin-bottom: 10px;
   }
-}
+}*/
 
 #notice {
-  color: green;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
 }
 
-.field_with_errors {
-  padding: 2px;
-  background-color: red;
-  display: table;
+/*.field_with_errors {
+  
+}*/
+
+label .form_label_error{
+  color: red;
+}
+
+.form_label_error{
+  color: red !important;
+  background-color: #F2DEDE ;
+}
+.form_field_error{
+  border: 2px solid pink !important;
 }
 
 #error_explanation {
+  border-radius: 5px;
   width: 450px;
-  border: 2px solid red;
+  border: 2px solid pink;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
   background-color: #f0f0f0;
   h2 {
-    text-align: left;
+    text-align: center;
     font-weight: bold;
     padding: 5px 5px 5px 15px;
     font-size: 12px;
     margin: -7px;
     margin-bottom: 0px;
-    background-color: #c00;
-    color: #fff;
+    background-color: #F2DEDE;
+    color: red;
   }
   ul li {
+    margin-left: 50px;
+    text-align: left;
     font-size: 12px;
+    color: red;
     list-style: square;
   }
 }

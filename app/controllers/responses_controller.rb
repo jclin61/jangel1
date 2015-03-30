@@ -32,8 +32,8 @@ class ResponsesController < ApplicationController
         #Tell the UserMailer to send a welcome email after save
         UserMailer.rsvp_email(@response).deliver
 
-        format.html { redirect_to :back, notice: 'Response was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @response }
+        format.html { redirect_to rsvp0702_path, notice: 'Response was successfully created.' }
+        format.json { render action: 'new', status: :created, location: @response }
       else
         format.html { render action: 'new' }
         format.json { render json: @response.errors, status: :unprocessable_entity }
