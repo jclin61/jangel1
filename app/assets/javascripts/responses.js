@@ -5,6 +5,12 @@ $(document).on('page:change ready', function(){
 	
 });
 
+
+
+function remove_mapimage(){
+	$(".rsvp_mapoverlay").removeClass();
+}
+
 function close_alert(){
 	$(".close").click(function(){
         $(".alert").alert('close');

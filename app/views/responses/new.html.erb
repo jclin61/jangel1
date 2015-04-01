@@ -8,16 +8,16 @@
 <section id="rsvp_top" class="rsvp_top_img hidden-xs" data-type="background" data-speed="3">
 	<div class="rsvp_error_box"><%= render "form_errors" %></div>
 	<article>
-		<nav class="navbar navbar-default transparent navbar-fixed-top">
-			<div class="container">
-				 <ul id="rsvp_nav" class="nav navbar-nav pull-right">
-			        <li><a href="#">Top <span class="sr-only">(current)</span></a></li>
-			        <li><a href="#">Reserve</a></li>
-			        <li><a href="#">Location</a></li>
-			      </ul>
-      		</div>
-		</nav>
 		<p class="rsvp_top_text">RSVP</p>
+		<!-- dot navigation -->
+		<div data-spy="affix" data-offset-top="0" id="rsvp_dotNav" class="pull-right">
+			<ul>
+		      <li title="Invite" class="active"><a href="#rsvp_top"></a></li>
+		      <li title="Form"><a href="#rsvp_form"></a></li>
+		      <li title="Comment"><a href="#rsvp_comment"></a></li>
+		    </ul>
+		</div>
+		<!-- dot navigation end -->
 	</article>
 </section>
 
@@ -69,16 +69,20 @@
 	
 <div class="container">	
 	<!-- Accordion Information -->
-
 	<div id="rsvp_location" class="rsvp_info">
 		<%= image_tag('icons/Metrize/compass-2.svg', size:"70x70") %>
 		<span>Location</span>
-		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_location_info" aria-expanded="false" aria-controls="rsvp_location_info">
+		<a id="location_arrow" class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_location_info" aria-expanded="false" aria-controls="rsvp_location_info">
 		</a>
 
 		<div class="collapse" id="rsvp_location_info">
-		  <div>
+		  <div class="row">
 		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
+		    <div class="col-md-6"></div>
+		  	<div class="col-md-6">
+		  		<div id"rsvp_mapoverlayid" class="rsvp_mapoverlay" onclick="remove_mapimage()">
+				</div>
+				<embed src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3102.4768206567815!2d-119.95123299999997!3d38.958779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s4041+Lakeshore+Blvd+South+Lake+Tahoe%2C+CA+96150!5e0!3m2!1s!2sus!4v1427879551865" width="400" height="300" frameborder="0" style="border:0"></embed>
 		  </div>
 		</div>
 	</div>
@@ -123,14 +127,4 @@
 	<section id="rsvp_comment">
 		<%= render 'comment'%>
 	</section>
-
-    <!-- dot navigation -->
-	<div data-spy="affix" data-offset-top="0" id="rsvp_dotNav" class="pull-right">
-		<ul>
-	      <li title="Invite" class="active"><a href="#rsvp_top"></a></li>
-	      <li title="Form"><a href="#rsvp_form"></a></li>
-	      <li title="Comment"><a href="#rsvp_comment"></a></li>
-	    </ul>
-	</div>
-<!-- dot navigation end -->
 </div>

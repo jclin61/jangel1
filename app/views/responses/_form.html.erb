@@ -15,12 +15,12 @@
       </div>
        <div class="form-group col-sm-6">
         <%= f.label :meal %><br>
-        <%= f.select(:meal, [['Type A', 'Type A'],
-                            ['Type B', 'Type B'],
-                            ['Type C', 'Type C'],
-                            ['Type D', 'Type D'],
-                            ['Type E', 'Type E']
-                           ],{ :prompt => "Preference"} , :class=>"form-control"
+        <%= f.select(:meal, [['None', 'None'],
+                            ['Vegetarian', 'Vegetarian'],
+                            ['No Beef', 'No Beef'],
+                            ['No Pork', 'No Pork'],
+                            ['Others', 'Others']
+                           ],{ :prompt => "-Preference-"} , :class=>"form-control"
                            ) 
                            %>
       </div>
