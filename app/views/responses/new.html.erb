@@ -8,17 +8,18 @@
 <section id="rsvp_top" class="rsvp_top_img hidden-xs" data-type="background" data-speed="3">
 	<div class="rsvp_error_box"><%= render "form_errors" %></div>
 	<article>
-		<p class="rsvp_top_text">RSVP</p>
-		<!-- dot navigation -->
-		<div data-spy="affix" data-offset-top="0" id="rsvp_dotNav" class="pull-right">
-			<ul>
-		      <li title="Invite" class="active"><a href="#rsvp_top"></a></li>
-		      <li title="Form"><a href="#rsvp_form"></a></li>
-		      <li title="Comment"><a href="#rsvp_comment"></a></li>
-		    </ul>
-		</div>
-		<!-- dot navigation end -->
+		<p href="#rsvp_form" class="rsvp_top_text">RSVP</a>
 	</article>
+	<!-- dot navigation -->
+	<div data-spy="affix" data-offset-top="1" id="rsvp_dotNav" class="pull-right">
+		<ul>
+	      <li title="Invite" class="active"><a href="#rsvp_invite"></a></li>
+	      <li title="Form"><a href="#rsvp_form"></a></li>
+	      <li title="Comment"><a href="#rsvp_comment"></a></li>
+	      <li title="Footer"><a href="#rsvp_footer"></a></li>
+	    </ul>
+	</div>
+	<!-- dot navigation end -->
 </section>
 
 <section id="m_rsvp_top" class="m_rsvp_top_img hidden-sm hidden-md hidden-lg" data-type="background">
@@ -29,9 +30,12 @@
 </section>
 
 <div id="rsvp_invite" class="container">
-	<h2>INVITING YOU</h2>
+	<h2>INITING YOU</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus dignissim vitae dictum a, porttitor et magna.</p>
+    <h2>BABY, WHAT TO PUt HERE?</h2>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
+	<h3>Outdoor wedding</h3>
+	<p> Angel and I are having wedding on the beach. It may get warm. pblabhalbalh</p>
 </div>
 
 <section id="rsvp_form">
@@ -68,17 +72,22 @@
 <!-- 	<%= link_to 'Back', responses_path %> -->
 	
 <div class="container">	
+	<a href=""
 	<!-- Accordion Information -->
 	<div id="rsvp_location" class="rsvp_info">
-		<%= image_tag('icons/Metrize/compass-2.svg', size:"70x70") %>
+		<a href="#rsvp_location_info" data-toggle="collapse">
+			<%= image_tag('icons/Metrize/compass-2.svg', size:"70x70")%>
+		</a>
 		<span>Location</span>
 		<a id="location_arrow" class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_location_info" aria-expanded="false" aria-controls="rsvp_location_info">
 		</a>
 
+
 		<div class="collapse" id="rsvp_location_info">
 		  <div class="row">
-		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
-		    <div class="col-md-6"></div>
+		    <div class="col-md-5 col-md-offset-1">
+    		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
+		    </div>
 		  	<div class="col-md-6">
 		  		<div id"rsvp_mapoverlayid" class="rsvp_mapoverlay" onclick="remove_mapimage()">
 				</div>
@@ -86,32 +95,109 @@
 		  </div>
 		</div>
 	</div>
-		<div id="rsvp_date" class="rsvp_info">
-		<%= image_tag('icons/Metrize/clock.svg', size:"70x70") %>
+	<div id="rsvp_date" class="rsvp_info">
+		<a href="#rsvp_date_info" data-toggle="collapse">
+			<%= image_tag('icons/Metrize/clock.svg', size:"70x70") %>
+		</a>
 		<span>Date & Time</span>
 		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_date_info" aria-expanded="false" aria-controls="rsvp_date_info">
 		</a>
 
 		<div class="collapse" id="rsvp_date_info">
-		  <div>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
-		  </div>
+			<div class="rsvp_info_heading">
+				<h1>Ceremony</h1>
+				<h2>Date: August 2nd, 2015</h2>
+				<h2>Time: 4:00pm</h2>
+			</div>
+		  	<div class="row">
+		  		<h3>Tentative Schedule</h3>
+		    	<div class="col-md-5 col-md-offset-1">
+		    		<div class="panel panel-default">
+					  <div class="panel-heading">
+					    <h3 class="panel-title">Saturday</h3>
+					  </div>
+					  <div class="panel-body">
+					    Panel content
+					  </div>
+					  <table class="table">
+					  	<tbody>
+					  		<tr>
+						  		<th>Time</th>
+						  		<th>Event</th>
+						  	</tr>
+						  	<tr>
+						  		<td>10:00am</td>
+						  		<td>Group Activity (Optional)</td>
+						  	</tr>
+					  	</tbody>
+					  </table>
+					</div>
+		  		</div>
+				<div class="col-md-5">
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+					    <h3 class="panel-title">Sunday</h3>
+					  </div>
+					  <div class="panel-body">
+					    Panel content
+					  </div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-		<div id="rsvp_hotel" class="rsvp_info">
-		<%= image_tag('icons/Metrize/3d-cube.svg', size:"70x70") %>
+	<div id="rsvp_hotel" class="rsvp_info">
+		<a href="#rsvp_hotel_info" data-toggle="collapse">
+			<%= image_tag('icons/Metrize/3d-cube.svg', size:"70x70") %>
+		</a>
 		<span>Accommodation</span>
 		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_hotel_info" aria-expanded="false" aria-controls="rsvp_hotel_info">
 		</a>
 
 		<div class="collapse" id="rsvp_hotel_info">
 		  <div>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
+		  		<div class="rsvp_info_heading">
+		  			<p>Several accomodations</p>
+		  		</div>
+		  		<div class="row">
+			    	<div class="col-md-4">
+			    		<div class="panel panel-default">
+						  <div class="panel-heading">
+						    <h3 class="panel-title">$</h3>
+						  </div>
+						  <div class="panel-body">
+						    Panel content
+						  </div>
+						</div>
+			  		</div>
+					<div class="col-md-4">
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+						    <h3 class="panel-title">$$</h3>
+						  </div>
+						  <div class="panel-body">
+						    Panel content
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+						    <h3 class="panel-title">$$$</h3>
+						  </div>
+						  <div class="panel-body">
+						    Panel content
+						  </div>
+						</div>
+					</div>
+				</div>
 		  </div>
 		</div>
 	</div>
 	<div id="rsvp_activity" class="rsvp_info">
-		<%= image_tag('icons/Metrize/circles.svg', size:"70x70") %>
+		<a href="#rsvp_activity_info" data-toggle="collapse">
+			<%= image_tag('icons/Metrize/circles.svg', size:"70x70") %>
+		</a>
 		<span>Activities</span>
 		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_activity_info" aria-expanded="false" aria-controls="rsvp_activity_info">
 		</a>
@@ -120,6 +206,9 @@
 		  <div>
 		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
 		  </div>
+		  <div class="well">
+		  	<p>test</p>
+		  </div>
 		</div>
 	</div>
 	
@@ -127,4 +216,8 @@
 	<section id="rsvp_comment">
 		<%= render 'comment'%>
 	</section>
+	<section id="rsvp_footer">
+		<p>All right reserved</p>
+	</section>
 </div>
+
