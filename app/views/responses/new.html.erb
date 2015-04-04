@@ -5,74 +5,51 @@
 </div>
   <% end %>
 
-<section id="rsvp_top" class="rsvp_top_img hidden-xs" data-type="background" data-speed="3">
-	<div class="rsvp_error_box"><%= render "form_errors" %></div>
-	<article>
-		<p href="#rsvp_form" class="rsvp_top_text">RSVP</a>
-	</article>
-	<!-- dot navigation -->
-	<div data-spy="affix" data-offset-top="1" id="rsvp_dotNav" class="pull-right">
-		<ul>
-	      <li title="Invite" class="active"><a href="#rsvp_invite"></a></li>
-	      <li title="Form"><a href="#rsvp_form"></a></li>
-	      <li title="Comment"><a href="#rsvp_comment"></a></li>
-	      <li title="Footer"><a href="#rsvp_footer"></a></li>
-	    </ul>
-	</div>
-	<!-- dot navigation end -->
-</section>
+<!-- dot navigation -->
+<div class="hidden-xs" data-spy="affix" data-offset-top="0" id="rsvp_dotNav" class="pull-right">
+	<ul>	
+      <li title="Invite"><a href="#rsvp_top"></a></li>
+      <li title="Info"><a href="#rsvp_info_all"></a></li>
+      <li title="Form"><a href="#rsvp_form"></a></li>
+      <li title="Comment"><a href="#rsvp_comment"></a></li>
+    </ul>
+</div>
+<!-- dot navigation end -->
 
-<section id="m_rsvp_top" class="m_rsvp_top_img hidden-sm hidden-md hidden-lg" data-type="background">
+
+<section id="rsvp_top" class="rsvp_top_img hidden-xs" data-type="background" data-speed="3">
 	<div class="rsvp_error_box"><%= render "form_errors" %></div>
 	<article>
 		<p class="rsvp_top_text">RSVP</p>
 	</article>
 </section>
 
-<div id="rsvp_invite" class="container">
-	<h2>INITING YOU</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus dignissim vitae dictum a, porttitor et magna.</p>
-    <h2>BABY, WHAT TO PUt HERE?</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
-	<h3>Outdoor wedding</h3>
-	<p> Angel and I are having wedding on the beach. It may get warm. pblabhalbalh</p>
-</div>
-
-<section id="rsvp_form">
-	<!-- Desktop Form w/ Video -->
-	<div id="rsvp_video_sec" class="player hidden-xs" data-property="{videoURL:'https://www.youtube.com/watch?v=KLsz6X5PP7Y',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:0.6,mute: true,showControls:false}">
-	<!-- change https://www.youtube.com/watch?v=Ycv5fNd4AeM to your youtube url-->
-	    <div class="overlay">
-	        <div class="container">
-	        	<div class="text-center">
-					<h2>We're excited to celebrate with you!</h2>
-					<h3>Kindly respond by May 1st, 2015</h3>
-				</div>
-	            <div id="rsvp_video_form" class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<%= render 'form' %>
-					</div>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-
-	<!-- Mobile Form w/ Image -->
-	<div id="rsvp_mobile_form" class="hidden-sm hidden-md hidden-lg">
-		<div class="container">
-			<div class="text-center">
-				<h2>We're excited to celebrate with you!</h2>
-				<h3>Kindly respond by May 1st, 2015</h3>
-			</div>
-				<%= render 'form' %>
-		</div>
-	</div>
+<section id="m_rsvp_top" class="m_rsvp_top_img hidden-sm hidden-md hidden-lg" data-type="background">
+	<div class="rsvp_error_box"><%= render "form_errors" %></div>
+	<article>
+		<p class="m_rsvp_top_text">RSVP</p>
+	</article>
 </section>
 
-<!-- 	<%= link_to 'Back', responses_path %> -->
-	
-<div class="container">	
-	<a href=""
+<div id="rsvp_invite" class="container">
+	<h1 class="text-center">Inviting You</h1>
+    <h3 id="hi">Dear Friends,</h3>
+	<p>It has been our dream to host a destination wedding with close friends. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scele. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec </p>
+	<p>Scroll down to see what we have planned for the day</p>
+	<p class="text-right">Sincerely, Jerry and Angel</p>
+</div>
+
+<section id="rsvp_ring" class="rsvp_middle_img" data-type="background" data-speed="15">
+	<article>
+		<p class="rsvp_middle_text">TYING THE KNOT</p>
+	</article>
+</section>
+
+<div id="rsvp_pre_info">
+	<a href="#rsvp_ring" id="rsvp_expand_all" class="pull-right" data-toggle="collapse" data-target=".rsvp_inner_info">EXPAND ALL</a>
+</div>
+
+<section id="rsvp_info_all" class="container-fluid">
 	<!-- Accordion Information -->
 	<div id="rsvp_location" class="rsvp_info">
 		<a href="#rsvp_location_info" data-toggle="collapse">
@@ -82,17 +59,26 @@
 		<a id="location_arrow" class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_location_info" aria-expanded="false" aria-controls="rsvp_location_info">
 		</a>
 
-
-		<div class="collapse" id="rsvp_location_info">
-		  <div class="row">
-		    <div class="col-md-5 col-md-offset-1">
-    		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
-		    </div>
-		  	<div class="col-md-6">
-		  		<div id"rsvp_mapoverlayid" class="rsvp_mapoverlay" onclick="remove_mapimage()">
+		<div class="collapse rsvp_inner_info" id="rsvp_location_info">
+		  	<div class="row">
+		    	<div class="col-md-7 col-md-offset-1">
+    		    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
+			    </div>
+			  	<div class="col-md-4 rsvp_embed_map">
+			  		<div id"rsvp_mapoverlayid" class="rsvp_mapoverlay" onclick="remove_mapimage()">
+					</div>
+					<embed src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3102.4768206567815!2d-119.95123299999997!3d38.958779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s4041+Lakeshore+Blvd+South+Lake+Tahoe%2C+CA+96150!5e0!3m2!1s!2sus!4v1427879551865" width="320" height="300" frameborder="0" style="border:0"></embed>
 				</div>
-				<embed src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3102.4768206567815!2d-119.95123299999997!3d38.958779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s4041+Lakeshore+Blvd+South+Lake+Tahoe%2C+CA+96150!5e0!3m2!1s!2sus!4v1427879551865" width="400" height="300" frameborder="0" style="border:0"></embed>
-		  </div>
+			</div>
+			<div class="container">
+					<p>Driving Route</p>
+					<div id="rsvp_route" class="hidden-xs">
+						<embed class="rsvp_route_embed" src="https://mapsengine.google.com/map/embed?mid=zvzbziTx2uIQ.kVPD6_cPUTyU" width="600" height="480"></embed>
+					</div>
+					<div id="rsvp_route" class="hidden-sm hidden-md hidden-lg">
+						<embed class="rsvp_route_embed" src="https://mapsengine.google.com/map/embed?mid=zvzbziTx2uIQ.kVPD6_cPUTyU" width="320" height="280"></embed>
+					</div>
+				</div>
 		</div>
 	</div>
 	<div id="rsvp_date" class="rsvp_info">
@@ -103,15 +89,14 @@
 		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_date_info" aria-expanded="false" aria-controls="rsvp_date_info">
 		</a>
 
-		<div class="collapse" id="rsvp_date_info">
+		<div class="collapse rsvp_inner_info" id="rsvp_date_info">
 			<div class="rsvp_info_heading">
 				<h1>Ceremony</h1>
 				<h2>Date: August 2nd, 2015</h2>
 				<h2>Time: 4:00pm</h2>
 			</div>
-		  	<div class="row">
-		  		<h3>Tentative Schedule</h3>
-		    	<div class="col-md-5 col-md-offset-1">
+		  	<div class="row">	
+		  		<div class="col-md-5 col-md-offset-1">
 		    		<div class="panel panel-default">
 					  <div class="panel-heading">
 					    <h3 class="panel-title">Saturday</h3>
@@ -135,17 +120,18 @@
 		  		</div>
 				<div class="col-md-5">
 					<div class="panel panel-default">
-					  <div class="panel-heading">
-					    <h3 class="panel-title">Sunday</h3>
-					  </div>
-					  <div class="panel-body">
-					    Panel content
-					  </div>
+						  <div class="panel-heading">
+						    <h3 class="panel-title">Sunday</h3>
+						  </div>
+						  <div class="panel-body">
+						    Panel content
+						  </div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
 	<div id="rsvp_hotel" class="rsvp_info">
 		<a href="#rsvp_hotel_info" data-toggle="collapse">
 			<%= image_tag('icons/Metrize/3d-cube.svg', size:"70x70") %>
@@ -154,36 +140,26 @@
 		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_hotel_info" aria-expanded="false" aria-controls="rsvp_hotel_info">
 		</a>
 
-		<div class="collapse" id="rsvp_hotel_info">
-		  <div>
+		<div class="collapse rsvp_inner_info" id="rsvp_hotel_info">
+		  	<div>
 		  		<div class="rsvp_info_heading">
 		  			<p>Several accomodations</p>
 		  		</div>
 		  		<div class="row">
-			    	<div class="col-md-4">
+			    	<div class="col-md-6">
 			    		<div class="panel panel-default">
 						  <div class="panel-heading">
-						    <h3 class="panel-title">$</h3>
+						    <h3 class="panel-title">Hotel</h3>
 						  </div>
 						  <div class="panel-body">
 						    Panel content
 						  </div>
 						</div>
 			  		</div>
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<div class="panel panel-default">
 						  <div class="panel-heading">
-						    <h3 class="panel-title">$$</h3>
-						  </div>
-						  <div class="panel-body">
-						    Panel content
-						  </div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="panel panel-default">
-						  <div class="panel-heading">
-						    <h3 class="panel-title">$$$</h3>
+						    <h3 class="panel-title">AirBnB</h3>
 						  </div>
 						  <div class="panel-body">
 						    Panel content
@@ -191,9 +167,10 @@
 						</div>
 					</div>
 				</div>
-		  </div>
+		  	</div>
 		</div>
 	</div>
+
 	<div id="rsvp_activity" class="rsvp_info">
 		<a href="#rsvp_activity_info" data-toggle="collapse">
 			<%= image_tag('icons/Metrize/circles.svg', size:"70x70") %>
@@ -202,22 +179,66 @@
 		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_activity_info" aria-expanded="false" aria-controls="rsvp_activity_info">
 		</a>
 
-		<div class="collapse" id="rsvp_activity_info">
-		  <div>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
-		  </div>
-		  <div class="well">
-		  	<p>test</p>
-		  </div>
+		<div class="collapse rsvp_inner_info" id="rsvp_activity_info">
+		 	<div>
+		   		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tempor ante, at ullamcorper urna. Vestibulum tempus luctus elit, et scelerisque ante efficitur non. Curabitur convallis facilisis mauris, nec lobortis nisl sodales vel. Nulla id arcu gravida, commodo ante ut, vehicula lacus. Vestibulum faucibus eget arcu nec condimentum. Maecenas sem est, laoreet nec neque ac, efficitur sollicitudin orci. In hac habitasse platea dictumst. Donec eleifend eros vitae libero molestie, ut consectetur lacus sodales. Nunc eu gravida nunc. Curabitur lacus lectus, aliquam id ornare et, lobortis sed libero. Fusce eget ligula commodo, aliquet urna nec, sagittis orci. Nullam vestibulum felis non ex facilisis, quis sagittis purus laoreet. Nullam lorem dolor, dignissim vitae dictum a, porttitor et magna.</p>
+		  	</div>
+			<div class="well">
+			  	<p>test</p>
+			</div>
 		</div>
 	</div>
-	
+</section>
+
+
+<section id="rsvp_form">
+	<!-- Desktop Form w/ Video -->
+	<div id="rsvp_video_sec" class="player hidden-xs" data-property="{videoURL:'https://www.youtube.com/watch?v=KLsz6X5PP7Y',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:0.6,mute: true,showControls:false}">
+	<!-- change https://www.youtube.com/watch?v=Ycv5fNd4AeM to your youtube url-->
+	    <div class="overlay">
+	        <div class="container">
+	        	<div class="text-center">
+					<h2>We're excited to celebrate with you!</h2>
+					<h3>Kindly respond by May 1st, 2015</h3>
+				</div>
+	            <div id="rsvp_video_form">
+					<%= render 'form' %>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<!-- Mobile Form w/ Image -->
+	<div id="rsvp_mobile_form" class="hidden-sm hidden-md hidden-lg">
+		<div class="container">
+			<div class="text-center">
+				<h2>We're excited to celebrate with you!</h2>
+				<h3>Kindly respond by May 1st, 2015</h3>
+			</div>
+				<%= render 'form' %>
+		</div>
+	</div>
+</section>
+
+<!-- 	<%= link_to 'Back', responses_path %> -->
+<div class="container-fluid">
+	<div>
+		<h3>Leave your comments</h3>
+	</div>
+
 	<!-- Accordion Finish -->
 	<section id="rsvp_comment">
 		<%= render 'comment'%>
 	</section>
-	<section id="rsvp_footer">
-		<p>All right reserved</p>
-	</section>
 </div>
 
+<div id="rsvp_top_button" class="sd_arrow">
+		<a class="btn btn-default" href="#rsvp_top">
+			<span class="glyphicon glyphicon-menu-up"> </span>
+			<span>TOP</span>
+		</a>
+</div>
+
+<div class="sd_footer">
+		<!-- see css -->
+</div>

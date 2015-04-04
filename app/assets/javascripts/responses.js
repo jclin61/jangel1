@@ -2,7 +2,6 @@ $(document).on('page:change ready', function(){
 
 	rsvp_navigation_dot()
 	close_alert()
-	
 });
 
 
@@ -25,7 +24,7 @@ function rsvp_navigation_dot(){
 
 	function redraw_rsvp_DotNav(){
 	  
-	  	var topNavHeight = 50;
+	  	var rsvptopNavHeight = 50;
 	  	var numDivs = $('section').length;
 		
 	  	$('#rsvp_dotNav li a').removeClass('active').parent('li').removeClass('active');  	
@@ -49,7 +48,7 @@ function rsvp_navigation_dot(){
 	        thisTop = 0;
 	      }
 	      
-	      var docTop = $(document).scrollTop()+topNavHeight;
+	      var docTop = $(document).scrollTop()+rsvptopNavHeight;
 	      
 	      if(docTop >= thisTop && (docTop < nextTop)){
 	        $('#rsvp_dotNav li').eq(i).addClass('active');

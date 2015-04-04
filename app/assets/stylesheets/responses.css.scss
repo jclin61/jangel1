@@ -10,8 +10,8 @@
 
 .rsvp_top_img{
 	background: url(image_path('rsvp/rsvp_top.jpg')) 100% 0 no-repeat fixed;
-	background-size: 110%;
-	height:500px;
+	background-size: cover;
+	height: 1000px;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1920px;
@@ -28,11 +28,78 @@
 	position:relative;
 }
 
+.rsvp_middle_img{
+	background: url(image_path('rsvp/rsvp_ring.jpg')) 150% 0 no-repeat;
+	background-size: cover;
+	height: 500px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position:relative;
+}
 
+.m_rsvp_middle_img{
+	background: url(image_path('rsvp/rsvp_ring.jpg')) 150% 0 no-repeat;
+	background-size: cover;
+	height: 500px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	
+}
 .rsvp_error_box{
 	margin: 0 auto;
 	width:450px;
 }
+
+.rsvp_top{
+	height:800px;
+}
+
+.rsvp_top_text{
+	font-size:120px;
+	letter-spacing: 0.2em;
+	font-family: 'Wire One', sans-serif;
+	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
+	/*font-weight: 300;*/
+	color: white;
+	text-shadow: -1px 0 lightgrey, 0 1px lightgrey, 1px 0 lightgrey, 0 -1px lightgrey;
+	padding-top: 250px;
+	text-align:center;
+		}
+
+
+.rsvp_middle_text{
+	font-size:70px;
+	letter-spacing: 0.2em;
+	font-family: 'Wire One', sans-serif;
+	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
+	/*font-weight: 300;*/
+	color: white;
+	text-shadow: -1px 0 lightgrey, 0 1px lightgrey, 1px 0 lightgrey, 0 -1px lightgrey;
+	padding-top: 170px;
+	text-align:center;
+		}
+
+#rsvp_invite{
+	height: 500px;
+	font-family: 'Raleway', sans-serif;
+}
+
+#rsvp_invite h1{
+	font-size: 70px;
+}
+
+#rsvp_invite p{
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.rsvp_info{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 .rsvp_info img{
 	opacity: 0.6;
 }
@@ -53,21 +120,6 @@
 	color:black;
 }
 
-.rsvp_top_text{
-	font-size:70px;
-	letter-spacing: 0.2em;
-	font-family: 'Muli', sans-serif;
-	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
-	/*font-weight: 300;*/
-	color: white;
-	text-shadow: -1px 0 lightgrey, 0 1px lightgrey, 1px 0 lightgrey, 0 -1px lightgrey;
-	padding-top: 200px;
-	text-align:center;
-		}
-
-#rsvp_invite{
-	height: 500px;
-}
 
 #rsvp_video_sec{
 	color: #fff;
@@ -170,12 +222,33 @@
 	top:-5px;
 }
 
+.rsvp_embed_map{
+	width: 320px;
+	margin: 0 auto;
+}
+
 .rsvp_mapoverlay {
    background: url(image_path('rsvp/rsvp_map.png'));
    position:relative; 
-   width:400px;
+   width:320px;
    height:300px; /* your iframe height */
    top:300px;  /* your iframe height */
    margin-top:-300px;  /* your iframe height */
 }
+
+
+
 	
+#rsvp_pre_info{
+	height:50px;
+}
+#rsvp_expand_all{
+	margin: 20px 50px 20px 20px;
+}
+
+
+
+#rsvp_comment{
+	padding-left: 30px;
+	padding-right: 30px;
+}

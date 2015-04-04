@@ -5,6 +5,7 @@ $(document).on('page:change ready', function(){
 	sd_scroll_to_top()
 	sd_navigation_dot()
 	savethedate_type()
+	rsvp_scroll_to_top()
 	
 });
 
@@ -105,4 +106,12 @@ function savethedate_type(){
 	var win = $(window),
         air = $('#typer');
 		air.typer(['air!', 'water!']);
+}
+
+function rsvp_scroll_to_top(){
+	$("#rsvp_top_button").click(function(){
+		$('html, body').animate({
+			scrollTop: $("#rsvp_top").offset().top
+		}, 1000);
+		});
 }
