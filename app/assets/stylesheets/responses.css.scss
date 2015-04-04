@@ -93,7 +93,7 @@
 		}
 
 #rsvp_invite{
-	height: 600px;
+	height: 750px;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -179,7 +179,6 @@
 }
 
 .rsvp_info_heading{
-	text-align: center;
 	margin: 50px 0px 50px 0px;
 }
 /*Dot NAV*/
@@ -247,14 +246,23 @@
    margin-top:-300px;  /* your iframe height */
 }
 
+#pre-form{
+	height: 250px;
+}
 
-
+#pre-form h1{
+	margin-top: 100px;
+}
 	
 #rsvp_pre_info{
 	height:50px;
 }
 #rsvp_expand_all{
 	margin: 20px 50px 20px 20px;
+}
+
+.rsvp_inner_info p{
+	font-size: 20px;
 }
 
 .rsvp_discussion{
