@@ -9,7 +9,7 @@
 }
 
 .rsvp_top_img{
-	background: url(image_path('rsvp/rsvp_top.jpg')) 100% 0 no-repeat fixed;
+	background: url(image_path('rsvp/rsvp_top.jpg')) 50% 0 no-repeat fixed;
 	background-size: cover;
 	height: 1000px;
 	margin: 0 auto;
@@ -64,10 +64,21 @@
 	/*font-weight: 300;*/
 	color: white;
 	text-shadow: -1px 0 lightgrey, 0 1px lightgrey, 1px 0 lightgrey, 0 -1px lightgrey;
-	padding-top: 250px;
+	padding-top: 350px;
 	text-align:center;
 		}
 
+.m_rsvp_top_text{
+	font-size:60px;
+	letter-spacing: 0.2em;
+	font-family: 'Wire One', sans-serif;
+	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
+	/*font-weight: 300;*/
+	color: white;
+	text-shadow: -1px 0 lightgrey, 0 1px lightgrey, 1px 0 lightgrey, 0 -1px lightgrey;
+	padding-top: 100px;
+	text-align:center;
+}
 
 .rsvp_middle_text{
 	font-size:70px;
@@ -82,7 +93,7 @@
 		}
 
 #rsvp_invite{
-	height: 500px;
+	height: 600px;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -246,7 +257,9 @@
 	margin: 20px 50px 20px 20px;
 }
 
-
+.rsvp_discussion{
+	margin-top: 50px;
+}
 
 #rsvp_comment{
 	padding-left: 30px;

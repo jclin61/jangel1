@@ -1,6 +1,6 @@
 $(document).on('page:change ready', function(){
 
-	rsvp_navigation_dot()
+	// rsvp_navigation_dot()
 	close_alert()
 });
 
