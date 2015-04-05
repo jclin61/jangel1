@@ -73,6 +73,6 @@ class ResponsesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def response_params
-      params.require(:response).permit(:name, :phone, :email, :guests, :meal, :note)
+      params.require(:response).permit(:name, :phone, :email, :guests, :meal, :shoesize, :activity, :note)
     end
 end

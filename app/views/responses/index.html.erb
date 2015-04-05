@@ -1,6 +1,6 @@
 <h1>Listing responses</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
@@ -8,6 +8,8 @@
       <th>Email</th>
       <th>Meal</th>
       <th>Guests</th>
+      <th>Shoe Size</th>
+      <th>Activity</th>
       <th>Note</th>
       <th></th>
       <th></th>
@@ -22,6 +24,8 @@
         <td><%= response.email %></td>
         <td><%= response.meal %></td>
         <td><%= response.guests %></td>
+        <td><%= response.shoesize %></td>
+        <td><%= response.activity %></td>
         <td><%= response.note %></td>
         <td><%= link_to 'Show', response %></td>
         <td><%= link_to 'Edit', edit_response_path(response) %></td>
