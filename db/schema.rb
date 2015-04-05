@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150321213726) do
+ActiveRecord::Schema.define(version: 20150405065842) do
 
   create_table "responses", force: true do |t|
     t.string   "name"
@@ -22,8 +22,9 @@ ActiveRecord::Schema.define(version: 20150321213726) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "meal"
-    t.string   "activity",   limit: nil
-    t.string   "shoesize",   limit: nil
+    t.string   "fieldname"
+    t.string   "shoesize"
+    t.string   "activity"
   end
 
   create_table "topics", force: true do |t|
