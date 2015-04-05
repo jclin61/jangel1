@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 20150321213726) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "meal"
+    t.string   "activity",   limit: nil
+    t.string   "shoesize",   limit: nil
   end
 
   create_table "topics", force: true do |t|
