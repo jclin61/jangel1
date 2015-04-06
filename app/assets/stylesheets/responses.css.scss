@@ -93,7 +93,8 @@
 		}
 
 #rsvp_invite{
-	height: 750px;
+	height: 900px;
+	padding-top: 30px;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -105,6 +106,30 @@
 	font-size: 20px;
 	font-family: 'Raleway', sans-serif;
 }
+
+/*TIMER CSS HERE*/
+#rsvp_timer{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.rsvp_timer_box{
+    margin: 35px 24px;
+    display: inline-block;
+    padding: 20px 12px 0px 12px;
+    text-align: center;
+    width: 130px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, .6);
+}
+.rsvp_timer_box h1{
+    font-size: 48px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.rsvp_timer_box p{ margin-top: 0px;}
+
+/*TIMER CSS FINISH*/
 
 .rsvp_info{
 	padding-left: 30px;
@@ -137,8 +162,8 @@
     text-align: center;
 }
 	#rsvp_video_sec .overlay{
-		/*background-color: rgba(0, 0, 0, 0.55);*/
-        min-height: 550px;
+		background-color: rgba(0, 0, 0, 0.3);
+        min-height: 650px;
         color: #fff;
 	}
 	#rsvp_video_sec h2 {
@@ -153,7 +178,7 @@
 
 #rsvp_video_form{
 	position: relative;
-	height:300px;
+	height:450px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -162,7 +187,7 @@
 #rsvp_mobile_form{
 	background: url(image_path('rsvp/m_rsvp_form.jpg')) no-repeat;
 	background-size: cover;
-	height:620px;
+	height:850px;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 800px;
@@ -173,6 +198,10 @@
 	#rsvp_mobile_form .container{
 		padding-top: 20px;
 	}
+
+#rsvp_info_all{
+
+}
 
 .rsvp_info{
 	margin: 20px 0px 20px 0px;
@@ -269,6 +298,25 @@
 	font-size: 40px;
 }
 
+
+
+
+
+.btn-div .btn-info{
+   margin-top: 20px;
+   height:50px;
+   font-weight: 900;
+   background-color: #FFAAA3;
+   border: solid #FFAAA3;
+   font-size: 20px;
+}
+
+.btn-div .btn-info:hover{
+	background-color: #F88379;
+	border: solid #F88379;
+}
+
+
 .rsvp_discussion{
 	margin-top: 50px;
 }
@@ -276,4 +324,40 @@
 #rsvp_comment{
 	padding-left: 30px;
 	padding-right: 30px;
+}
+
+#rsvp_top_button .btn-info{
+	margin:0 0 0 0;
+	padding: 0 0 0 0;
+   background-color: #FFAAA3;
+   border: solid #FFAAA3;
+   color:#FFF0EF;
+}
+
+#rsvp_top_button .btn-info:hover{
+	background-color: #F88379;
+	border: solid #F88379;
+}
+
+.rsvp_footer{
+		 /* fallback */
+  background-color: #FFAAA3;
+  background: url(images/linear_bg_2.png);
+  background-repeat: repeat-x;
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFAAA3), to(#FFFFFF));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #FFFFFF, #FFAAA3);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #FFFFFF, #FFAAA3);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #FFFFFF, #FFAAA3);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #FFFFFF, #FFAAA3);
+	height:120px;
 }

@@ -2,6 +2,7 @@ $(document).on('page:change ready', function(){
 
 	// rsvp_navigation_dot()
 	close_alert()
+	countdown_timer() //calling from countdown_custom.js
 });
 
 
@@ -15,7 +16,7 @@ function close_alert(){
         $(".alert").alert('close');
     });
 }
-	
+
 function rsvp_navigation_dot(){
 		/* dot nav */
 	$(window).bind('scroll',function(e){

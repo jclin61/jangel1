@@ -1,3 +1,4 @@
+<div id="rsvp_fullpage">
 <% if flash[:notice] %>
 <div id="notice" class="alert alert-success alert-dismissible" role="alert">
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -15,8 +16,6 @@
     </ul>
 </div> -->
 <!-- dot navigation end -->
-
-
 <section id="rsvp_top" class="rsvp_top_img hidden-xs" data-type="background">
 	<div class="rsvp_error_box"><%= render "form_errors" %></div>
 	<article>
@@ -30,7 +29,6 @@
 		<p class="m_rsvp_top_text">RSVP</p>
 	</article>
 </section>
-
 <div id="rsvp_invite" class="container">
 	<h1 class="text-center">Inviting You</h1>
 	<br>
@@ -43,13 +41,20 @@
 	<br>
 	<p>P.S. We will continue to update the info section below and notify you of any changes via email.</p>
 </div>
-
 <section id="rsvp_ring" class="rsvp_middle_img" data-type="background" data-speed="15">
 	<article>
 		<p class="rsvp_middle_text">TYING THE KNOT</p>
 	</article>
 </section>
-
+<!-- START TIMER -->
+<div id="rsvp_timer" class="text-center" data-animated="FadeIn">
+    <div id="days" class="rsvp_timer_box"></div>
+    <div id="hours" class="rsvp_timer_box"></div>
+    <div id="minutes" class="rsvp_timer_box"></div>
+    <div id="seconds" class="rsvp_timer_box"></div>
+    <h1 id="message"></h1>
+</div>
+<!-- END TIMER -->
 <div id="rsvp_pre_info">
 	<a href="#rsvp_ring" id="rsvp_expand_all" class="pull-right" data-toggle="collapse" data-target=".rsvp_inner_info">EXPAND ALL</a>
 </div>
@@ -311,12 +316,13 @@
 </div>
 
 <div id="rsvp_top_button" class="sd_arrow">
-		<a class="btn btn-default" href="#rsvp_top">
+		<a class="btn btn-info" href="#rsvp_top">
 			<span class="glyphicon glyphicon-menu-up"> </span>
 			<span>TOP</span>
 		</a>
 </div>
 
-<div class="sd_footer">
+<div class="rsvp_footer">
 		<!-- see css -->
 </div>
+</div> <!-- RSVP full page ending div>
