@@ -61,47 +61,18 @@
 
 <section id="rsvp_info_all" class="container-fluid">
 	<!-- Accordion Information -->
-	<div id="rsvp_location" class="rsvp_info">
-		<a href="#rsvp_location_info" data-toggle="collapse">
-			<%= image_tag('icons/Metrize/compass-2.svg', size:"70x70")%>
-		</a>
-		<span>Location</span>
-		<a id="location_arrow" class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_location_info" aria-expanded="false" aria-controls="rsvp_location_info">
-		</a>
-
-		<div class="collapse rsvp_inner_info" id="rsvp_location_info">
-		  	<div class="row rsvp_info_heading">
-		    	<div class="col-md-7 col-md-offset-1">
-    		    	<p>Lake Tahoe, a large freshwater lake in the Sierra Nevada of the United States, sits right on the border of Nevada and California. It is the 6th largest lake by volume behind the five Great Lakes. Much like Whistler, B.C., Lake Tahoe is a very popular winter and summer destination for ski, camping, boating and beach fun. The difference is that Lake Tahoe is humongous and has more than 10 large world class ski resorts around the basin. Since half of Lake Tahoe is in Nevada state, there are several large casino such as Hard Rock Casino by the South Shore in Stateline. </p>
-    		    	<p>Our wedding ceremony will take place at Lakeside Marina in South Lake Tahoe. It is easily accessible via U.S. Route 50 for most of us that will be traveling from the San Francisco bay area. The drive is about three and half hours from San Francisco International Airport, two hours from Sacramento International Airport and one hour from Reno-Tahoe International Airport. You will see the route outlined below. </p>
-    		    	<p>Needless to say, a road trip is in order. There will be a lot of driving to reach the beautiful Lake Tahoe. Trust us, it is worth it. =p. It’ll be even more fun if you are traveling in groups. Bring a radio!</p>
-    		    	<p>As for us, we will travel from San Jose and arrive at South Lake Tahoe 2 days before our wedding. </p>
-			    </div>
-			  	<div class="col-md-4 rsvp_embed_map">
-			  		<div id"rsvp_mapoverlayid" class="rsvp_mapoverlay" onclick="remove_mapimage()">
-					</div>
-					<embed src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3102.4768206567815!2d-119.95123299999997!3d38.958779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s4041+Lakeshore+Blvd+South+Lake+Tahoe%2C+CA+96150!5e0!3m2!1s!2sus!4v1427879551865" width="320" height="300" frameborder="0" style="border:0"></embed>
-				</div>
-			</div>
-			<div class="container">
-					<h3 class="text-center">Driving Route</h3>
-					<div id="rsvp_route" class="hidden-xs">
-						<embed class="rsvp_route_embed" src="https://mapsengine.google.com/map/embed?mid=zvzbziTx2uIQ.kVPD6_cPUTyU" width="600" height="480"></embed>
-					</div>
-					<div id="rsvp_route" class="hidden-sm hidden-md hidden-lg">
-						<embed class="rsvp_route_embed" src="https://mapsengine.google.com/map/embed?mid=zvzbziTx2uIQ.kVPD6_cPUTyU" width="320" height="280"></embed>
-					</div>
-				</div>
-		</div>
-	</div>
 	<div id="rsvp_date" class="rsvp_info">
-		<a href="#rsvp_date_info" data-toggle="collapse">
-			<%= image_tag('icons/Metrize/clock.svg', size:"70x70") %>
+		<div class="rsvp_info_icon">
+			<div class="rsvp_icon_div">
+				<a href="#rsvp_date_info" data-toggle="collapse">
+					<%= image_tag('icons/Metrize/clock.svg', size:"100x100") %>
+				</a>
+				<span>Date & Time</span>
+			</div>
+		</div>
+		<!-- <a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_date_info" aria-expanded="false" aria-controls="rsvp_date_info">
 		</a>
-		<span>Date & Time</span>
-		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_date_info" aria-expanded="false" aria-controls="rsvp_date_info">
-		</a>
-
+ -->
 		<div class="collapse rsvp_inner_info" id="rsvp_date_info">
 			<div class="rsvp_info_heading text-center">
 				<h1>Ceremony</h1>
@@ -192,14 +163,55 @@
 			</div>
 		</div>
 	</div>
+	
+	<div id="rsvp_location" class="rsvp_info">
+		<div class="rsvp_info_icon">
+			<div class="rsvp_icon_div">
+				<a href="#rsvp_location_info" data-toggle="collapse">
+					<%= image_tag('icons/Metrize/compass-2.svg', size:"100x100")%>
+				</a>
+				<span>Location</span>
+			</div>
+		</div>
+		<!-- <a id="location_arrow" class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_location_info" aria-expanded="false" aria-controls="rsvp_location_info">
+		</a> -->
 
+		<div class="collapse rsvp_inner_info" id="rsvp_location_info">
+		  	<div class="row rsvp_info_heading">
+		    	<div class="col-md-7 col-md-offset-1">
+    		    	<p>Lake Tahoe, a large freshwater lake in the Sierra Nevada of the United States, sits right on the border of Nevada and California. It is the 6th largest lake by volume behind the five Great Lakes. Much like Whistler, B.C., Lake Tahoe is a very popular winter and summer destination for ski, camping, boating and beach fun. The difference is that Lake Tahoe is humongous and has more than 10 large world class ski resorts around the basin. Since half of Lake Tahoe is in Nevada state, there are several large casino such as Hard Rock Casino by the South Shore in Stateline. </p>
+    		    	<p>Our wedding ceremony will take place at Lakeside Marina in South Lake Tahoe. It is easily accessible via U.S. Route 50 for most of us that will be traveling from the San Francisco bay area. The drive is about three and half hours from San Francisco International Airport, two hours from Sacramento International Airport and one hour from Reno-Tahoe International Airport. You will see the route outlined below. </p>
+    		    	<p>Needless to say, a road trip is in order. There will be a lot of driving to reach the beautiful Lake Tahoe. Trust us, it is worth it. =p. It’ll be even more fun if you are traveling in groups. Bring a radio!</p>
+    		    	<p>As for us, we will travel from San Jose and arrive at South Lake Tahoe 2 days before our wedding. </p>
+			    </div>
+			  	<div class="col-md-4 rsvp_embed_map">
+			  		<div id"rsvp_mapoverlayid" class="rsvp_mapoverlay" onclick="remove_mapimage()">
+					</div>
+					<embed src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3102.4768206567815!2d-119.95123299999997!3d38.958779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s4041+Lakeshore+Blvd+South+Lake+Tahoe%2C+CA+96150!5e0!3m2!1s!2sus!4v1427879551865" width="320" height="300" frameborder="0" style="border:0"></embed>
+				</div>
+			</div>
+			<div class="container">
+					<h3 class="text-center">Driving Route</h3>
+					<div id="rsvp_route" class="hidden-xs">
+						<embed class="rsvp_route_embed" src="https://mapsengine.google.com/map/embed?mid=zvzbziTx2uIQ.kVPD6_cPUTyU" width="600" height="480"></embed>
+					</div>
+					<div id="rsvp_route" class="hidden-sm hidden-md hidden-lg">
+						<embed class="rsvp_route_embed" src="https://mapsengine.google.com/map/embed?mid=zvzbziTx2uIQ.kVPD6_cPUTyU" width="320" height="280"></embed>
+					</div>
+				</div>
+		</div>
+	</div>
 	<div id="rsvp_hotel" class="rsvp_info">
-		<a href="#rsvp_hotel_info" data-toggle="collapse">
-			<%= image_tag('icons/Metrize/3d-cube.svg', size:"70x70") %>
-		</a>
-		<span>Accommodation</span>
-		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_hotel_info" aria-expanded="false" aria-controls="rsvp_hotel_info">
-		</a>
+		<div class="rsvp_info_icon">
+			<div class="rsvp_icon_div">
+				<a href="#rsvp_hotel_info" data-toggle="collapse">
+					<%= image_tag('icons/Metrize/3d-cube.svg', size:"100x100") %>
+				</a>
+				<span>Accommodation</span>
+			</div>
+		</div>	
+		<!-- <a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_hotel_info" aria-expanded="false" aria-controls="rsvp_hotel_info">
+		</a> -->
 
 		<div class="collapse rsvp_inner_info" id="rsvp_hotel_info">
 		  	<div>
@@ -233,12 +245,16 @@
 	</div>
 
 	<div id="rsvp_activity" class="rsvp_info">
-		<a href="#rsvp_activity_info" data-toggle="collapse">
-			<%= image_tag('icons/Metrize/circles.svg', size:"70x70") %>
-		</a>
-		<span>Activities</span>
-		<a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_activity_info" aria-expanded="false" aria-controls="rsvp_activity_info">
-		</a>
+		<div class="rsvp_info_icon">
+			<div class="rsvp_icon_div">
+				<a href="#rsvp_activity_info" data-toggle="collapse">
+					<%= image_tag('icons/Metrize/circles.svg', size:"100x100") %>
+				</a>
+				<span>Activities</span>
+			</div>
+		</div>
+		<!-- <a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_activity_info" aria-expanded="false" aria-controls="rsvp_activity_info">
+		</a> -->
 
 		<div class="collapse rsvp_inner_info" id="rsvp_activity_info">
 		 	<div class="rsvp_info_heading col-md-10 col-md-offset-1">
