@@ -20,33 +20,34 @@
 
 .m_rsvp_top_img{
 	background: url(image_path('rsvp/m_rsvp_top.jpg')) 100% 0 no-repeat;
-	background-size: 120%;
+	background-size: 100%;
 	height:320px;
 	margin: 0 auto;
 	width: 100%;
-	max-width: 800px;
+	max-width: 1000px;
+	position:relative;
+}
+
+.rsvp_middle2_img{
+	background: url(image_path('rsvp/rsvp_proposal.jpg')) 150% 0 no-repeat;
+	background-size: cover;
+	height: 500px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
 	position:relative;
 }
 
 .rsvp_middle_img{
 	background: url(image_path('rsvp/rsvp_ring.jpg')) 150% 0 no-repeat;
 	background-size: cover;
-	height: 500px;
+	height: 400px;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1920px;
 	position:relative;
 }
 
-.m_rsvp_middle_img{
-	background: url(image_path('rsvp/rsvp_ring.jpg')) 150% 0 no-repeat;
-	background-size: cover;
-	height: 500px;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1920px;
-	
-}
 .rsvp_error_box{
 	margin: 0 auto;
 	width:450px;
@@ -64,7 +65,7 @@
 	/*font-weight: 300;*/
 	color: white;
 	text-shadow: -1px 0 lightgrey, 0 1px lightgrey, 1px 0 lightgrey, 0 -1px lightgrey;
-	padding-top: 350px;
+	padding-top: 300px;
 	text-align:center;
 		}
 
@@ -93,7 +94,6 @@
 		}
 
 #rsvp_invite{
-	height: 900px;
 	padding-top: 30px;
 	font-family: 'Raleway', sans-serif;
 }
@@ -109,11 +109,15 @@
 
 /*TIMER CSS HERE*/
 #rsvp_timer{
-	padding-top: 100px;
-	padding-bottom: 100px;
+
+}
+
+#rsvp_timer h1{
+	font-size: 50px;
+	font-family: 'Wire one', sans-serif !important;
 }
 .rsvp_timer_box{
-    margin: 35px 24px;
+    margin: 15px 15px;
     display: inline-block;
     padding: 20px 12px 0px 12px;
     text-align: center;
@@ -124,8 +128,9 @@
 .rsvp_timer_box h1{
     font-size: 48px;
     margin-top: 5px;
+    padding-top: 0px;
     margin-bottom: 0px;
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 900;
 }
 .rsvp_timer_box p{ margin-top: 0px;}
 
@@ -164,6 +169,10 @@
 .rsvp_icon_div{
 	margin: 0 auto;
 	width:300px;
+}
+
+.rsvp_icon_div span{
+	padding-left: 10px;
 }
 
 .rsvp_info_icon {
@@ -209,7 +218,7 @@
 	height:850px;
 	margin: 0 auto;
 	width: 100%;
-	max-width: 800px;
+	max-width: 1000px;
 	position:relative;
 	color: #fff; /*text color*/
 }
@@ -295,15 +304,30 @@
 }
 
 #pre-form{
-	height: 250px;
+	margin-top:-20px;
+	margin-bottom: 100px;
 }
 
-#pre-form h1{
-	margin-top: 100px;
+#pre-form a{
+	font-size: 50px;
+	color:coral;
 }
 	
+#pre-form a:hover{
+	color:#FFAAA3;
+	text-decoration: none;
+}
+
+#pre-form p{
+	color:#FFAAA3;
+	margin: -15px 0 0 0;
+	padding: 0 0 0 0;
+}
+
 #rsvp_pre_info{
-	height:50px;
+	width:1000px;
+	height:10px;
+	float:right;
 }
 #rsvp_expand_all{
 	margin: 20px 50px 20px 20px;

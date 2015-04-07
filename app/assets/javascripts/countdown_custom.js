@@ -44,7 +44,7 @@ function countdown_timer(){
                 seconds.html('<h1>'+s+'</h1><p>Second'+(s>1?'s':''),'</p>');
                 setTimeout(setDate, 1000);
 
-                message.html("LET'S GET THE CLOCK TICKING!");
+                message.html("To Our Wedding In");
             }
         }
     })(jQuery);

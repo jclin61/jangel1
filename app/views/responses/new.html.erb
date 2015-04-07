@@ -1,3 +1,21 @@
+<script>
+
+$(document).ready(function() {
+    $('#rsvp_fullpage').fullpage({
+    	anchors: ['firstPage', 'secondPage', '3rdPage', '4th', 'RSVP'],
+    	responsive: 1000,
+    	scrollBar: true,
+    	normalScrollElements: '#rsvp_normal, .rsvp_normal_scroll',
+    	navigation: true,
+    	touchSensitivity: 50,
+    	fitToSection: false
+    });
+
+});
+
+</script>
+
+
 <div id="rsvp_fullpage">
 <% if flash[:notice] %>
 <div id="notice" class="alert alert-success alert-dismissible" role="alert">
@@ -16,329 +34,359 @@
     </ul>
 </div> -->
 <!-- dot navigation end -->
-<section id="rsvp_top" class="rsvp_top_img hidden-xs" data-type="background">
-	<div class="rsvp_error_box"><%= render "form_errors" %></div>
-	<article>
-		<p class="rsvp_top_text">RSVP</p>
-	</article>
-</section>
-
-<section id="m_rsvp_top" class="m_rsvp_top_img hidden-sm hidden-md hidden-lg" data-type="background">
-	<div class="rsvp_error_box"><%= render "form_errors" %></div>
-	<article>
-		<p class="m_rsvp_top_text">RSVP</p>
-	</article>
-</section>
-<div id="rsvp_invite" class="container">
-	<h1 class="text-center">Inviting You</h1>
-	<br>
-    <h3>Dear Friends,</h3>
-    <br>
-	<p>We are finally tying the knot after long 6 years of being together! There were many instances where we had wanted to start our next exciting chapter sooner, but school, career and especially long distance relationship have made it a challenge. To celebrate our soon-to-be “super short distance” relationship, you are all invited to share the joy, laugh and teary moment of our special day at Lake Tahoe. We fell in love with Lake Tahoe the first time we visited, and we certainly hope you will too! </p>
-	<p>Scroll down to see what we have planned for the day</p>
-	<br>
-	<p class="text-right">Sincerely, Jerry and Angel</p>
-	<br>
-	<p>P.S. We will continue to update the info section below and notify you of any changes via email.</p>
-</div>
-<section id="rsvp_ring" class="rsvp_middle_img" data-type="background" data-speed="15">
-	<article>
-		<p class="rsvp_middle_text">TYING THE KNOT</p>
-	</article>
-</section>
-<!-- START TIMER -->
-<div id="rsvp_timer" class="text-center" data-animated="FadeIn">
-    <div id="days" class="rsvp_timer_box"></div>
-    <div id="hours" class="rsvp_timer_box"></div>
-    <div id="minutes" class="rsvp_timer_box"></div>
-    <div id="seconds" class="rsvp_timer_box"></div>
-    <h1 id="message"></h1>
-</div>
-<!-- END TIMER -->
-<div id="rsvp_pre_info">
-	<a href="#rsvp_ring" id="rsvp_expand_all" class="pull-right" data-toggle="collapse" data-target=".rsvp_inner_info">EXPAND ALL</a>
-</div>
-
-<section id="rsvp_info_all" class="container-fluid">
-	<!-- Accordion Information -->
-	<div id="rsvp_date" class="rsvp_info">
-		<div class="rsvp_info_icon">
-			<div class="rsvp_icon_div">
-				<a href="#rsvp_date_info" data-toggle="collapse">
-					<%= image_tag('icons/Metrize/clock.svg', size:"100x100") %>
-				</a>
-				<span>Date & Time</span>
-			</div>
-		</div>
-		<!-- <a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_date_info" aria-expanded="false" aria-controls="rsvp_date_info">
-		</a>
- -->
-		<div class="collapse rsvp_inner_info" id="rsvp_date_info">
-			<div class="rsvp_info_heading text-center">
-				<h1>Ceremony</h1>
-				<h2>Date: August 2nd, 2015</h2>
-				<h2>Time: 4:00pm</h2>
-			</div>
-		  	<div class="row">	
-		  		<div class="col-md-5 col-md-offset-1">
-		    		<div class="panel panel-default">
-					  <div class="panel-heading">
-					    <h3 class="panel-title">Saturday (Suggested)</h3>
-					  </div>
-					  <div class="panel-body">
-					    Panel content
-					  </div>
-					  <table class="table">
-					  	<tbody>
-					  		<tr>
-						  		<th>Time</th>
-						  		<th>Event</th>
-						  	</tr>
-						  	<tr>
-						  		<td>10:00am</td>
-						  		<td>Arrive at Lake Tahoe</td>
-						  	</tr>
-						  	<tr>
-						  		<td>11:00am</td>
-						  		<td>Emerald Bay</td>
-						  	</tr>
-						  	<tr>
-						  		<td>1:00pm</td>
-						  		<td>Eagle Fall</td>
-						  	</tr>
-						  	<tr>
-						  		<td>4:00pm</td>
-						  		<td>Heavenly Village</td>
-						  	</tr>
-						  	<tr>
-						  		<td>6:00pm</td>
-						  		<td>Dinner</td>
-						  	</tr>
-					  	</tbody>
-					  </table>
-					</div>
-		  		</div>
-				<div class="col-md-5">
-					<div class="panel panel-default">
-						  <div class="panel-heading">
-						    <h3 class="panel-title">Sunday</h3>
-						  </div>
-						  <div class="panel-body">
-						    Panel content
-						  </div>
-						    <table class="table">
-					  	<tbody>
-					  		<tr>
-						  		<th>Time</th>
-						  		<th>Event</th>
-						  	</tr>
-						  	<tr>
-						  		<td>10:00am</td>
-						  		<td>Water Sports (optional)</td>
-						  	</tr>
-						  	<tr>
-						  		<td>1:00pm</td>
-						  		<td>Beach</td>
-						  	</tr>
-						  	<tr>
-						  		<td>4:00pm</td>
-						  		<td>Wedding Ceremony</td>
-						  	</tr>
-						  	<tr>
-						  		<td>5:00pm</td>
-						  		<td>Beach Wedding Photo</td>
-						  	</tr>
-						  	<tr>
-						  		<td>6:00pm</td>
-						  		<td>Wedding Reception</td>
-						  	</tr>
-					  	</tbody>
-					  </table>
-					</div>
-				</div>
-				<div class="col-md-10 col-md-offset-1">
-					<p>We include schedule on Saturday as a reference. There are no group activities planned on the day, and we highly recommend you to tour around Lake Tahoe and its famous spots.</p>
-					<p>Sunday starts off with water sports activity, we will be parasailing in the morning at Lakeside Marina and see Lake Tahoe from the sky. Ceremony will begin at 4pm on the same Lakeside beach. </p>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div id="rsvp_location" class="rsvp_info">
-		<div class="rsvp_info_icon">
-			<div class="rsvp_icon_div">
-				<a href="#rsvp_location_info" data-toggle="collapse">
-					<%= image_tag('icons/Metrize/compass-2.svg', size:"100x100")%>
-				</a>
-				<span>Location</span>
-			</div>
-		</div>
-		<!-- <a id="location_arrow" class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_location_info" aria-expanded="false" aria-controls="rsvp_location_info">
-		</a> -->
-
-		<div class="collapse rsvp_inner_info" id="rsvp_location_info">
-		  	<div class="row rsvp_info_heading">
-		    	<div class="col-md-7 col-md-offset-1">
-    		    	<p>Lake Tahoe, a large freshwater lake in the Sierra Nevada of the United States, sits right on the border of Nevada and California. It is the 6th largest lake by volume behind the five Great Lakes. Much like Whistler, B.C., Lake Tahoe is a very popular winter and summer destination for ski, camping, boating and beach fun. The difference is that Lake Tahoe is humongous and has more than 10 large world class ski resorts around the basin. Since half of Lake Tahoe is in Nevada state, there are several large casino such as Hard Rock Casino by the South Shore in Stateline. </p>
-    		    	<p>Our wedding ceremony will take place at Lakeside Marina in South Lake Tahoe. It is easily accessible via U.S. Route 50 for most of us that will be traveling from the San Francisco bay area. The drive is about three and half hours from San Francisco International Airport, two hours from Sacramento International Airport and one hour from Reno-Tahoe International Airport. You will see the route outlined below. </p>
-    		    	<p>Needless to say, a road trip is in order. There will be a lot of driving to reach the beautiful Lake Tahoe. Trust us, it is worth it. =p. It’ll be even more fun if you are traveling in groups. Bring a radio!</p>
-    		    	<p>As for us, we will travel from San Jose and arrive at South Lake Tahoe 2 days before our wedding. </p>
-			    </div>
-			  	<div class="col-md-4 rsvp_embed_map">
-			  		<div id"rsvp_mapoverlayid" class="rsvp_mapoverlay" onclick="remove_mapimage()">
-					</div>
-					<embed src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3102.4768206567815!2d-119.95123299999997!3d38.958779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s4041+Lakeshore+Blvd+South+Lake+Tahoe%2C+CA+96150!5e0!3m2!1s!2sus!4v1427879551865" width="320" height="300" frameborder="0" style="border:0"></embed>
-				</div>
-			</div>
-			<div class="container">
-					<h3 class="text-center">Driving Route</h3>
-					<div id="rsvp_route" class="hidden-xs">
-						<embed class="rsvp_route_embed" src="https://mapsengine.google.com/map/embed?mid=zvzbziTx2uIQ.kVPD6_cPUTyU" width="600" height="480"></embed>
-					</div>
-					<div id="rsvp_route" class="hidden-sm hidden-md hidden-lg">
-						<embed class="rsvp_route_embed" src="https://mapsengine.google.com/map/embed?mid=zvzbziTx2uIQ.kVPD6_cPUTyU" width="320" height="280"></embed>
-					</div>
-				</div>
-		</div>
-	</div>
-	<div id="rsvp_hotel" class="rsvp_info">
-		<div class="rsvp_info_icon">
-			<div class="rsvp_icon_div">
-				<a href="#rsvp_hotel_info" data-toggle="collapse">
-					<%= image_tag('icons/Metrize/3d-cube.svg', size:"100x100") %>
-				</a>
-				<span>Accommodation</span>
-			</div>
-		</div>	
-		<!-- <a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_hotel_info" aria-expanded="false" aria-controls="rsvp_hotel_info">
-		</a> -->
-
-		<div class="collapse rsvp_inner_info" id="rsvp_hotel_info">
-		  	<div>
-		  		<div class="rsvp_info_heading col-md-10 col-md-offset-1">
-		  			<p>South Lake Tahoe offers many fine hotels and even AirBnBs. We recommend you to stay close to Lakeside Marina and around Heavenly Village. There are affordable hotels, boutique hotels and even Casino hotels on the Nevada side. See below for our recommendation:</p>
-		  		</div>
-		  		<div class="row">
-			    	<div class="col-md-5 col-md-offset-1">
-			    		<div class="panel panel-default">
-						  <div class="panel-heading">
-						    <h3 class="panel-title">Hotel</h3>
-						  </div>
-						  <div class="panel-body">
-						    Panel content
-						  </div>
-						</div>
-			  		</div>
-					<div class="col-md-5">
-						<div class="panel panel-default">
-						  <div class="panel-heading">
-						    <h3 class="panel-title">AirBnB</h3>
-						  </div>
-						  <div class="panel-body">
-						    Panel content
-						  </div>
-						</div>
-					</div>
-				</div>
-		  	</div>
-		</div>
-	</div>
-
-	<div id="rsvp_activity" class="rsvp_info">
-		<div class="rsvp_info_icon">
-			<div class="rsvp_icon_div">
-				<a href="#rsvp_activity_info" data-toggle="collapse">
-					<%= image_tag('icons/Metrize/circles.svg', size:"100x100") %>
-				</a>
-				<span>Activities</span>
-			</div>
-		</div>
-		<!-- <a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_activity_info" aria-expanded="false" aria-controls="rsvp_activity_info">
-		</a> -->
-
-		<div class="collapse rsvp_inner_info" id="rsvp_activity_info">
-		 	<div class="rsvp_info_heading col-md-10 col-md-offset-1">
-		   		<p>Lake Tahoe is home to many outdoor sports. In Summer, there are kayak, boat, jet ski rentals by the beach. A lot of hiking and cycling trails are also within minutes of drive. We will be parasailing before our wedding ceremony, and we welcome you to join us.</p>
-		  	</div>
-		  	<div class="row">
-		    	<div class="col-md-5 col-md-offset-1">
-		    		<div class="panel panel-default">
-					  <div class="panel-heading">
-					    <h3 class="panel-title">Water</h3>
-					  </div>
-					  <div class="panel-body">
-					    Panel content
-					  </div>
-					</div>
-		  		</div>
-				<div class="col-md-5">
-					<div class="panel panel-default">
-					  <div class="panel-heading">
-					    <h3 class="panel-title">Land</h3>
-					  </div>
-					  <div class="panel-body">
-					    Panel content
-					  </div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Accordion Finish -->
-
-<section id="pre-form">
-	<h1 class="text-center">We really wish you could join us on this special day! RSVP below!</h1>
-</section>
-
-<section id="rsvp_form">
-	<!-- Desktop Form w/ Video -->
-	<div id="rsvp_video_sec" class="player hidden-xs" data-property="{videoURL:'https://www.youtube.com/watch?v=KLsz6X5PP7Y',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:0.6,mute: true,showControls:false}">
-	<!-- change https://www.youtube.com/watch?v=Ycv5fNd4AeM to your youtube url-->
-	    <div class="overlay">
-	        <div class="container">
-	        	<div class="text-center">
-					<h2>We're excited to celebrate with you!</h2>
-					<h3>Kindly respond by May 1st, 2015</h3>
-				</div>
-	            <div id="rsvp_video_form">
-					<%= render 'form' %>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-
-	<!-- Mobile Form w/ Image -->
-	<div id="rsvp_mobile_form" class="hidden-sm hidden-md hidden-lg">
-		<div class="container">
-			<div class="text-center">
-				<h2>We're excited to celebrate with you!</h2>
-				<h3>Kindly respond by May 1st, 2015</h3>
-			</div>
-				<%= render 'form' %>
-		</div>
-	</div>
-</section>
-
-<!-- 	<%= link_to 'Back', responses_path %> -->
-<div class="container-fluid">
-	<div class="text-center rsvp_discussion">
-		<h2>Join discussion with other guests</h2>
-	</div>
-	
-	<section id="rsvp_comment">
-		<%= render 'comment'%>
+<div class="section">
+	<section id="rsvp_top" class="rsvp_top_img hidden-xs hidden-sm" data-type="background">
+		<div class="rsvp_error_box"><%= render "form_errors" %></div>
+		<article>
+			<p class="rsvp_top_text">RSVP</p>
+		</article>
+	</section>
+	<section id="m_rsvp_top" class="m_rsvp_top_img hidden-md hidden-lg" data-type="background">
+		<div class="rsvp_error_box"><%= render "form_errors" %></div>
+		<article>
+			<p class="m_rsvp_top_text">RSVP</p>
+		</article>
 	</section>
 </div>
 
-<div id="rsvp_top_button" class="sd_arrow">
-		<a class="btn btn-info" href="#rsvp_top">
-			<span class="glyphicon glyphicon-menu-up"> </span>
-			<span>TOP</span>
-		</a>
+<div class="section">
+	<div id="rsvp_invite" class="container">
+		<br>
+	    <h3>Dear Friends,</h3>
+	    <br>
+		<p>We are finally tying the knot after long 6 years of being together! There were many instances where we had wanted to start our next exciting chapter sooner, but school, career and especially long distance relationship have made it a challenge. To celebrate our soon-to-be “super short distance” relationship, you are all invited to share the joy, laugh and teary moment of our special day at Lake Tahoe. We fell in love with Lake Tahoe the first time we visited, and we certainly hope you will too! </p>
+		<p>Scroll down to see what we have planned for the day</p>
+		<br>
+		<p class="text-right">Sincerely, Jerry and Angel</p>
+		<br>
+		<p>P.S. We will continue to update the info section below and notify you of any changes via email.</p>
+	</div>
+</div>
+<div class="section">
+	<section id="rsvp_proposal" class="rsvp_middle2_img" data-type="background" data-speed="15">
+		<article>
+			<p class="rsvp_middle_text">INVITING YOU</p>
+		</article>
+	</section>
+	<!-- START TIMER -->
+	<div id="rsvp_timer" class="text-center" data-animated="FadeIn">
+		<h1 id="message"></h1>
+	    <div id="days" class="rsvp_timer_box"></div>
+	    <div id="hours" class="rsvp_timer_box"></div>
+	    <div id="minutes" class="rsvp_timer_box"></div>
+	    <div id="seconds" class="rsvp_timer_box"></div>
+	</div>
+	<!-- END TIMER -->
 </div>
 
-<div class="rsvp_footer">
-		<!-- see css -->
-</div>
-</div> <!-- RSVP full page ending div>
+<div class="section">
+<div id="rsvp_normal" class="rsvp_normal_scroll">
+
+	<section id="rsvp_ring" class="rsvp_middle_img" data-type="background" data-speed="15">
+		<article>
+			<p class="rsvp_middle_text">TYING THE KNOT</p>
+		</article>
+	</section>
+
+
+
+	<div id="rsvp_pre_info">
+		<a href="#rsvp_info_all" id="rsvp_expand_all" class="pull-right" data-toggle="collapse" data-target=".rsvp_inner_info">EXPAND ALL</a>
+	</div>
+
+	<section id="rsvp_info_all" class="container-fluid">
+		<!-- Accordion Information -->
+		<div class="row">
+			<div id="rsvp_date" class="rsvp_info col-md-6">
+				<div class="rsvp_info_icon">
+					<div class="rsvp_icon_div">
+						<a href="#rsvp_date_info" data-toggle="collapse">
+							<%= image_tag('icons/Metrize/clock.svg', size:"100x100") %>
+						</a>
+						<span>Date & Time</span>
+					</div>
+				</div>
+				<!-- <a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_date_info" aria-expanded="false" aria-controls="rsvp_date_info">
+				</a>-->
+				<div class="collapse rsvp_inner_info" id="rsvp_date_info">
+					<div class="rsvp_info_heading text-center">
+						<h1>Ceremony</h1>
+						<h2>Date: August 2nd, 2015</h2>
+						<h2>Time: 4:00pm</h2>
+					</div>
+				  	<div class="row">	
+				  		<div class="col-md-5 col-md-offset-1">
+				    		<div class="panel panel-default">
+							  <div class="panel-heading">
+							    <h3 class="panel-title">Saturday (Suggested)</h3>
+							  </div>
+							  <div class="panel-body">
+							    Panel content
+							  </div>
+							  <table class="table">
+							  	<tbody>
+							  		<tr>
+								  		<th>Time</th>
+								  		<th>Event</th>
+								  	</tr>
+								  	<tr>
+								  		<td>10:00am</td>
+								  		<td>Arrive at Lake Tahoe</td>
+								  	</tr>
+								  	<tr>
+								  		<td>11:00am</td>
+								  		<td>Emerald Bay</td>
+								  	</tr>
+								  	<tr>
+								  		<td>1:00pm</td>
+								  		<td>Eagle Fall</td>
+								  	</tr>
+								  	<tr>
+								  		<td>4:00pm</td>
+								  		<td>Heavenly Village</td>
+								  	</tr>
+								  	<tr>
+								  		<td>6:00pm</td>
+								  		<td>Dinner</td>
+								  	</tr>
+							  	</tbody>
+							  </table>
+							</div>
+				  		</div>
+						<div class="col-md-5">
+							<div class="panel panel-default">
+								  <div class="panel-heading">
+								    <h3 class="panel-title">Sunday</h3>
+								  </div>
+								  <div class="panel-body">
+								    Panel content
+								  </div>
+								    <table class="table">
+							  	<tbody>
+							  		<tr>
+								  		<th>Time</th>
+								  		<th>Event</th>
+								  	</tr>
+								  	<tr>
+								  		<td>10:00am</td>
+								  		<td>Water Sports (optional)</td>
+								  	</tr>
+								  	<tr>
+								  		<td>1:00pm</td>
+								  		<td>Beach</td>
+								  	</tr>
+								  	<tr>
+								  		<td>4:00pm</td>
+								  		<td>Wedding Ceremony</td>
+								  	</tr>
+								  	<tr>
+								  		<td>5:00pm</td>
+								  		<td>Beach Wedding Photo</td>
+								  	</tr>
+								  	<tr>
+								  		<td>6:00pm</td>
+								  		<td>Wedding Reception</td>
+								  	</tr>
+							  	</tbody>
+							  </table>
+							</div>
+						</div>
+						<div class="col-md-10 col-md-offset-1">
+							<p>We include schedule on Saturday as a reference. There are no group activities planned on the day, and we highly recommend you to tour around Lake Tahoe and its famous spots.</p>
+							<p>Sunday starts off with water sports activity, we will be parasailing in the morning at Lakeside Marina and see Lake Tahoe from the sky. Ceremony will begin at 4pm on the same Lakeside beach. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+
+			<div id="rsvp_location" class="rsvp_info col-md-6">
+				<div class="rsvp_info_icon">
+					<div class="rsvp_icon_div">
+						<a href="#rsvp_location_info" data-toggle="collapse">
+							<%= image_tag('icons/Metrize/compass-2.svg', size:"100x100")%>
+						</a>
+						<span>Location</span>
+					</div>
+				</div>
+				<!-- <a id="location_arrow" class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_location_info" aria-expanded="false" aria-controls="rsvp_location_info">
+				</a> -->
+
+				<div class="collapse rsvp_inner_info" id="rsvp_location_info">
+				  	<div class="row rsvp_info_heading">
+				    	<div class="col-md-7 col-md-offset-1">
+		    		    	<p>Lake Tahoe, a large freshwater lake in the Sierra Nevada of the United States, sits right on the border of Nevada and California. It is the 6th largest lake by volume behind the five Great Lakes. Much like Whistler, B.C., Lake Tahoe is a very popular winter and summer destination for ski, camping, boating and beach fun. The difference is that Lake Tahoe is humongous and has more than 10 large world class ski resorts around the basin. Since half of Lake Tahoe is in Nevada state, there are several large casino such as Hard Rock Casino by the South Shore in Stateline. </p>
+		    		    	<p>Our wedding ceremony will take place at Lakeside Marina in South Lake Tahoe. It is easily accessible via U.S. Route 50 for most of us that will be traveling from the San Francisco bay area. The drive is about three and half hours from San Francisco International Airport, two hours from Sacramento International Airport and one hour from Reno-Tahoe International Airport. You will see the route outlined below. </p>
+		    		    	<p>Needless to say, a road trip is in order. There will be a lot of driving to reach the beautiful Lake Tahoe. Trust us, it is worth it. =p. It’ll be even more fun if you are traveling in groups. Bring a radio!</p>
+		    		    	<p>As for us, we will travel from San Jose and arrive at South Lake Tahoe 2 days before our wedding. </p>
+					    </div>
+					  	<div class="col-md-4 rsvp_embed_map">
+					  		<div id"rsvp_mapoverlayid" class="rsvp_mapoverlay" onclick="remove_mapimage()">
+							</div>
+							<embed src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3102.4768206567815!2d-119.95123299999997!3d38.958779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s4041+Lakeshore+Blvd+South+Lake+Tahoe%2C+CA+96150!5e0!3m2!1s!2sus!4v1427879551865" width="320" height="300" frameborder="0" style="border:0"></embed>
+						</div>
+					</div>
+					<div class="container">
+							<h3 class="text-center">Driving Route</h3>
+							<div id="rsvp_route" class="hidden-xs hidden-sm">
+								<embed class="rsvp_route_embed" src="https://mapsengine.google.com/map/embed?mid=zvzbziTx2uIQ.kVPD6_cPUTyU" width="600" height="480"></embed>
+							</div>
+							<div id="rsvp_route" class="hidden-md hidden-lg">
+								<embed class="rsvp_route_embed" src="https://mapsengine.google.com/map/embed?mid=zvzbziTx2uIQ.kVPD6_cPUTyU" width="320" height="280"></embed>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div> <!--first row info -->
+		<div class="row">
+			<div id="rsvp_hotel" class="rsvp_info col-md-6">
+				<div class="rsvp_info_icon">
+					<div class="rsvp_icon_div">
+						<a href="#rsvp_hotel_info" data-toggle="collapse">
+							<%= image_tag('icons/Metrize/3d-cube.svg', size:"100x100") %>
+						</a>
+						<span>Accommodation</span>
+					</div>
+				</div>	
+				<!-- <a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_hotel_info" aria-expanded="false" aria-controls="rsvp_hotel_info">
+				</a> -->
+
+				<div class="collapse rsvp_inner_info" id="rsvp_hotel_info">
+				  	<div>
+				  		<div class="rsvp_info_heading col-md-10 col-md-offset-1">
+				  			<p>South Lake Tahoe offers many fine hotels and even AirBnBs. We recommend you to stay close to Lakeside Marina and around Heavenly Village. There are affordable hotels, boutique hotels and even Casino hotels on the Nevada side. See below for our recommendation:</p>
+				  		</div>
+				  		<div class="row">
+					    	<div class="col-md-5 col-md-offset-1">
+					    		<div class="panel panel-default">
+								  <div class="panel-heading">
+								    <h3 class="panel-title">Hotel</h3>
+								  </div>
+								  <div class="panel-body">
+								    Panel content
+								  </div>
+								</div>
+					  		</div>
+							<div class="col-md-5">
+								<div class="panel panel-default">
+								  <div class="panel-heading">
+								    <h3 class="panel-title">AirBnB</h3>
+								  </div>
+								  <div class="panel-body">
+								    Panel content
+								  </div>
+								</div>
+							</div>
+						</div>
+				  	</div>
+				</div>
+			</div>
+
+			<div id="rsvp_activity" class="rsvp_info col-md-6">
+				<div class="rsvp_info_icon">
+					<div class="rsvp_icon_div">
+						<a href="#rsvp_activity_info" data-toggle="collapse">
+							<%= image_tag('icons/Metrize/circles.svg', size:"100x100") %>
+						</a>
+						<span>Activities</span>
+					</div>
+				</div>
+				<!-- <a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_activity_info" aria-expanded="false" aria-controls="rsvp_activity_info">
+				</a> -->
+
+				<div class="collapse rsvp_inner_info" id="rsvp_activity_info">
+				 	<div class="rsvp_info_heading col-md-10 col-md-offset-1">
+				   		<p>Lake Tahoe is home to many outdoor sports. In Summer, there are kayak, boat, jet ski rentals by the beach. A lot of hiking and cycling trails are also within minutes of drive. We will be parasailing before our wedding ceremony, and we welcome you to join us.</p>
+				  	</div>
+				  	<div class="row">
+				    	<div class="col-md-5 col-md-offset-1">
+				    		<div class="panel panel-default">
+							  <div class="panel-heading">
+							    <h3 class="panel-title">Water</h3>
+							  </div>
+							  <div class="panel-body">
+							    Panel content
+							  </div>
+							</div>
+				  		</div>
+						<div class="col-md-5">
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+							    <h3 class="panel-title">Land</h3>
+							  </div>
+							  <div class="panel-body">
+							    Panel content
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Accordion Finish -->
+
+	<section id="pre-form" class="text-center">
+		<a class="glyphicon glyphicon-triangle-bottom"  href="#rsvp_form"></a>
+		<p>RSVP</p>
+	</section>
+
+
+	<section id="rsvp_form">
+		<!-- Desktop Form w/ Video -->
+		<div id="rsvp_video_sec" class="player hidden-xs hidden-sm" data-property="{videoURL:'https://www.youtube.com/watch?v=KLsz6X5PP7Y',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:0.6,mute: true,showControls:false}">
+		<!-- change https://www.youtube.com/watch?v=Ycv5fNd4AeM to your youtube url-->
+		    <div class="overlay">
+		        <div class="container">
+		        	<div class="text-center">
+						<h2>We're excited to celebrate with you!</h2>
+						<h3>Kindly respond by May 1st, 2015</h3>
+					</div>
+		            <div id="rsvp_video_form">
+						<%= render 'form' %>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
+		<!-- Mobile Form w/ Image -->
+		<div id="rsvp_mobile_form" class="hidden-md hidden-lg">
+			<div class="container">
+				<div class="text-center">
+					<h2>We're excited to celebrate with you!</h2>
+					<h3>Kindly respond by May 1st, 2015</h3>
+				</div>
+					<%= render 'form' %>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- 	<%= link_to 'Back', responses_path %> -->
+	<div class="container-fluid">
+		<div class="text-center rsvp_discussion">
+			<h2>Join discussion with other guests</h2>
+		</div>
+		
+		<section id="rsvp_comment">
+			<%= render 'comment'%>
+		</section>
+	</div>
+
+	<div id="rsvp_top_button" class="sd_arrow">
+			<a class="btn btn-info" href="#rsvp_top">
+				<span class="glyphicon glyphicon-menu-up"> </span>
+				<span>TOP</span>
+			</a>
+	</div>
+
+	<div class="rsvp_footer">
+			<!-- see css -->
+	</div>
+
+</div> <!-- div rsvp_normal_scroll ending div -->
+</div> <!-- 3rd section div -->
+
+
+</div> <!-- RSVP full page ending div -->
