@@ -18,13 +18,6 @@ $(document).ready(function() {
 
 
 <div id="rsvp_fullpage">
-<% if flash[:notice] %>
-<div id="notice" class="alert alert-success alert-dismissible" role="alert">
-	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	<%= notice %>
-</div>
-  <% end %>
-
 <!-- dot navigation -->
 <!-- <div class="hidden-xs" data-spy="affix" data-offset-top="0" id="rsvp_dotNav" class="pull-right">
 	<ul>	
@@ -36,14 +29,12 @@ $(document).ready(function() {
 </div> -->
 <!-- dot navigation end -->
 <div class="section">
-	<section id="rsvp_top" class="rsvp_top_img hidden-xs hidden-sm" data-type="background">
-		<div class="rsvp_error_box"><%= render "form_errors" %></div>
+	<section id="rsvp_top" class="rsvp_top_img hidden-xs hidden-sm" data-type="background">	
 		<article>
 			<p class="rsvp_top_text">RSVP</p>
 		</article>
 	</section>
 	<section id="m_rsvp_top" class="m_rsvp_top_img hidden-md hidden-lg" data-type="background">
-		<div class="rsvp_error_box"><%= render "form_errors" %></div>
 		<article>
 			<p class="m_rsvp_top_text">RSVP</p>
 		</article>
@@ -332,8 +323,20 @@ $(document).ready(function() {
 		<p>RSVP</p>
 	</section>
 
-
+	<div class="section">
 	<section id="rsvp_form">
+		<% if flash[:notice] %>
+		<div id="notice" class="alert alert-success alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<%= notice %>
+		</div>
+		<% elsif flash[:alert] %>
+		<div id="notice" class="alert alert-danger alert-success alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<%= alert %>
+		</div>
+		<% end %>
+		<div class="rsvp_error_box"><%= render "form_errors" %></div>
 		<!-- Desktop Form w/ Video -->
 		<div id="rsvp_video_sec" class="player hidden-xs hidden-sm" data-property="{videoURL:'https://www.youtube.com/watch?v=KLsz6X5PP7Y',containment:'self',autoPlay:true, mute:true, startAt:0, opacity:0.6,mute: true,showControls:false}">
 		<!-- change https://www.youtube.com/watch?v=Ycv5fNd4AeM to your youtube url-->
@@ -361,6 +364,7 @@ $(document).ready(function() {
 			</div>
 		</div>
 	</section>
+	</div>
 
 
 
