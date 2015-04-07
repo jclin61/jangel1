@@ -2,13 +2,14 @@
 
 $(document).ready(function() {
     $('#rsvp_fullpage').fullpage({
-    	anchors: ['firstPage', 'secondPage', '3rdPage', '4th', 'RSVP'],
+    	anchors: ['Top', 'Letter', 'Invite', 'Info', 'RSVP'],
     	responsive: 1000,
     	scrollBar: true,
     	normalScrollElements: '#rsvp_normal, .rsvp_normal_scroll',
     	navigation: true,
     	touchSensitivity: 50,
-    	fitToSection: false
+    	fitToSection: false,
+    	animateAnchor: false,
     });
 
 });
@@ -327,7 +328,7 @@ $(document).ready(function() {
 	<!-- Accordion Finish -->
 
 	<section id="pre-form" class="text-center">
-		<a class="glyphicon glyphicon-triangle-bottom"  href="#rsvp_form"></a>
+		<a id="rsvp_form_arrow" class="glyphicon glyphicon-triangle-bottom"  href="#rsvp_form"></a>
 		<p>RSVP</p>
 	</section>
 
@@ -364,15 +365,6 @@ $(document).ready(function() {
 
 
 	<!-- 	<%= link_to 'Back', responses_path %> -->
-	<div class="container-fluid">
-		<div class="text-center rsvp_discussion">
-			<h2>Join discussion with other guests</h2>
-		</div>
-		
-		<section id="rsvp_comment">
-			<%= render 'comment'%>
-		</section>
-	</div>
 
 	<div id="rsvp_top_button" class="sd_arrow">
 			<a class="btn btn-info" href="#rsvp_top">

@@ -3,8 +3,41 @@ $(document).on('page:change ready', function(){
 	// rsvp_navigation_dot()
 	close_alert()
 	countdown_timer() //calling from countdown_custom.js
+	scroll_to_RSVP()
+	scroll_to_Info()
+
 });
 
+function scroll_to_RSVP(){
+	$("#rsvp_form_arrow").click(function(){
+		$('html, body').animate({
+			scrollTop: $("#rsvp_form").offset().top
+		}, 1000);
+		});
+}
+
+function scroll_to_Info(){
+	$("#rsvp_date").click(function(){
+		$('html, body').animate({
+			scrollTop: $("#rsvp_date").offset().top
+		}, 500);
+		});
+	$("#rsvp_location").click(function(){
+		$('html, body').animate({
+			scrollTop: $("#rsvp_location").offset().top
+		}, 500);
+		});
+	$("#rsvp_hotel").click(function(){
+		$('html, body').animate({
+			scrollTop: $("#rsvp_hotel").offset().top
+		}, 500);
+	});
+	$("#rsvp_activity").click(function(){
+		$('html, body').animate({
+			scrollTop: $("#rsvp_activity").offset().top
+		}, 500);
+	});
+}
 
 
 function remove_mapimage(){
