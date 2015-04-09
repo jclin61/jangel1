@@ -5,6 +5,7 @@ $(document).on('page:change ready', function(){
 	countdown_timer() //calling from countdown_custom.js
 	scroll_to_RSVP()
 	scroll_to_Info()
+	rsvp_scroll_to_top()
 
 });
 
@@ -12,6 +13,14 @@ function scroll_to_RSVP(){
 	$("#rsvp_form_arrow").click(function(){
 		$('html, body').animate({
 			scrollTop: $("#rsvp_form").offset().top
+		}, 1000);
+		});
+}
+
+function rsvp_scroll_to_top(){
+	$("#rsvp_top_button").click(function(){
+		$('html, body').animate({
+			scrollTop: $("#rsvp_top").offset().top
 		}, 1000);
 		});
 }

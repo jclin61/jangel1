@@ -5,7 +5,6 @@ $(document).on('page:change ready', function(){
 	sd_scroll_to_top()
 	sd_navigation_dot()
 	savethedate_type()
-	rsvp_scroll_to_top()
 	
 });
 
@@ -58,7 +57,7 @@ function sd_navigation_dot(){
 	  	$('section').each(function(i,item){
 	      var ele = $(item), nextTop;
 	      
-	      console.log(ele.next().html());
+	      // console.log(ele.next().html());
 	      
 	      if (typeof ele.next().offset() != "undefined") {
 	        nextTop = ele.next().offset().top;
@@ -108,10 +107,4 @@ function savethedate_type(){
 		air.typer(['air!', 'water!']);
 }
 
-function rsvp_scroll_to_top(){
-	$("#rsvp_top_button").click(function(){
-		$('html, body').animate({
-			scrollTop: $("#rsvp_top").offset().top
-		}, 1000);
-		});
-}
+
