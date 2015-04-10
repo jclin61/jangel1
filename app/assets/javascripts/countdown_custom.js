@@ -7,7 +7,7 @@ function countdown_timer(){
         * Set your date here  (YEAR, MONTH (0 for January/11 for December), DAY, HOUR, MINUTE, SECOND)
         * according to the GMT+0 Timezone
         **/
-        var launch = new Date(2015, 08, 02, 16, 00);
+        var launch = new Date(2015, 7, 2, 17, 00);
         /**
         * The script
         **/
