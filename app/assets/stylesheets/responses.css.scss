@@ -1,7 +1,7 @@
 .rsvp_top_img{
 	background: url(image_path('rsvp/rsvp_top.jpg')) 50% 0 no-repeat fixed;
 	background-size: cover;
-	height: 1000px;
+	height: 1200px;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1920px;
@@ -40,7 +40,7 @@
 .rsvp_middle_img{
 	background: url(image_path('rsvp/rsvp_ring.jpg')) 150% 0 no-repeat;
 	background-size: cover;
-	height: 500px;
+	height: 1200px;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1920px;
@@ -98,7 +98,7 @@
 	/*font-weight: 300;*/
 	color: #FFF1F0;
 	text-shadow: -1px 0 lightgrey, 0 1px lightgrey, 1px 0 lightgrey, 0 -1px lightgrey;
-	padding-top: 170px;
+	padding-top: 30%;
 	text-align:center;
 		}
 
@@ -157,6 +157,7 @@
 	margin-top: 20px;
 	font-size: 26px;
 	color:lightgrey;
+	text-decoration: none;
 }
 
 .rsvp_info a {
@@ -169,6 +170,14 @@
 	color:black;
 }
 
+.rsvp_info a:visited{
+	text-decoration: none;
+}
+
+.rsvp_info a:active{
+	text-decoration: none;
+}
+
 #rsvp_date_info .rsvp_info_heading h1{
 	font-size:60px;
 	font-weight: 900;
@@ -177,6 +186,10 @@
 #rsvp_date_info .rsvp_info_heading h2{
 	font-size:60px;
 	font-family: 'Wire One', sans-serif;
+}
+
+.rsvp_info_heading p{
+	font-size: 20px;
 }
 
 /*==== INFO ICON ================*/
@@ -260,7 +273,8 @@
 }
 
 .rsvp_embed_map{
-	width: 320px;
+	width: 80%;
+	padding-top: 40px;
 	margin: 0 auto;
 }
 
@@ -276,6 +290,7 @@
 #rsvp_pre_info{
 	width:1000px;
 	height:10px;
+	margin-top: 30px;
 	float:right;
 }
 

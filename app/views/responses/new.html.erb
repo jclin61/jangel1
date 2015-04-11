@@ -2,8 +2,8 @@
 
 $(document).ready(function() {
     $('#rsvp_fullpage').fullpage({
-    	anchors: ['Top', 'Letter', 'Invite', 'Info', 'RSVP'],
-    	responsive: 1000,
+    	anchors: ['Top', 'Letter', 'Invite', 'Ring', 'Info', 'RSVP'],
+    	responsive: 700,
     	scrollBar: true,
     	normalScrollElements: '.rsvp_normal_scroll',
     	navigation: true,
@@ -50,8 +50,9 @@ $(document).ready(function() {
 		<br>
 	    <h3>Dear Friends,</h3>
 	    <br>
-		<p>We are finally tying the knot after long 6 years of being together! There were many instances where we had wanted to start our next exciting chapter sooner, but school, career and especially long distance relationship have made it a challenge. To celebrate our soon-to-be “super short distance” relationship, you are all invited to share the joy, laugh and teary moment of our special day at Lake Tahoe. We fell in love with Lake Tahoe the first time we visited, and we certainly hope you will too! </p>
-		<p>Scroll down to see what we have planned for the day</p>
+		<p>We are finally tying the knot after six long years of being together! There were many instances which we had wanted to start our next exciting chapter of life sooner, but school, career and especially long distance relationship have made it a challenge. To celebrate our soon-to-be “super short distance” relationship, we invite you to share the joy, laughter and teary moment of our special day with us at Lake Tahoe. The wedding is going to be very small with our close friends only. </p>
+		<br>
+		<p>We fell in love with Lake Tahoe the first time we visited, and we certainly hope you will too! Please scroll down to see more information, and you may start planning your summer getaway!</p>
 		<br>
 		<p class="text-right">Sincerely, Jerry and Angel</p>
 	</div>
@@ -95,7 +96,9 @@ $(document).ready(function() {
 		</article>
 	</section>
 	<!-- ====== MOBILE end ====== -->
-	
+
+</div>
+<div class="section">	
 	<div class="rsvp_normal_scroll">
 		<div id="rsvp_pre_info">
 			<a href="#rsvp_info_all" id="rsvp_expand_all" class="pull-right" data-toggle="collapse" data-target=".rsvp_inner_info">EXPAND ALL</a>
@@ -111,17 +114,19 @@ $(document).ready(function() {
 							<a href="#rsvp_date_info" data-toggle="collapse">
 								<%= image_tag('icons/Metrize/clock.svg', size:"100x100") %>
 							</a>
-							<span>Date & Time</span>
+							<span>Date/Time</span>
 						</div>
 					</div>
-					<!-- <a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_date_info" aria-expanded="false" aria-controls="rsvp_date_info">
-					</a>-->
+					<div class="rsvp_info_heading text-center">
+						<h1>Ceremony</h1>
+						<h2>Date: August 2nd, 2015</h2>
+						<h2>Time: 4:00pm</h2>
+					</div>
+					<div class="text-center">
+						<a class="glyphicon glyphicon-menu-down" data-toggle="collapse" href="#rsvp_date_info" aria-expanded="false" aria-controls="rsvp_date_info">
+						</a>
+					</div>
 					<div class="collapse rsvp_inner_info" id="rsvp_date_info">
-						<div class="rsvp_info_heading text-center">
-							<h1>Ceremony</h1>
-							<h2>Date: August 2nd, 2015</h2>
-							<h2>Time: 4:00pm</h2>
-						</div>
 					  	<div class="row">	
 					  		<!-- <div class="col-md-5 col-md-offset-1">
 					    		<div class="panel panel-default">
@@ -206,8 +211,8 @@ $(document).ready(function() {
 						</div>
 					</div>
 				</div>
+		
 			
-
 				<div id="rsvp_location" class="rsvp_info col-md-6">
 					<div class="rsvp_info_icon">
 						<div class="rsvp_icon_div">
@@ -217,32 +222,30 @@ $(document).ready(function() {
 							<span>Location</span>
 						</div>
 					</div>
-					<!-- <a id="location_arrow" class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_location_info" aria-expanded="false" aria-controls="rsvp_location_info">
-					</a> -->
-
-					<div class="collapse rsvp_inner_info" id="rsvp_location_info">
-					  	<div class="row rsvp_info_heading">
-					  		<!-- <div class="col-md-12 rsvp_embed_map">
-						  		<div id"rsvp_mapoverlayid" class="rsvp_mapoverlay" onclick="remove_mapimage()">
-								</div>
-								<embed src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3102.4768206567815!2d-119.95123299999997!3d38.958779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s4041+Lakeshore+Blvd+South+Lake+Tahoe%2C+CA+96150!5e0!3m2!1s!2sus!4v1427879551865" width="320" height="300" frameborder="0" style="border:0"></embed>
-							</div> -->
-					    	<div class="col-md-11">
-			    		    	<p>Our wedding ceremony will take place at Lakeside Marina in South Lake Tahoe. It is easily accessible via U.S. Route 50 for most of us that will be traveling from the San Francisco bay area. The drive is about three and half hours from San Francisco International Airport, two hours from Sacramento International Airport and one hour from Reno-Tahoe International Airport. You will see the route outlined below. </p>
+					<div class="rsvp_embed_map">
+						<embed src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3102.4768206567815!2d-119.95123299999997!3d38.958779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s4041+Lakeshore+Blvd+South+Lake+Tahoe%2C+CA+96150!5e0!3m2!1s!2sus!4v1427879551865" width="100%" height="220" frameborder="0" style="border:0"></embed>
+					</div>
+					<div class="text-center">
+						<a id="location_arrow" class="glyphicon glyphicon-menu-down" data-toggle="collapse" href="#rsvp_location_info" aria-expanded="false" aria-controls="rsvp_location_info">
+						</a>
+					</div>
+					<div class="collapse rsvp_inner_info col-md-10 col-md-offset-1" id="rsvp_location_info">
+					  	<div class="rsvp_info_heading">
+		    		    	<p>Our wedding ceremony will take place at Lakeside Marina in South Lake Tahoe. It is easily accessible via U.S. Route 50 for most of us that will be traveling from the San Francisco bay area. The drive is about three and half hours from San Francisco International Airport, two hours from Sacramento International Airport and one hour from Reno-Tahoe International Airport. You will see the route outlined below. </p>
 			    		    	
-			    		    	<p>As for us, we will travel from San Jose and arrive at South Lake Tahoe 2 days before our wedding. </p>
-						    </div>
+		    		    	<p>As for us, we will travel from San Jose and arrive at South Lake Tahoe 2 days before our wedding. </p>
+					    </div>
+						<div class="hidden-xs hidden-sm">
+							<embed class="rsvp_route_embed" src="https://mapsengine.google.com/map/embed?mid=zvzbziTx2uIQ.kVPD6_cPUTyU" width="600" height="480"></embed>
 						</div>
-							<div id="rsvp_route" class="hidden-xs hidden-sm">
-								<embed class="rsvp_route_embed" src="https://mapsengine.google.com/map/embed?mid=zvzbziTx2uIQ.kVPD6_cPUTyU" width="600" height="480"></embed>
-							</div>
-							<div id="rsvp_route" class="hidden-md hidden-lg">
-								<embed class="rsvp_route_embed" src="https://mapsengine.google.com/map/embed?mid=zvzbziTx2uIQ.kVPD6_cPUTyU" width="320" height="280"></embed>
-							</div>
+						<div class="hidden-md hidden-lg">
+							<embed class="rsvp_route_embed" src="https://mapsengine.google.com/map/embed?mid=zvzbziTx2uIQ.kVPD6_cPUTyU" width="80%" height="280"></embed>
+						</div>
 
 					</div>
 				</div>
-			 
+			 </div> <!-- row ends -->
+			 <div class="row">
 				<div id="rsvp_hotel" class="rsvp_info col-md-6">
 					<div class="rsvp_info_icon">
 						<div class="rsvp_icon_div">
@@ -252,14 +255,16 @@ $(document).ready(function() {
 							<span>Stay</span>
 						</div>
 					</div>	
-					<!-- <a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_hotel_info" aria-expanded="false" aria-controls="rsvp_hotel_info">
-					</a> -->
-
+					<div class="rsvp_info_heading col-md-10 col-md-offset-1">
+			  			<p>South Lake Tahoe offers many fine hotels and even AirBnBs. We recommend you to stay close to Lakeside Marina and around Heavenly Village. There are affordable hotels, boutique hotels and even Casino hotels on the Nevada side. See below for our recommendation:</p>
+			  			<div class="text-center">
+				  			<a class="glyphicon glyphicon-menu-down" data-toggle="collapse" href="#rsvp_hotel_info" aria-expanded="false" aria-controls="rsvp_hotel_info">
+							</a>
+				  		</div>
+			  		</div>
 					<div class="collapse rsvp_inner_info" id="rsvp_hotel_info">
 					  	<div>
-					  		<div class="rsvp_info_heading col-md-10 col-md-offset-1">
-					  			<p>South Lake Tahoe offers many fine hotels and even AirBnBs. We recommend you to stay close to Lakeside Marina and around Heavenly Village. There are affordable hotels, boutique hotels and even Casino hotels on the Nevada side. See below for our recommendation:</p>
-					  		</div>
+					  		
 					  		<div class="row">
 						    	<div class="col-md-5 col-md-offset-1">
 						    		<div class="panel panel-default">
@@ -295,13 +300,15 @@ $(document).ready(function() {
 							<span>Activities</span>
 						</div>
 					</div>
-					<!-- <a class="glyphicon glyphicon-menu-down pull-right" data-toggle="collapse" href="#rsvp_activity_info" aria-expanded="false" aria-controls="rsvp_activity_info">
-					</a> -->
-
+					
+					<div class="rsvp_info_heading col-md-10 col-md-offset-1">
+				   		<p>Lake Tahoe is home to many outdoor sports. In Summer, there are kayak, boat, jet ski rentals by the beach. A lot of hiking and cycling trails are also within minutes of drive. We will be parasailing before our wedding ceremony, and we welcome you to join us.</p>
+				   		<div class="text-center">
+							<a class="glyphicon glyphicon-menu-down" data-toggle="collapse" href="#rsvp_activity_info" aria-expanded="false" aria-controls="rsvp_activity_info">
+							</a>
+						</div>
+					</div>
 					<div class="collapse rsvp_inner_info" id="rsvp_activity_info">
-					 	<div class="rsvp_info_heading col-md-10 col-md-offset-1">
-					   		<p>Lake Tahoe is home to many outdoor sports. In Summer, there are kayak, boat, jet ski rentals by the beach. A lot of hiking and cycling trails are also within minutes of drive. We will be parasailing before our wedding ceremony, and we welcome you to join us.</p>
-					  	</div>
 					  	<div class="row">
 					    	<div class="col-md-5 col-md-offset-1">
 					    		<div class="panel panel-default">
