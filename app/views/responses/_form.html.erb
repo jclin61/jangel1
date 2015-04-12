@@ -3,8 +3,8 @@
   <form>
      <div class="form-group col-sm-12">
         <%= f.label :attendance, 'Attendance*' %><br>
-        <%= f.select(:attendance, [['Yes, I am attending (Please fill all fields)', 'yes'],
-                            ["No, I can't make it. (Please leave only your name, number and email)", 'no']
+        <%= f.select(:attendance, [['Yes, I am attending (Please fill all fields)', 'Yes, I am attending'],
+                            ["No, I can't make it. (Please leave only your name, number and email)", "No, I can't make it"]
                            ],{ :prompt => "-Are you attending?-"} , :class=>"form-control"
                            ) 
                            %>

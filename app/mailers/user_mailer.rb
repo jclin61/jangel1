@@ -10,6 +10,6 @@ class UserMailer < ActionMailer::Base
 
   	# email_with_name = %("#{response.name}" <#{@response.email}>)
   	# mail(to: email_with_name, subject: "You are confirmed for Jerry & Angel's Wedding")
-  	mail(to: @response.email, subject: "You are confirmed for Jerry & Angel's Wedding")
+  	mail(to: @response.email, subject: "You are confirmed for Jerry & Angel's Wedding 08/02/2015")
   end
 end

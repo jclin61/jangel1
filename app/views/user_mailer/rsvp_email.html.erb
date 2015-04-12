@@ -11,7 +11,7 @@ body {
 }
 
 .content{
-  max-width: 800px;
+  max-width: 400px;
 }
 
 h3{
@@ -37,17 +37,20 @@ p{
       <table>
         <tr>
           <td>
-            <img width="600px" src="http://www.thejangel.com/public_img/rsvp_email_thanks.png" />
+            <img width="400px" src="http://www.thejangel.com/public_img/rsvp_email_thanks.png" />
             <h3>Hello <%= @response.name %>, You are confirmed for Jerry & Angel's Wedding</h3>
             <p class="lead">Thank you for your RSVP. Please let us know if you have any questions. </p>
             <br>
-            <p style="text-align: center">Below is your notes to us</p>
-            <p style="text-align: center"><%= @response.note %></p>
-
+            <p style="text-align: center">You submitted the following:</p>
+            <p style="text-align: center"><strong>Attendance: <%= @response.attendance %></strong></p>
+            <p style="text-align: center">Meal: <%= @response.meal %></p>
+            <p style="text-align: center">Shoe Size: <%= @response.shoesize %></p>
+            <p style="text-align: center">Activity: <%= @response.activity %></p>
+            <p style="text-align: center">Message: <%= @response.note %></p>
             
-
-            <p style="text-align: right">Talk to you soon! Jerry & Angel</p>
-            <p style="text-align: right"><%= @url %></p>
+            <br>
+            <p style="text-align: left">Talk to you soon! Jerry & Angel</p>
+            <p style="text-align: left"><%= @url %></p>
           </td>
         </tr>
       </table>
