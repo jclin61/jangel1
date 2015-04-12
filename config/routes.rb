@@ -31,7 +31,7 @@ Jangel1::Application.routes.draw do
   :to => "home#blog",
   :via => :get
 
-  match "rsvp0702",
+  match "rsvp_us",
   :to => "responses#new",
   :via => :get
 

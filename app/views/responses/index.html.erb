@@ -11,7 +11,7 @@
       <th>Shoe Size</th>
       <th>Activity</th>
       <th>Note</th>
-      <th></th>
+      <th>Attendance</th>
       <th></th>
     </tr>
   </thead>
@@ -27,6 +27,7 @@
         <td><%= response.shoesize %></td>
         <td><%= response.activity %></td>
         <td><%= response.note %></td>
+        <td><%= response.attendance %></td>
         <td><%= link_to 'Show', response %></td>
         <td><%= link_to 'Edit', edit_response_path(response) %></td>
         <td><%= link_to 'Destroy', response, method: :delete, data: { confirm: 'Are you sure?' } %></td>

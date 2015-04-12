@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150405065842) do
+ActiveRecord::Schema.define(version: 20150412065435) do
 
   create_table "responses", force: true do |t|
     t.string   "name"
@@ -22,16 +22,10 @@ ActiveRecord::Schema.define(version: 20150405065842) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "meal"
-    t.string   "fieldname"
+    t.string   "field"
     t.string   "shoesize"
     t.string   "activity"
-  end
-
-  create_table "topics", force: true do |t|
-    t.string   "title"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "attendance"
   end
 
 end

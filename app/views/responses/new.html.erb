@@ -1,3 +1,5 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.3/jquery.fullPage.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.3/jquery.fullPage.min.css" rel="stylesheet">
 <script>
 
 $(document).ready(function() {
@@ -55,7 +57,7 @@ $(document).ready(function() {
 	    <br>
 		<p>We are finally tying the knot after six long years of being together! There were many instances which we had wanted to start our next exciting chapter of life sooner, but school, career and especially long distance relationship have made it a challenge. To celebrate our soon-to-be “super short distance” relationship, we invite you to share the joy, laughter and teary moment of our special day with us at Lake Tahoe. The wedding is going to be very small with our close friends only. </p>
 		<br>
-		<p>We fell in love with Lake Tahoe the first time we visited, and we certainly hope you will too! Please scroll down to see more information, and you may start planning your summer getaway!</p>
+		<p>We fell in love with Lake Tahoe the first time we visited, and we certainly hope you will too! Please scroll down to see more information, and start planning your summer getaway!</p>
 		<br>
 		<p class="text-right">Sincerely, Jerry and Angel</p>
 	</div>
@@ -169,7 +171,7 @@ $(document).ready(function() {
 								</div>
 					  		</div> -->
 							<div class="col-md-10 col-md-offset-1">
-								<div class="panel panel-warning">
+								<div class="panel panel-default">
 									  <div class="panel-heading">
 									    <h3 class="panel-title">Sunday, 8/2/2015</h3>
 									  </div>
@@ -196,7 +198,7 @@ $(document).ready(function() {
 											  	</tr>
 											  	<tr>
 											  		<td>5:00pm</td>
-											  		<td>Beach Wedding Photo</td>
+											  		<td>Wedding Photo</td>
 											  	</tr>
 											  	<tr>
 											  		<td>6:00pm</td>
@@ -236,7 +238,9 @@ $(document).ready(function() {
 					<div  id="rsvp_location_info" class="collapse rsvp_inner_info">
 						<div class="col-md-offset-1 col-md-10">
 						  	<div class="rsvp_info_content">
-			    		    	<p>Our wedding ceremony will take place at Lakeside Beach in South Lake Tahoe.</p>
+			    		    	<p>Our outdoor wedding ceremony will take place at Lakeside Beach in South Lake Tahoe.</p>
+			    		    	<p class="text-center"><strong><%= image_tag('rsvp/icons/sun_icon.png', size:"20x20")%> Likely Sunny, 26&#x2103; </strong></p>
+			    		    	<p>Please prepare accordingly as we will be exposed to outdoor elements.</p>
 			    		    	<p>Approximate travel time:</p>
 			    		  		
 			    		  		<ul class="list-group">
@@ -283,7 +287,7 @@ $(document).ready(function() {
 						</a>
 				  	</div>
 					<div class="collapse rsvp_inner_info" id="rsvp_hotel_info">	
-			  			<div class="rsvp_info_heading col-md-10 col-md-offset-1">
+			  			<div class="col-md-10 col-md-offset-1">
 				  			<p>South Lake Tahoe offers many fine hotels and even airbnb's for best value. We recommend you to stay close to Lakeside Marina and around Heavenly Village. There are affordable hotels, boutique hotels and even Casino hotels on the Nevada side. </p>
 				  			<p>See below for our recommendation:</p>
 				    		<div class="panel panel-default">
@@ -393,7 +397,7 @@ $(document).ready(function() {
 						</a>
 					</div>
 					<div class="collapse" id="rsvp_activity_info">
-				  		<div class="rsvp_inner_infocol-md-10 col-md-offset-1">
+				  		<div class="rsvp_inner_info col-md-10 col-md-offset-1">
 				  			<p>We will be parasailing in the morning. Join us!</p>
 					   		<p>Lake Tahoe is home to many outdoor activities. Explore around the area!</p>
 						</div>
@@ -429,7 +433,7 @@ $(document).ready(function() {
 								</div>
 							</div>
 						</div>
-						<p>Parasailing Vendors: <a target="_blank" href="http://www.tahoesports.com/parasailing">Tahoe Sports</a>, <a target="_blank" href="http://www.action-watersports.com/">Action Watersports</a>.
+						<p class="col-md-offset-1">Parasailing Vendors: <a target="_blank" href="http://www.tahoesports.com/parasailing">Tahoe Sports</a>, <a target="_blank" href="http://www.action-watersports.com/">Action Watersports</a>.
 					</div>
 				</div>
 			</div> <!-- row ends -->
@@ -483,7 +487,7 @@ $(document).ready(function() {
 				<div class="container">
 					<div class="text-center">
 						<h2>We're excited to celebrate with you!</h2>
-						<h3>Kindly respond by May 1st, 2015</h3>
+						<h3>Kindly respond by April 27th, 2015</h3>
 					</div>
 						<%= render 'form' %>
 				</div>
@@ -492,7 +496,7 @@ $(document).ready(function() {
 
 		<!-- 	<%= link_to 'Back', responses_path %> -->
 		<div id="rsvp_top_button" class="rsvp_arrow">
-				<a class="btn btn-info" href="#rsvp_top">
+				<a class="btn btn-info" href="#rsvp_fullpage">
 					<span class="glyphicon glyphicon-menu-up"> </span>
 					<span>TOP</span>
 				</a>

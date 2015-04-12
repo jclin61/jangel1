@@ -32,10 +32,10 @@ class ResponsesController < ApplicationController
         #Tell the UserMailer to send a welcome email after save
         UserMailer.rsvp_email(@response).deliver
 
-        format.html { redirect_to "/rsvp0702#rsvp_form", notice: 'Response was successfully created.' }
+        format.html { redirect_to "/rsvp_us#rsvp_form", notice: 'Response was successfully created.' }
         format.json { render action: 'new', status: :created, location: @response }
       else
-        format.html { redirect_to "/rsvp0702#rsvp_form", alert: "Incorrect input, please check"  }
+        format.html { redirect_to "/rsvp_us#rsvp_form", alert: "Incorrect/Incomplete input, please check"  }
         # format.html { render action: 'new' }
         format.json { render json: @response.errors, status: :unprocessable_entity }
       end
@@ -74,6 +74,6 @@ class ResponsesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def response_params
-      params.require(:response).permit(:name, :phone, :email, :guests, :meal, :shoesize, :activity, :note)
+      params.require(:response).permit(:name, :phone, :email, :guests, :meal, :shoesize, :activity, :note, :attendance)
     end
 end
