@@ -90,6 +90,12 @@
 	text-align:center;
 }
 
+.m_rsvp_top_arrow{
+	font-size: 18px;
+	margin-top: 100px;
+	color:white;
+}
+
 .rsvp_middle_text{
 	font-size:70px;
 	letter-spacing: 0.2em;
@@ -125,6 +131,9 @@
 #rsvp_invite p{
 	font-size: 20px;
 	font-family: 'Raleway', sans-serif;
+}
+
+.rsvp_inviting_you{
 }
 
 /*TIMER CSS HERE*/
@@ -166,6 +175,7 @@
 }
 
 .rsvp_info .glyphicon-menu-down{
+	width:100px;
 	margin-top: 20px;
 	font-size: 26px;
 	color:lightgrey;
@@ -201,7 +211,71 @@
 }
 
 .rsvp_info_heading p{
-	font-size: 20px;
+	font-size: 25px;
+}
+
+.rsvp_embed_map{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.rsvp_route_overlay {
+   background-color:rgba(175, 175, 175, 0.3) ; 
+   position:relative; 
+   width:100%;
+   height:480px; /* your iframe height */
+   top:480px;  /* your iframe height */
+   margin-top:-480px;  /* your iframe height */
+}
+
+.rsvp_link_route a{
+
+	padding: 10px 10px 10px 10px;
+	width:250px;
+	border:solid black;
+}
+
+.rsvp_link_route a:hover{
+	background-color: coral;
+}
+
+#rsvp_info_all{
+
+}
+
+.rsvp_info{
+	margin: 20px 0px 20px 0px;
+}
+
+.rsvp_info_heading{
+	margin: 50px 0px 0px 0px;
+}
+
+#rsvp_pre_info{
+	width:1000px;
+	height:10px;
+	margin-top: 50px;
+	float:right;
+}
+
+#rsvp_pre_info a{
+	color:grey;
+}
+#rsvp_expand_all{
+	margin: 20px 50px 20px 20px;
+}
+
+.rsvp_inner_info p{
+	font-size: 16px;
+}
+
+#rsvp_info_long_div{
+	/*desktop only*/
+	height:100px;
+}
+
+.rsvp_info_stay_img{
+	
 }
 
 /*==== INFO ICON ================*/
@@ -211,21 +285,19 @@
 
 .rsvp_icon_div{
 	margin: 0 auto;
-	width:300px;
+	width:200px;
+	text-align: center;
 }
 
 .rsvp_icon_div span{
-	padding-left: 10px;
+	padding-left: 5px;
+	vertical-align: middle;
 	color:#F88379;
 	font-weight: 500;
 }
 
 .rsvp_info_icon {
 	text-align: left;
-}
-
-.rsvp_info_icon a{
-	margin-left: 30px;
 }
 
  /*===== INFO ICON END ===========*/
@@ -272,56 +344,6 @@
 		padding-top: 20px;
 	}
 
-#rsvp_info_all{
-
-}
-
-.rsvp_info{
-	margin: 20px 0px 20px 0px;
-}
-
-.rsvp_info_heading{
-	margin: 50px 0px 50px 0px;
-}
-
-.rsvp_embed_map{
-	width: 80%;
-	padding-top: 40px;
-	margin: 0 auto;
-}
-
-.rsvp_mapoverlay {
-   background: url(image_path('rsvp/rsvp_map.png'));
-   position:relative; 
-   width:320px;
-   height:300px; /* your iframe height */
-   top:300px;  /* your iframe height */
-   margin-top:-300px;  /* your iframe height */
-}
-
-#rsvp_pre_info{
-	width:1000px;
-	height:10px;
-	margin-top: 30px;
-	float:right;
-}
-
-#rsvp_pre_info a{
-	color:grey;
-}
-#rsvp_expand_all{
-	margin: 20px 50px 20px 20px;
-}
-
-.rsvp_inner_info p{
-	font-size: 20px;
-}
-
-#rsvp_info_long_div{
-	/*desktop only*/
-	height:300px;
-}
-
 
 #pre-form{
 	margin-top:-20px;
@@ -340,7 +362,7 @@
 
 #pre-form p{
 	color:#F87984;
-	margin: -15px 0 0 0;
+	margin: -15px 0 -15px 0;
 	padding: 0 0 0 0;
 }
 

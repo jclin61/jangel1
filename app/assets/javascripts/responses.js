@@ -4,7 +4,7 @@ $(document).on('page:change ready', function(){
 	close_alert()
 	countdown_timer() //calling from countdown_custom.js
 	scroll_to_RSVP()
-	scroll_to_Info()
+	// scroll_to_Info()
 	rsvp_scroll_to_top()
 
 });

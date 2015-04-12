@@ -42,6 +42,9 @@ $(document).ready(function() {
 		<article>
 			<p class="m_rsvp_top_text">RSVP</p>
 		</article>
+		<div class="m_rsvp_top_arrow text-center">
+		<span class="glyphicon glyphicon-menu-down"></span>
+		</div>
 	</section>
 </div>
 
@@ -57,7 +60,7 @@ $(document).ready(function() {
 		<p class="text-right">Sincerely, Jerry and Angel</p>
 	</div>
 </div>
-<div class="section">
+<div class="section rsvp_inviting_you">
 	<section id="rsvp_proposal" class="rsvp_middle2_img hidden-xs" data-type="background" data-speed="15">
 		<article>
 			<p class="rsvp_middle_text">INVITING YOU</p>
@@ -105,24 +108,23 @@ $(document).ready(function() {
 		</div>
 		
 		<section id="rsvp_info_all" class="container-fluid">
-			
 			<!-- Accordion Information -->
 			<div class="row">
-				<div id="rsvp_date" class="rsvp_info col-md-6">
+				<div id="rsvp_date" class="rsvp_info col-md-4 col-md-offset-2">
 					<div class="rsvp_info_icon">
 						<div class="rsvp_icon_div">
 							<a href="#rsvp_date_info" data-toggle="collapse">
-								<%= image_tag('icons/Metrize/clock.svg', size:"100x100") %>
+								<%= image_tag('rsvp/icons/date_icon.png', size:"50x50") %>
 							</a>
 							<span>Date/Time</span>
 						</div>
 					</div>
 					<div class="rsvp_info_heading text-center">
-						<h1>Ceremony</h1>
-						<h2>Date: August 2nd, 2015</h2>
-						<h2>Time: 4:00pm</h2>
+						<h3>Ceremony</h3>
+						<p>Date: August 2nd, 2015</p>
+						<p>Time: 4:00pm</p>
 					</div>
-					<div class="text-center">
+					<div class="col-md-offset-10">
 						<a class="glyphicon glyphicon-menu-down" data-toggle="collapse" href="#rsvp_date_info" aria-expanded="false" aria-controls="rsvp_date_info">
 						</a>
 					</div>
@@ -167,7 +169,7 @@ $(document).ready(function() {
 								</div>
 					  		</div> -->
 							<div class="col-md-10 col-md-offset-1">
-								<div class="panel panel-default">
+								<div class="panel panel-warning">
 									  <div class="panel-heading">
 									    <h3 class="panel-title">Sunday, 8/2/2015</h3>
 									  </div>
@@ -175,35 +177,35 @@ $(document).ready(function() {
 									    Optional events start early on wedding day. We highly recommend arriving in Lake Tahoe at least the night before.
 									  </div>
 									    <table class="table">
-								  	<tbody>
-								  		<tr>
-									  		<th>Time</th>
-									  		<th>Event</th>
-									  	</tr>
-									  	<tr>
-									  		<td>10:00am</td>
-									  		<td>Parasailing</td>
-									  	</tr>
-									  	<tr>
-									  		<td>1:00pm</td>
-									  		<td>Free Time</td>
-									  	</tr>
-									  	<tr>
-									  		<td>4:00pm</td>
-									  		<td>Wedding Ceremony</td>
-									  	</tr>
-									  	<tr>
-									  		<td>5:00pm</td>
-									  		<td>Beach Wedding Photo</td>
-									  	</tr>
-									  	<tr>
-									  		<td>6:00pm</td>
-									  		<td>Wedding Reception</td>
-									  	</tr>
-								  	</tbody>
-								  </table>
+										  	<tbody>
+										  		<tr>
+											  		<th>Time</th>
+											  		<th>Event</th>
+											  	</tr>
+											  	<tr>
+											  		<td>10:00am</td>
+											  		<td>Parasailing</td>
+											  	</tr>
+											  	<tr>
+											  		<td>1:00pm</td>
+											  		<td>Free Time</td>
+											  	</tr>
+											  	<tr>
+											  		<td>4:00pm</td>
+											  		<td>Wedding Ceremony</td>
+											  	</tr>
+											  	<tr>
+											  		<td>5:00pm</td>
+											  		<td>Beach Wedding Photo</td>
+											  	</tr>
+											  	<tr>
+											  		<td>6:00pm</td>
+											  		<td>Wedding Reception</td>
+											  	</tr>
+										  	</tbody>
+										  </table>
+									</div>
 								</div>
-							</div>
 							<div class="col-md-10 col-md-offset-1">
 								<p>Many famous and amazing spots are within 30 minutes drive from South Lake Tahoe. This will be the perfect weekend to explore!</p>
 								<p>Sunday starts off with water sports activity, we will be parasailing in the morning at Lakeside Marina and see Lake Tahoe from the sky. Ceremony will begin at 4pm on the same Lakeside beach. </p>
@@ -213,133 +215,228 @@ $(document).ready(function() {
 				</div>
 		
 			
-				<div id="rsvp_location" class="rsvp_info col-md-6">
+				<div id="rsvp_location" class="rsvp_info col-md-4">
 					<div class="rsvp_info_icon">
 						<div class="rsvp_icon_div">
 							<a href="#rsvp_location_info" data-toggle="collapse">
-								<%= image_tag('icons/Metrize/compass-2.svg', size:"100x100")%>
+								<%= image_tag('rsvp/icons/location_icon.png', size:"50x50")%>
 							</a>
 							<span>Location</span>
 						</div>
 					</div>
-					<div class="rsvp_embed_map">
-						<embed src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3102.4768206567815!2d-119.95123299999997!3d38.958779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s4041+Lakeshore+Blvd+South+Lake+Tahoe%2C+CA+96150!5e0!3m2!1s!2sus!4v1427879551865" width="100%" height="220" frameborder="0" style="border:0"></embed>
+					<div class="rsvp_info_heading text-center">
+						<h3>4041 Lakeshore Blvd</h3>
+						<p>South Lake Tahoe</p>
+						<p>California</p>
 					</div>
-					<div class="text-center">
+					<div class="col-md-offset-10">
 						<a id="location_arrow" class="glyphicon glyphicon-menu-down" data-toggle="collapse" href="#rsvp_location_info" aria-expanded="false" aria-controls="rsvp_location_info">
 						</a>
 					</div>
-					<div class="collapse rsvp_inner_info col-md-10 col-md-offset-1" id="rsvp_location_info">
-					  	<div class="rsvp_info_heading">
-		    		    	<p>Our wedding ceremony will take place at Lakeside Marina in South Lake Tahoe. It is easily accessible via U.S. Route 50 for most of us that will be traveling from the San Francisco bay area. The drive is about three and half hours from San Francisco International Airport, two hours from Sacramento International Airport and one hour from Reno-Tahoe International Airport. You will see the route outlined below. </p>
-			    		    	
-		    		    	<p>As for us, we will travel from San Jose and arrive at South Lake Tahoe 2 days before our wedding. </p>
-					    </div>
-						<div class="hidden-xs hidden-sm">
-							<embed class="rsvp_route_embed" src="https://mapsengine.google.com/map/embed?mid=zvzbziTx2uIQ.kVPD6_cPUTyU" width="600" height="480"></embed>
+					<div  id="rsvp_location_info" class="collapse rsvp_inner_info">
+						<div class="col-md-offset-1 col-md-10">
+						  	<div class="rsvp_info_content">
+			    		    	<p>Our wedding ceremony will take place at Lakeside Beach in South Lake Tahoe.</p>
+			    		    	<p>Approximate travel time:</p>
+			    		  		
+			    		  		<ul class="list-group">
+								  <li class="list-group-item"><%= image_tag('rsvp/icons/flying_icon.png', size:"20x20")%> Flight: YVR to SFO 2 h 20 min </li>
+								  <li class="list-group-item"><%= image_tag('rsvp/icons/driving_icon.png', size:"20x20")%> Driving: Van to SF 15 h 3 min </li>
+								  <li class="list-group-item"><%= image_tag('rsvp/icons/boat_icon.png', size:"20x20")%> Boat: Inaccessible</li>
+								</ul>
+						    </div>
+							<div>
+								<embed class="rsvp_embed_map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3102.4768206567815!2d-119.95123299999997!3d38.958779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s4041+Lakeshore+Blvd+South+Lake+Tahoe%2C+CA+96150!5e0!3m2!1s!2sus!4v1427879551865" width="100%" height="300" frameborder="0" style="border:0"></embed>
+								<!-- <div class="rsvp_route_overlay" onClick="style.pointerEvents='none'">
+								</div> -->
+								<!-- <embed class="rsvp_route_embed" src="https://mapsengine.google.com/map/embed?mid=zvzbziTx2uIQ.kVPD6_cPUTyU" width="100%" height="480"></embed> -->
+							</div>
+							<div class="rsvp_link_route text-center">
+								<br>
+								<a target="_blank" href="https://www.google.com/maps/d/edit?mid=zvzbziTx2uIQ.kVPD6_cPUTyU">Link to Driving Route</a>
+							</div>
 						</div>
-						<div class="hidden-md hidden-lg">
-							<embed class="rsvp_route_embed" src="https://mapsengine.google.com/map/embed?mid=zvzbziTx2uIQ.kVPD6_cPUTyU" width="80%" height="280"></embed>
-						</div>
-
 					</div>
 				</div>
 			 </div> <!-- row ends -->
 			 <div class="row">
-				<div id="rsvp_hotel" class="rsvp_info col-md-6">
+				<div id="rsvp_hotel" class="rsvp_info col-md-4 col-md-offset-2">
 					<div class="rsvp_info_icon">
 						<div class="rsvp_icon_div">
 							<a href="#rsvp_hotel_info" data-toggle="collapse">
-								<%= image_tag('icons/Metrize/3d-cube.svg', size:"100x100") %>
+								<%= image_tag('rsvp/icons/stay_icon.png', size:"50x50") %>
 							</a>
-							<span>Stay</span>
+							<span>Hotels</span>
 						</div>
 					</div>	
-					<div class="rsvp_info_heading col-md-10 col-md-offset-1">
-			  			<p>South Lake Tahoe offers many fine hotels and even AirBnBs. We recommend you to stay close to Lakeside Marina and around Heavenly Village. There are affordable hotels, boutique hotels and even Casino hotels on the Nevada side. See below for our recommendation:</p>
-			  			<div class="text-center">
-				  			<a class="glyphicon glyphicon-menu-down" data-toggle="collapse" href="#rsvp_hotel_info" aria-expanded="false" aria-controls="rsvp_hotel_info">
-							</a>
+			  		<div class="rsvp_info_heading text-center">
+						<div class="rsvp_info_stay_img col-md-offset-1 col-md-10">
+				  			<%= image_tag('rsvp/logo/airbnb.png', size:"110x50") %>
+				  			<%= image_tag('rsvp/logo/priceline.png', size:"170x30") %>
+				  			<br>
+				  			<%= image_tag('rsvp/logo/hardrock.png', size:"80x80") %>
+				  			<%= image_tag('rsvp/logo/landing.png', size:"130x30") %>
 				  		</div>
-			  		</div>
-					<div class="collapse rsvp_inner_info" id="rsvp_hotel_info">
-					  	<div>
-					  		
-					  		<div class="row">
-						    	<div class="col-md-5 col-md-offset-1">
-						    		<div class="panel panel-default">
-									  <div class="panel-heading">
-									    <h3 class="panel-title">Hotel</h3>
-									  </div>
-									  <div class="panel-body">
-									    Panel content
-									  </div>
-									</div>
-						  		</div>
-								<div class="col-md-5">
-									<div class="panel panel-default">
-									  <div class="panel-heading">
-									    <h3 class="panel-title">AirBnB</h3>
-									  </div>
-									  <div class="panel-body">
-									    Panel content
-									  </div>
-									</div>
-								</div>
-							</div>
-					  	</div>
 					</div>
-				</div>
+			  		<div class="col-md-offset-10">
+				  		<a class="glyphicon glyphicon-menu-down" data-toggle="collapse" href="#rsvp_hotel_info" aria-expanded="false" aria-controls="rsvp_hotel_info">
+						</a>
+				  	</div>
+					<div class="collapse rsvp_inner_info" id="rsvp_hotel_info">	
+			  			<div class="rsvp_info_heading col-md-10 col-md-offset-1">
+				  			<p>South Lake Tahoe offers many fine hotels and even airbnb's for best value. We recommend you to stay close to Lakeside Marina and around Heavenly Village. There are affordable hotels, boutique hotels and even Casino hotels on the Nevada side. </p>
+				  			<p>See below for our recommendation:</p>
+				    		<div class="panel panel-default">
+								  <div class="panel-heading">
+								    <h3 class="panel-title">$</h3>
+								  </div>
+								  	<table class="table">
+									  	<tbody>
+										  	<tr>
+										  		<td width="30%">Sharing</td>
+										  		<td><a target="_blank" href="https://www.airbnb.com/rooms/690968?checkin=08%2F01%2F2015&checkout=08%2F03%2F2015&guests=5&s=vusR">airbnb Example</a></td>
+										  	</tr>
+										  	<tr>
+										  		<td>1 star hotel</td>
+										  		<td><a target="_blank" href="http://www.bluejlodge.com/">Blue Jay Lodge</a>, <a target="_blank" href="http://www.yelp.com/biz/alpine-inn-and-spa-south-lake-tahoe">Alpine Inn & Spa</a>.</td>
+										  	</tr>
+									  	</tbody>
+									</table>
+									<!-- <div class="panel-body"> -->
+								  	<!-- <ul>
+								  		<li>
+										Sharing cottage from airbnb. <a target="_blank" href="https://www.airbnb.com/rooms/690968?checkin=08%2F01%2F2015&checkout=08%2F03%2F2015&guests=5&s=vusR">Example</a>
+										</li>
+										<li>1~2 star hotel. ex: <a target="_blank" href="http://www.bluejlodge.com/">Blue Jay Lodge</a>, <a target="_blank" href="http://www.yelp.com/biz/alpine-inn-and-spa-south-lake-tahoe">Alpine Inn & Spa</a>.
+										</li>
+									</ul> -->
+								  <!-- </div> -->
+								  <div class="panel-heading">
+								    <h3 class="panel-title">$$</h3>
+								  </div>
+								 
+								  	<table class="table">
+									  	<tbody>
+										  	<tr>
+										  		<td width="30%">2 star hotel</td>
+										  		<td>
+										  			<a target="_blank" href="http://www.yelp.com/biz/big-pines-mountain-house-south-lake-tahoe">Big Pines Mountain House</a>
+										  		</td>
+										  	</tr>
+										  	<tr>
+										  		<td>3 star hotel</td>
+										  		<td>
+										  			<a target="_blank" href="http://www.stationhouseinn.com/">Best Western</a>, <a target="_blank" href="http://www.ihg.com/holidayinnexpress/hotels/us/en/south-lake-tahoe/tvlso/hoteldetail">Holiday Inn Express</a>
+										  		</td>
+										  	</tr>
+									  	</tbody>
+									</table>
+									 <!-- <div class="panel-body"> -->
+								<!--     <ul>
+								  		<li class="list-group-item">
+										2 star hotel. ex: <a target="_blank" href="http://www.yelp.com/biz/big-pines-mountain-house-south-lake-tahoe">Big Pines Mountain House</a>
+										</li>
+										<li class="list-group-item">3 star hotel. ex: <a target="_blank" href="http://www.stationhouseinn.com/">Best Western</a>, <a target="_blank" href="http://www.ihg.com/holidayinnexpress/hotels/us/en/south-lake-tahoe/tvlso/hoteldetail">Holiday Inn Express</a>.
+										</li>
+									</ul> -->
+								 <!--  </div> -->
+								   <div class="panel-heading">
+								    <h3 class="panel-title">$$$</h3>
+								  </div>
+								  <table class="table">
+									  	<tbody>
+										  	<tr>
+										  		<td width="30%">4 star hotel</td>
+										  		<td>
+										  			<a target="_blank" href="https://www.caesars.com/harveys-tahoe">Harveys Casino & Hotel</a>, <a target="_blank" href="http://hardrockcasinolaketahoe.com/">Hard Rock Hotel & Casino</a>
+										  		</td>
+										  	</tr>
+										  	<tr>
+										  		<td>Luxury hotel</td>
+										  		<td>
+										  			<a target="_blank" href="http://www.marriott.com/hotels/travel/rnotl-marriotts-timber-lodge/">Marriott's Timber Lodge</a>, <a target="_blank" href="http://thelandingtahoe.com/">The Landing</a>, <a target="_blank" href="http://www.edgewoodtahoe.com/">Edgewood Hotel</a>
+										  		</td>
+										  	</tr>
+									  	</tbody>
+									</table>
+								  <!-- <div class="panel-body">
+								     <ul>
+								  		<li>
+										4 star hotel. ex: <a target="_blank" href="https://www.caesars.com/harveys-tahoe">Harveys Casino & Hotel</a>, <a target="_blank" href="http://hardrockcasinolaketahoe.com/">Hard Rock Hotel & Casino</a>
+										</li>
+										<li>Luxury hotel. ex: <a target="_blank" href="http://www.marriott.com/hotels/travel/rnotl-marriotts-timber-lodge/">Marriott's Timber Lodge</a>, <a target="_blank" href="http://thelandingtahoe.com/">The Landing</a>, <a target="_blank" href="http://www.edgewoodtahoe.com/">Edgewood Hotel</a>
+										</li>
+									</ul>
+								  </div> -->
+							</div>
+						</div>
+					</div>
+				</div>	  		
+					
 
-				<div id="rsvp_activity" class="rsvp_info col-md-6">
+				<div id="rsvp_activity" class="rsvp_info col-md-4">
 					<div class="rsvp_info_icon">
 						<div class="rsvp_icon_div">
 							<a href="#rsvp_activity_info" data-toggle="collapse">
-								<%= image_tag('icons/Metrize/circles.svg', size:"100x100") %>
+								<%= image_tag('rsvp/icons/activity_icon.png', size:"50x50") %>
 							</a>
 							<span>Activities</span>
 						</div>
 					</div>
-					
-					<div class="rsvp_info_heading col-md-10 col-md-offset-1">
-				   		<p>Lake Tahoe is home to many outdoor sports. In Summer, there are kayak, boat, jet ski rentals by the beach. A lot of hiking and cycling trails are also within minutes of drive. We will be parasailing before our wedding ceremony, and we welcome you to join us.</p>
-				   		<div class="text-center">
-							<a class="glyphicon glyphicon-menu-down" data-toggle="collapse" href="#rsvp_activity_info" aria-expanded="false" aria-controls="rsvp_activity_info">
-							</a>
-						</div>
+					<div class="rsvp_info_heading text-center">
+						<p>Jet ski</p>
+						<p><strong>Parasailing</strong></p>
+						<p>Boating</p>
 					</div>
-					<div class="collapse rsvp_inner_info" id="rsvp_activity_info">
-					  	<div class="row">
+					<div class="col-md-offset-10">
+						<a class="glyphicon glyphicon-menu-down" data-toggle="collapse" href="#rsvp_activity_info" aria-expanded="false" aria-controls="rsvp_activity_info">
+						</a>
+					</div>
+					<div class="collapse" id="rsvp_activity_info">
+				  		<div class="rsvp_inner_infocol-md-10 col-md-offset-1">
+				  			<p>We will be parasailing in the morning. Join us!</p>
+					   		<p>Lake Tahoe is home to many outdoor activities. Explore around the area!</p>
+						</div>
+						<div class="row">
 					    	<div class="col-md-5 col-md-offset-1">
-					    		<div class="panel panel-default">
+					    		<div class="panel panel-info">
 								  <div class="panel-heading">
 								    <h3 class="panel-title">Water</h3>
 								  </div>
 								  <div class="panel-body">
-								    Panel content
+								    <ul>
+								    	<li>Boating</li>
+								    	<li>Jet ski</li>
+								    	<li>Water cycle</li>
+								    	<li>Swimming</li>
+								    </ul>
 								  </div>
 								</div>
 					  		</div>
 							<div class="col-md-5">
-								<div class="panel panel-default">
+								<div class="panel panel-success">
 								  <div class="panel-heading">
 								    <h3 class="panel-title">Land</h3>
 								  </div>
 								  <div class="panel-body">
-								    Panel content
+								    <ul>
+								    	<li>Hiking</li>
+								    	<li>Gondola Rides</li>
+								    	<li>Cycling</li>
+								    	<li>Golfing</li>
+								    </ul>
 								  </div>
 								</div>
 							</div>
 						</div>
+						<p>Parasailing Vendors: <a target="_blank" href="http://www.tahoesports.com/parasailing">Tahoe Sports</a>, <a target="_blank" href="http://www.action-watersports.com/">Action Watersports</a>.
 					</div>
 				</div>
 			</div> <!-- row ends -->
-
 		</section>
 		<!-- Accordion Finish -->
 		<section id="pre-form" class="text-center">
-			<a id="rsvp_form_arrow" class="glyphicon glyphicon-triangle-bottom"  href="#rsvp_form"></a>
-			<p>RSVP</p>
+			<a href="#rsvp_form"><p>RSVP</p><span id="rsvp_form_arrow" class="glyphicon glyphicon-triangle-bottom" ></span></a>	
 		</section>
 		<div id="rsvp_info_long_div" class="hidden-xs hidden-sm">
 			<!-- LONG DIV RSVP INFO -->

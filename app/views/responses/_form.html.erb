@@ -7,7 +7,7 @@
       </div>
       <div class="form-group col-sm-6">
         <%= f.label :phone, 'Phone Number' %><br>
-        <%= f.text_field :phone, :class=>"form-control" %>
+        <%= f.text_field :phone, :class=>"form-control", :placeholder=>"ex: 123-456-7890" %>
       </div>
       <div class="form-group col-sm-6">
         <%= f.label :email, 'E-Mail'%><br>
@@ -19,28 +19,28 @@
                             ['Vegetarian', 'Vegetarian'],
                             ['No Beef', 'No Beef'],
                             ['No Pork', 'No Pork'],
-                            ['Others', 'Others']
+                            ['Others', 'Others (message)']
                            ],{ :prompt => "-Preference-"} , :class=>"form-control"
                            ) 
                            %>
       </div>
       <div class="form-group col-sm-6">
         <%= f.label :shoesize, 'Shoe Size'%><br>
-        <%= f.select :shoesize, [['35/22.8/3.5', '35'],
-                            ['36/23.5/4.5', '36'],
-                            ['37/23.8/5.5', '37'],
-                            ['38/24.5/6', '38'],
-                            ['39/25.1/7', '39'],
-                            ['40/25.4/7.5', '40'],
-                            ['41/25.7/8', '41'],
-                            ['42/26.0/8.5', '42'],
-                            ['43/26.7/9', '43'],
-                            ['44/27.3/10.5', '44'],
-                           ],{ :prompt => "-EUR/CM/USA(M)-"} ,  :class=>"form-control"%>
+        <%= f.select :shoesize, [['35/22.8', '35'],
+                            ['36/23.5', '36'],
+                            ['37/23.8', '37'],
+                            ['38/24.5', '38'],
+                            ['39/25.1', '39'],
+                            ['40/25.4', '40'],
+                            ['41/25.7', '41'],
+                            ['42/26.0', '42'],
+                            ['43/26.7', '43'],
+                            ['44/27.3', '44'],
+                           ],{ :prompt => "-EUR/CM-"} ,  :class=>"form-control"%>
       </div>
       <div class="form-group col-sm-6">
-        <%= f.label :activity %><br>
-        <%= f.select(:activity, [['Yes, I will join', 'Yes'], ['No, thank you', 'No']], { :prompt =>"-Would you like to join?-"}, :class=>"form-control" ) %>
+        <%= f.label :parasailing %><br>
+        <%= f.select(:activity, [['Yes, I will join on 8/2 morning', 'Yes'], ['No, I have other plans', 'No']], { :prompt =>"-Would you like to join?-"}, :class=>"form-control" ) %>
       </div>
 
    <!--  <div class="field">
@@ -52,7 +52,7 @@
         <%= f.text_area :note, :class=>"form-control", :type=>"text", :placeholder=>"If you have +1 that we have not yet invited, kindly fill in their personal info here. Please also let us know if you have children under 12. Thanks!", :rows=>"3"%>
       </div>
       <div class="col-sm-12 btn-div">
-        <%= f.submit 'RSVP TO OUR WEDDING', class: 'btn btn-info btn-block' %>
+        <%= f.submit "RSVP TO WEDDING", class: 'btn btn-info btn-block' %>
       </div>
   </form>
   <% end %>
