@@ -3,7 +3,7 @@ class UserMailer < ActionMailer::Base
 
   def rsvp_email(response)
   	@response = response
-  	@url = "http://www.thejangel.com/rsvp"
+  	@url = "http://www.thejangel.com/rsvp_us"
   	# delivery_options = { user_name: info@jangel.com,
   	# 					 password: Fuckyou0623,
   	# 					 address: server136.web-hosting.com }

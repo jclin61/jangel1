@@ -4,6 +4,7 @@ $(document).on('page:change ready', function(){
 	countdown_timer() //calling from countdown_custom.js
 	// scroll_to_Info()
 	destroy_rsvp_mobile_js()
+	rsvp_scroll_to_top()
 
 });
 
@@ -13,7 +14,6 @@ function destroy_rsvp_mobile_js(){
    } 
    else {
      scroll_to_RSVP()
-     rsvp_scroll_to_top()
    }
  
 }

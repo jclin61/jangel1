@@ -106,7 +106,7 @@ $(document).ready(function() {
 <div class="section">	
 	<div class="rsvp_normal_scroll">
 		<div id="rsvp_pre_info">
-			<a href="#rsvp_info_all" id="rsvp_expand_all" class="pull-right" data-toggle="collapse" data-target=".rsvp_inner_info">EXPAND ALL</a>
+			<a href="#rsvp_info_all" id="rsvp_expand_all" class="pull-right" data-toggle="collapse" data-target=".rsvp_inner_info">TOGGLE ALL</a>
 		</div>
 		
 		<section id="rsvp_info_all" class="container-fluid">
@@ -263,6 +263,7 @@ $(document).ready(function() {
 					</div>
 				</div>
 			 </div> <!-- row ends -->
+			 <hr>
 			 <div class="row">
 				<div id="rsvp_hotel" class="rsvp_info col-md-4 col-md-offset-2">
 					<div class="rsvp_info_icon">
@@ -396,8 +397,8 @@ $(document).ready(function() {
 						<a class="glyphicon glyphicon-menu-down" data-toggle="collapse" href="#rsvp_activity_info" aria-expanded="false" aria-controls="rsvp_activity_info">
 						</a>
 					</div>
-					<div class="collapse" id="rsvp_activity_info">
-				  		<div class="rsvp_inner_info col-md-10 col-md-offset-1">
+					<div class="collapse rsvp_inner_info" id="rsvp_activity_info">
+				  		<div class="col-md-10 col-md-offset-1">
 				  			<p>We will be parasailing in the morning. Join us!</p>
 					   		<p>Lake Tahoe is home to many outdoor activities. Explore around the area!</p>
 						</div>
@@ -440,7 +441,7 @@ $(document).ready(function() {
 		</section>
 		<!-- Accordion Finish -->
 		<section id="pre-form" class="text-center">
-			<a href="#rsvp_form"><p>RSVP</p><span id="rsvp_form_arrow" class="glyphicon glyphicon-triangle-bottom" ></span></a>	
+			<a href="javascript:;"><p>RSVP</p><span id="rsvp_form_arrow" class="glyphicon glyphicon-triangle-bottom" ></span></a>	
 		</section>
 		<div id="rsvp_info_long_div" class="hidden-xs hidden-sm">
 			<!-- LONG DIV RSVP INFO -->
@@ -496,7 +497,7 @@ $(document).ready(function() {
 
 		<!-- 	<%= link_to 'Back', responses_path %> -->
 		<div id="rsvp_top_button" class="rsvp_arrow">
-				<a class="btn btn-info" href="#rsvp_fullpage">
+				<a class="btn btn-info" href="javascript:;">
 					<span class="glyphicon glyphicon-menu-up"> </span>
 					<span>TOP</span>
 				</a>
