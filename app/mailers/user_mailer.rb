@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "info@thejangel.com"
+  default from: "Jerry & Angel <info@thejangel.com>"
 
   def rsvp_email(response)
   	@response = response

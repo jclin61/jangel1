@@ -32,7 +32,7 @@ class ResponsesController < ApplicationController
         #Tell the UserMailer to send a welcome email after save
         UserMailer.rsvp_email(@response).deliver
 
-        format.html { redirect_to "/rsvp_us#rsvp_form", notice: 'Response was successfully created.' }
+        format.html { redirect_to "/rsvp_us#rsvp_form", notice: 'Your response was successfully submitted' }
         format.json { render action: 'new', status: :created, location: @response }
       else
         format.html { redirect_to "/rsvp_us#rsvp_form", alert: "Incorrect/Incomplete input, please check"  }
