@@ -1,5 +1,5 @@
 class AddActivityToResponses < ActiveRecord::Migration
   def change
-    add_column :responses, :field, :string
+    add_column :responses, :activity, :string
   end
 end
