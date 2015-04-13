@@ -175,11 +175,16 @@
 }
 
 .rsvp_info .glyphicon-menu-down{
-	width:100px;
+	width:70px;
 	margin-top: 20px;
 	font-size: 26px;
 	color:lightgrey;
 	text-decoration: none;
+}
+
+.rsvp_info .glyphicon-menu-down span{
+	font-size: 14px;
+	vertical-align: middle;
 }
 
 .rsvp_info a {
