@@ -25,7 +25,7 @@ function countdown_timer(){
                 hours.html('<h1>0</h1><p>Hour</p>');
                 minutes.html('<h1>0</h1><p>Minute</p>');
                 seconds.html('<h1>0</h1><p>Second</p>');
-                message.html('CONTENT UPLOADING...CHECK BACK SOON!');
+                message.html('SITE TO BE UPDATED...CHECK BACK SOON!');
             }
             else{
                 var s = -now.getTimezoneOffset()*60 + (launch.getTime() - now.getTime())/1000;
@@ -44,8 +44,9 @@ function countdown_timer(){
                 seconds.html('<h1>'+s+'</h1><p>Second'+(s>1?'s':''),'</p>');
                 setTimeout(setDate, 1000);
 
-                message.html("To Our Wedding In");
+                message.html("To Our Wedding");
             }
         }
     })(jQuery);
 }
+

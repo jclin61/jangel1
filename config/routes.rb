@@ -44,11 +44,11 @@ Jangel1::Application.routes.draw do
   # ====
 
   match "index",
-  :to => "home#savethedate",
+  :to => "home#comingsoon",
   :via => :get
 
   match "home",
-  :to => "home#savethedate",
+  :to => "home#comingsoon",
   :via => :get
 
   resources :home
@@ -57,7 +57,7 @@ Jangel1::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'home#savethedate'
+  root 'home#comingsoon'
 
 
   # Example of regular route:
